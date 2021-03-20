@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+#__next {
+  max-width: 1920px;
+  margin: 0px auto;
+  padding-top: 70px;
 }
 
 body,
@@ -63,4 +70,38 @@ main {
 
 .title {
   color: blue;
+}
+
+.page-title {
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.page-title h1{
+  font-size: 75px;
+  margin: 0;
+}
+.page-title h3{
+  width: 50%;
+  margin: auto;
+}
+
+.regular-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.bold-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.semibold-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
 }

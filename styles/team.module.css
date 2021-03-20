@@ -1,0 +1,64 @@
+.delimiter {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.hr {
+  border: 2px solid #5d4b6a;
+  border-radius: 5px;
+  width: 60%;
+  position: absolute;
+}
+
+.hr_start {
+  left:0;
+}
+
+.hr_end {
+  right:0;
+}
+
+.member_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 20px;
+  margin-bottom: 40px;
+}
+
+.member_photo {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.member_name {
+  margin-top: 10px;
+}
+
+.member_role {
+  color: #6e13b9;
+}
+
+.partial_header {
+  display: flex;
+}
+
+.partial_header_tex {
+  width: 50%;
+  font-size: 20px;
+}
+.partial_header_tex h1 {
+ 
+}
+
+.partial_members_div {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+
+}
