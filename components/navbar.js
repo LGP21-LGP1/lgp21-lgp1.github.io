@@ -6,12 +6,12 @@ const navbar = () => {
     <navbar id="navbar">
       <ul>
         <li className="nav-item">
-          <Link href="/">
+          <Link href="/" as={process.env.BACKEND_URL + '/'}>
             <a>Home</a>
           </Link>
         </li>
         <li className="nav-item">
-          <Link href="/solutions">
+          <Link href="/solutions" as={process.env.BACKEND_URL + '/solutions'}>
             <a>Solutions</a>
           </Link>
         </li>

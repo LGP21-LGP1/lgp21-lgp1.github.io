@@ -14,12 +14,18 @@ export default function solutions() {
         <h1 className="title">Nice Solutions</h1>
         <ul>
           <li>
-            <Link href="/solutions/airmeddigital">
+            <Link
+              href="/solutions/airmeddigital"
+              as={process.env.BACKEND_URL + '/solutions/airmeddigital'}
+            >
               <a>AIR MED DIGITAL</a>
             </Link>
           </li>
           <li>
-            <Link href="/solutions/project2">
+            <Link
+              href="/solutions/project2"
+              as={process.env.BACKEND_URL + '/solutions/project2'}
+            >
               <a>Project 2</a>
             </Link>
           </li>
