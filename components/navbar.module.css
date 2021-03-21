@@ -1,8 +1,27 @@
-#navbar ul {
-  display: flex;
-  flex-direction: row;
+#navbar {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  min-height: 70px;
 }
 
-.navItem {
+#navbar.dark {
+  color: var(--dark);
+}
+
+#navbar.clear {
+  color: var(--light-gray);
+}
+
+#navbar .navItem {
   margin: 0 1rem;
+  padding: 0.5rem;
+  font: normal 20px var(--secondary-font);
+}
+
+#navbar.dark #selectedPage {
+  border-bottom: 2px solid var(--dark);
+}
+
+#navbar.clear #selectedPage {
+  border-bottom: 2px solid var(--light-gray);
 }
