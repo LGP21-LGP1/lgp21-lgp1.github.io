@@ -1,0 +1,63 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer.dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+#footerInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#footerInfo span {
+  margin: 0 2rem;
+}
+
+#backToTop {
+  border: none;
+  background: none;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  margin-top: 40px;
+}
+
+#backToTop span {
+  margin-left: 0.5rem;
+}
+
+#workWithUs {
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: underline;
+  width: 500px;
+}
+
+#email {
+  font-size: 30px;
+  font-weight: bold;
+  font-weight: 600;
+}
+
+#phone {
+  font-size: 30px;
+  font-weight: bold;
+  font-weight: 600;
+}
+
+#socials {
+  margin: 60px auto;
+}
+
+#socials a {
+  color: inherit;
+  margin: 0 1rem;
+}

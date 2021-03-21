@@ -184,8 +184,9 @@ export default function Team() {
     <div className="container">
       <Head>
         <title>Vortex - Team</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <Navbar dark={true} page={'team'} />
       <PageTitle
         title="The Team"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus
@@ -198,7 +199,7 @@ export default function Team() {
           <>
             <div style={{ textAlign: align }}>
               <TeamPartial
-                key= {team + index}
+                key={team + index}
                 name={team.name}
                 description={team.description}
                 members={team.members}
@@ -215,9 +216,7 @@ export default function Team() {
           </>
         );
       })}
-      <footer>
-        <h5>footer</h5>
-      </footer>
+      <Footer dark={true} />
     </div>
   );
 }
