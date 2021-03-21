@@ -10,7 +10,7 @@ const solution1 = () => {
           <title>Vortex - Solution 1</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar dark={true} page={'contact'} />
+        <Navbar dark={true} page={'solutions'} />
         <main>
           <h1 className="title">Solution 1</h1>
         </main>

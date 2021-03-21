@@ -26,10 +26,11 @@ const navbar = ({ dark, page }) => {
       <Navbar
         id={style.navbar}
         className={dark ? style.dark : style.clear}
+        light
         expand="md"
       >
         <NavbarBrand href="/">LOGO</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle} id={style.navbarToggler} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem
@@ -44,14 +45,40 @@ const navbar = ({ dark, page }) => {
               <DropdownToggle
                 nav
                 className={style.navItem}
-                id={style.solutionsDropdown}
+                id={page === 'solutions' ? style.selectedPage : ''}
               >
                 Solutions
               </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Solution 1</DropdownItem>
-                <DropdownItem>Solution 2</DropdownItem>
-                <DropdownItem>Solution 3</DropdownItem>
+              <DropdownMenu id={style.dropdownMenu} right>
+                <DropdownItem className={style.dropdownItem}>
+                  {' '}
+                  <Link
+                    href="/solutions/solution1"
+                    as={process.env.BACKEND_URL + '/solutions/solution1'}
+                  >
+                    <a>Solution 1</a>
+                  </Link>
+                </DropdownItem>
+                <DropdownItem divider className={style.dropdownDivider} />
+                <DropdownItem className={style.dropdownItem}>
+                  {' '}
+                  <Link
+                    href="/solutions/solution2"
+                    as={process.env.BACKEND_URL + '/solutions/solution2'}
+                  >
+                    <a>Solution 2</a>
+                  </Link>
+                </DropdownItem>
+                <DropdownItem divider className={style.dropdownDivider} />
+                <DropdownItem className={style.dropdownItem}>
+                  {' '}
+                  <Link
+                    href="/solutions/solution3"
+                    as={process.env.BACKEND_URL + '/solutions/solution3'}
+                  >
+                    <a>Solution 3</a>
+                  </Link>
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem

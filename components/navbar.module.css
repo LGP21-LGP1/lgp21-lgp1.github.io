@@ -2,20 +2,32 @@
   padding-left: 4rem;
   padding-right: 4rem;
   min-height: 70px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-#navbar.dark {
+#navbar.dark .navItem {
   color: var(--dark);
 }
 
-#navbar.clear {
+#navbar.clear .navItem {
   color: var(--light-gray);
+}
+
+#navbar.dark #navbarToggler {
+  color: var(--dark);
+  border: none;
+}
+
+#navbar.clear #navbarToggler {
+  color: var(--light-gray);
+  border: none;
 }
 
 #navbar .navItem {
   margin: 0 1rem;
   padding: 0.5rem;
   font: normal 20px var(--secondary-font);
+  color: var(--dark);
 }
 
 #navbar.dark #selectedPage {
@@ -24,4 +36,20 @@
 
 #navbar.clear #selectedPage {
   border-bottom: 2px solid var(--light-gray);
+}
+
+#dropdownMenu {
+  border-radius: 9px;
+  left: -20px;
+}
+
+.dropdownItem {
+  font: normal 20px var(--secondary-font);
+  text-align: center;
+}
+
+.dropdownDivider {
+  width: 40%;
+  margin: 0.2rem auto;
+  border-top: 1px solid var(--gray);
 }
