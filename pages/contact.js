@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 
 export default function Contact() {
@@ -14,9 +15,7 @@ export default function Contact() {
         <main>
           <h1 className="title">Contact</h1>
         </main>
-        <footer>
-          <h5>footer</h5>
-        </footer>
+        <Footer dark={true} />
       </div>
     </>
   );

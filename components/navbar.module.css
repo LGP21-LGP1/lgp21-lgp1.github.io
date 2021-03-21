@@ -10,7 +10,7 @@
 }
 
 #navbar.clear .navItem {
-  color: var(--light-gray);
+  color: var(--light);
 }
 
 #navbar.dark #navbarToggler {
@@ -19,7 +19,7 @@
 }
 
 #navbar.clear #navbarToggler {
-  color: var(--light-gray);
+  color: var(--light);
   border: none;
 }
 

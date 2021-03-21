@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
 import styles from '../../styles/solutions.module.css';
 
 const solution3 = () => {
@@ -14,9 +15,7 @@ const solution3 = () => {
         <main>
           <h1 className="title">Solution 3</h1>
         </main>
-        <footer>
-          <h5>footer</h5>
-        </footer>
+        <Footer dark={true} />
       </div>
     </>
   );

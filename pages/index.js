@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 export default function Home() {
   return (
@@ -14,9 +15,7 @@ export default function Home() {
         <main>
           <h1 className="title">Nice Content</h1>
         </main>
-        <footer>
-          <h5>footer</h5>
-        </footer>
+        <Footer dark={false} />
       </div>
     </>
   );
