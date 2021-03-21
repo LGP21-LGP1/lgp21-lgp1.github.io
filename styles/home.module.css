@@ -1,0 +1,52 @@
+#meetTheTeam {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-accent);
+  color: var(--light);
+  width: 100%;
+  padding: 3rem;
+}
+
+#meetTheTeam #content {
+  margin: 0 auto;
+  max-width: 1980px;
+  display: flex;
+  align-items: center;
+}
+
+#textContent {
+  z-index: 2;
+}
+
+#meetTheTeamImg {
+  position: relative;
+  right: 80px;
+  z-index: 1;
+}
+
+#textContent h2 {
+  width: 960px;
+  font-size: 121px;
+  font-weight: bold;
+}
+
+#textContent p {
+  max-width: 700px;
+  font-size: 29px;
+  font-weight: normal;
+  margin: 10.5px 0;
+}
+
+#meetTheTeamButton {
+  border: none;
+  background: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+#buttonText {
+  margin-left: 1rem;
+  font-size: 23px;
+  font-weight: bold;
+}

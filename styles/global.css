@@ -56,13 +56,13 @@ nav > * {
 }
 
 main {
-  padding: 5rem 0;
+  margin: 0;
+  padding: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1024px;
 }
 
 .page-title {
