@@ -10,7 +10,7 @@ const schools = () => {
           <title>Vortex - Solution 2</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar dark={true} page={'solutions'} />
+        <Navbar dark={false} page={'solutions'} />
         <main>
           <h1 className="title">Solution 2</h1>
         </main>

@@ -4,7 +4,7 @@
 }
 
 .hr {
-  border: 2px solid var(--dark-accent);
+  border: 2px solid var(--orange);
   width: 60%;
   position: absolute;
 }
@@ -42,7 +42,7 @@
 }
 
 .member_role {
-  color: var(--accent);
+  color: var(--cyan);
 }
 
 .partial_div{

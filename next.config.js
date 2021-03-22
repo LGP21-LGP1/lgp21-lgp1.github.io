@@ -15,7 +15,7 @@ module.exports = {
     };
   },
   //assetPrefix: '',
-  assetPrefix: !debug ? '/lgp21-lgp1.github.io/' : '',
+  assetPrefix: !debug ? '' : '',
   webpack: (config, { dev }) => {
     // Perform customizations to webpack config
     // console.log('webpack');

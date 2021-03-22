@@ -267,6 +267,13 @@ export default function Team() {
         const align = index % 2 == 0 ? 'start' : 'end';
         return (
           <div key={team.name + index}>
+            <div className={`mb-5 ${styles.delimiter}`}>
+                <hr
+                  className={`${styles.hr} ${
+                    index % 2 == 0 ? styles.hr_start : styles.hr_end
+                  }`}
+                />
+              </div>
             <div>
               <TeamPartial
                 name={team.name}
@@ -275,15 +282,6 @@ export default function Team() {
                 align={align}
               />
             </div>
-            {index != nteams - 1 && (
-              <div className={`mb-5 ${styles.delimiter}`}>
-                <hr
-                  className={`${styles.hr} ${
-                    index % 2 == 0 ? styles.hr_end : styles.hr_start
-                  }`}
-                />
-              </div>
-            )}
           </div>
         );
       })}

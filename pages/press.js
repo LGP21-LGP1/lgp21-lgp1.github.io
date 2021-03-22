@@ -11,7 +11,7 @@ export default function Press() {
           <title>Vortex - Press</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar dark={true} page={'press'} />
+        <Navbar dark={false} page={'press'} />
         <main>
           <h1 className="title">Press</h1>
         </main>
