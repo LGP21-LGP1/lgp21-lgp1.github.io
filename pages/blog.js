@@ -11,7 +11,7 @@ export default function Blog() {
           <title>Vortex - Blog</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar dark={true} page={'blog'} />
+        <Navbar dark={false} page={'blog'} />
         <main>
           <h1 className="title">Blog</h1>
         </main>

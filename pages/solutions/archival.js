@@ -10,7 +10,7 @@ const archival = () => {
           <title>Vortex - Solution 1</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar dark={true} page={'solutions'} />
+        <Navbar dark={false} page={'solutions'} />
         <main>
           <h1 className="title">Solution 1</h1>
         </main>

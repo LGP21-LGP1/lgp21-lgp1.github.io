@@ -1,7 +1,7 @@
 #navbar {
   padding-left: 4rem;
   padding-right: 4rem;
-  min-height: 70px;
+  min-height: 100px;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -35,16 +35,16 @@
 #navbar .navItem {
   margin: 0 1rem;
   padding: 0.5rem;
-  font: normal 20px var(--secondary-font);
+  font: normal 28px var(--secondary-font);
   color: var(--dark);
 }
 
 #navbar.dark #selectedPage {
-  border-bottom: 2px solid var(--dark);
+  border-bottom: 2px solid var(--orange);
 }
 
 #navbar.clear #selectedPage {
-  border-bottom: 2px solid var(--light-gray);
+  border-bottom: 2px solid var(--orange);
 }
 
 #dropdownMenu {

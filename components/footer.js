@@ -12,7 +12,7 @@ export const footer = ({ dark }) => {
   return (
     <footer id={style.footer} className={dark ? style.dark : style.clear}>
       <button id={style.backToTop}>
-        <FaArrowUp size={18} /> <span>Back to Top</span>
+        <FaArrowUp size={22} /> <span>Back to Top</span>
       </button>
       <div id={style.footerInfo}>
         <span id={style.workWithUs}>Interested in working with us?</span>

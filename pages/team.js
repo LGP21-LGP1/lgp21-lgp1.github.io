@@ -11,7 +11,7 @@ export default function Team() {
           <title>Vortex - Team</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar dark={true} page={'team'} />
+        <Navbar dark={false} page={'team'} />
         <main>
           <h1 className="title">Team</h1>
         </main>
