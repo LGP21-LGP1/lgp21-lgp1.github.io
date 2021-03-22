@@ -29,7 +29,9 @@ const navbar = ({ dark, page }) => {
         light
         expand="md"
       >
-        <NavbarBrand href="/">LOGO</NavbarBrand>
+        <NavbarBrand id={style.logo} href="/">
+          LOGO
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} id={style.navbarToggler} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -53,30 +55,30 @@ const navbar = ({ dark, page }) => {
                 <DropdownItem className={style.dropdownItem}>
                   {' '}
                   <Link
-                    href="/solutions/solution1"
-                    as={process.env.BACKEND_URL + '/solutions/solution1'}
+                    href="/solutions/archival"
+                    as={process.env.BACKEND_URL + '/solutions/archival'}
                   >
-                    <a>Solution 1</a>
+                    <a>Archival</a>
                   </Link>
                 </DropdownItem>
                 <DropdownItem divider className={style.dropdownDivider} />
                 <DropdownItem className={style.dropdownItem}>
                   {' '}
                   <Link
-                    href="/solutions/solution2"
-                    as={process.env.BACKEND_URL + '/solutions/solution2'}
+                    href="/solutions/schools"
+                    as={process.env.BACKEND_URL + '/solutions/schools'}
                   >
-                    <a>Solution 2</a>
+                    <a>Schools</a>
                   </Link>
                 </DropdownItem>
                 <DropdownItem divider className={style.dropdownDivider} />
                 <DropdownItem className={style.dropdownItem}>
                   {' '}
                   <Link
-                    href="/solutions/solution3"
-                    as={process.env.BACKEND_URL + '/solutions/solution3'}
+                    href="/solutions/labs"
+                    as={process.env.BACKEND_URL + '/solutions/labs'}
                   >
-                    <a>Solution 3</a>
+                    <a>Labs</a>
                   </Link>
                 </DropdownItem>
               </DropdownMenu>

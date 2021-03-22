@@ -12,7 +12,7 @@ export const footer = ({ dark }) => {
   return (
     <footer id={style.footer} className={dark ? style.dark : style.clear}>
       <button id={style.backToTop}>
-        <FaArrowUp size={20} /> <span>Back to Top</span>
+        <FaArrowUp size={18} /> <span>Back to Top</span>
       </button>
       <div id={style.footerInfo}>
         <span id={style.workWithUs}>Interested in working with us?</span>
@@ -21,16 +21,16 @@ export const footer = ({ dark }) => {
       </div>
       <div id={style.socials}>
         <a href="https://www.facebook.com/">
-          <Facebook fill="white" height={60} width={60} />
+          <Facebook fill="white" height={50} width={50} />
         </a>
         <a href="https://www.github.com/">
-          <Github fill="white" height={60} width={60} />
+          <Github fill="white" height={50} width={50} />
         </a>
         <a href="https://www.instagram.com/">
-          <Instagram fill="white" height={60} width={60} />
+          <Instagram fill="white" height={50} width={50} />
         </a>
         <a href="https://www.linkedin.com/">
-          <Linkedin fill="white" height={60} width={60} />
+          <Linkedin fill="white" height={50} width={50} />
         </a>
       </div>
     </footer>
