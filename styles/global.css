@@ -83,3 +83,37 @@ main {
   font-weight: normal;
   font-size: 29px;
 }
+
+.page-title {
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.page-title h1{
+  font-size: 75px;
+  margin: 0;
+}
+.page-title h3{
+  width: 50%;
+  margin: auto;
+}
+
+.regular-text{
+  font-family: var(--primary-font);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.bold-text{
+  font-family: var(--primary-font);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.semibold-text{
+  font-family: var(--primary-font);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
