@@ -252,9 +252,8 @@ export default function Team() {
         <div className="w-75 d-flex flex-wrap row align-items-center">
           {leaders.map((member, index) => {
             return (
-              <div className="col-md-6 col-lg-3">
+              <div className="col-md-6 col-lg-3" key={member.photo + index}>
                 <TeamMember
-                  key={member.photo + index}
                   photo={member.photo}
                   name={member.name}
                   role={member.role}

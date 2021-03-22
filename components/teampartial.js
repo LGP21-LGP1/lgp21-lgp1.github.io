@@ -22,9 +22,8 @@ const TeamPartial = (props) => {
       <div className="mt-5 d-flex row w-100 mx-auto">
         {teamMembers.map((member, index) => {
           return (
-            <div className="col-6 col-md-3 col-lg-2">
+            <div className="col-6 col-md-3 col-lg-2" key={member.photo + index}>
               <TeamMember
-                key={member.photo + index}
                 photo={member.photo}
                 name={member.name}
                 role={member.role}
