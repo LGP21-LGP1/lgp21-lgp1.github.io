@@ -1,38 +1,118 @@
+#home {
+  background-color: var(--dark);
+}
+
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url('../public/assets/background.png');
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#jumbotron {
+  margin: 0 auto;
+  max-width: 1800px;
+  width: 100%;
+  color: var(--light);
+  padding: 2rem;
+}
+
+#jumbotronContent {
+  max-width: 1400px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#jumbotron h1 {
+  font-size: 70px;
+  font-weight: bold;
+  font-family: var(--secondary-font);
+}
+
+#jumbotron p {
+  font-size: 31px;
+  font-weight: 300;
+}
+
+#scrollDown {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  opacity: 0.6;
+}
+
+#scrollDown span {
+  font-size: 29px;
+  font-family: var(--secondary-font);
+  margin: 0 0.5rem;
+}
+
+#scrollDown svg {
+  position: relative;
+  top: 3px;
+}
+
 #solutions {
   margin: 0 auto;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 3rem 100px 3rem;
+  padding: 100px 3rem 100px 3rem;
 }
 
 #solutionsTitle {
-  font-size: 70px;
-  font-weight: bold;
+  font-size: 99px;
+  font-weight: normal;
+  font-family: var(--reross);
+  color: var(--cyan);
 }
 
 #solutionsList {
   display: flex;
-  max-width: 775px;
-  width: 775px;
+  max-width: 1050px;
+  width: 1050px;
   justify-content: space-between;
   margin-top: 30px;
 }
 
 .solution {
+  position: relative;
   display: flex;
   align-items: center;
+  color: var(--light);
+  transition: all 0.3s ease-in-out;
+  border-bottom: 5px solid rgba(0, 0, 0, 0);
+  margin-top: 20px;
+}
+
+.solution:hover {
+  color: var(--orange);
+  border-bottom: 5px solid var(--orange);
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .solution span {
-  margin-left: 1rem;
+  margin-left: 2rem;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 65px;
+  font-family: var(--secondary-font);
 }
 
 #about {
-  background-color: var(--dark-accent);
+  background-color: var(--blue);
   color: var(--light);
   width: 100%;
   padding: 50px 3rem 100px 3rem;
@@ -47,14 +127,17 @@
 }
 
 #aboutTitle {
-  font-size: 70px;
-  font-weight: bold;
+  font-size: 99px;
+  font-weight: normal;
+  font-family: var(--reross);
+  color: var(--light);
 }
 
 #aboutContent {
-  font-size: 16px;
-  font-weight: normal;
-  max-width: 900px;
+  font-size: 29px;
+  font-weight: medium;
+  font-family: var(--poppins);
+  max-width: 1515px;
   text-align: center;
   margin-bottom: 35px;
 }
@@ -63,53 +146,59 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 1200px;
+  max-width: 1700px;
   padding: 100px;
+  width: 100%;
 }
 
 #ourVision {
-  font-weight: bold;
-  font-size: 45px;
   display: flex;
   align-items: center;
+  color: var(--cyan);
 }
 
 #ourVision span {
-  margin-left: 1rem;
+  font-size: 64px;
+  font-weight: bold;
+  font-family: var(--secondary-font);
+  margin-left: 2rem;
 }
 
 .separator {
-  border-left: 5px solid var(--dark);
-  margin: 5px 10px 2px 10px;
+  border: 5px solid var(--cyan);
+  border-radius: 10px;
+  margin: 15px 27px 30px 27px;
 }
 
 .visionStatement {
   display: flex;
   align-items: stretch;
+  color: var(--light);
+  font-size: 40px;
+  font-family: var(--poppins);
 }
 
 .visionNo,
 .visionTitle {
   font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
+  line-height: 60px;
+  max-width: 268px;
 }
 
 .visionContent {
-  font-size: 25px;
-  max-width: 175px;
-  line-height: 28px;
+  max-width: 268px;
+  line-height: 60px;
   margin: 0;
 }
 
 .visionContent p {
-  margin: 0;
+  margin-top: 8px;
 }
 
 #meetTheTeam {
   display: flex;
   align-items: center;
-  background-color: var(--dark-accent);
+  background-color: var(--blue);
   color: var(--light);
   width: 100%;
   padding: 100px 3rem;
@@ -117,7 +206,7 @@
 
 #meetTheTeam .content {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1700px;
   display: flex;
   align-items: center;
 }
@@ -133,13 +222,16 @@
 }
 
 #textContent h2 {
-  font-size: 70px;
-  font-weight: bold;
+  font-size: 99px;
+  font-weight: normal;
+  font-family: var(--reross);
+  color: var(--light);
 }
 
 #textContent p {
   max-width: 500px;
-  font-size: 16px;
+  font-size: 29px;
+  font-family: var(--poppins);
   font-weight: normal;
   margin: 10.5px 0;
 }
@@ -150,10 +242,11 @@
   color: inherit;
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 
 #buttonText {
   margin-left: 1rem;
-  font-size: 16px;
+  font-size: 28px;
   font-weight: bold;
 }

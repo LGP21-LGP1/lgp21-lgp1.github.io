@@ -20,7 +20,7 @@ export default function Contact() {
           <title>Vortex - Contact</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar dark={true} page={'contact'} />
+        <Navbar dark={false} page={'contact'} />
         <main>
           <h1 className="title">Contact Us</h1>
           <ContactForm submit={submit}></ContactForm>

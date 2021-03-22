@@ -22,8 +22,9 @@
 #backToTop {
   border: none;
   background: none;
-  font-size: 20px;
+  font-size: 29px;
   font-weight: 600;
+  font-family: var(--secondary-font);
   display: flex;
   align-items: center;
   color: inherit;
@@ -31,26 +32,27 @@
 }
 
 #backToTop span {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 #workWithUs {
-  font-size: 40px;
+  font-size: 73px;
   font-weight: bold;
+  font-family: var(--secondary-font);
   text-decoration: underline;
-  width: 400px;
+  width: 522px;
 }
 
 #email {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 39px;
   font-weight: 600;
+  font-family: var(--secondary-font);
 }
 
 #phone {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 39px;
   font-weight: 600;
+  font-family: var(--secondary-font);
 }
 
 #socials {

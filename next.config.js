@@ -5,15 +5,17 @@
 const debug = process.env.NODE_ENV !== 'production';
 
 module.exports = {
+  images: {
+	      loader: "imgix",
+	      path: "https://noop/",
+  },
   exportPathMap: function () {
     return {
       '/': { page: '/' },
-      '/solutions': { page: '/solutions' },
-      '/solutions/airmeddigital': { page: '/solutions/airmeddigital' },
     };
   },
   //assetPrefix: '',
-  assetPrefix: !debug ? '/lgp21-lgp1.github.io/' : '',
+  assetPrefix: !debug ? '' : '',
   webpack: (config, { dev }) => {
     // Perform customizations to webpack config
     // console.log('webpack');

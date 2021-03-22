@@ -7,6 +7,7 @@ import style from '../styles/home.module.css';
 import { FiArrowRightCircle } from 'react-icons/fi';
 import { FaEye, FaArchive } from 'react-icons/fa';
 import { IoSchoolSharp, IoFlaskSharp } from 'react-icons/io5';
+import { IoIosArrowDown } from 'react-icons/io';
 
 export default function Home() {
   return (
@@ -15,9 +16,31 @@ export default function Home() {
         <Head>
           <title>Vortex</title>
           <link rel="icon" href="/favicon.ico" />
+          <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
         </Head>
-        <Navbar dark={true} page={'home'} />
-        <main>
+        <main id={style.home}>
+          <section id={style.hero}>
+            <Navbar dark={false} page={'home'} />
+            <div id={style.jumbotron}>
+              <div id={style.jumbotronContent}>
+                <h1>
+                  Through innovation, we bridge the gap between people and
+                  technology.
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum.
+                </p>
+              </div>
+            </div>
+            <span id={style.scrollDown}>
+              <IoIosArrowDown size={30} />
+              <span>scroll down</span>
+              <IoIosArrowDown size={30} />
+            </span>
+          </section>
           <section id={style.solutions}>
             <h2 id={style.solutionsTitle}>Our Solutions</h2>
             <div id={style.solutionsList}>
@@ -27,7 +50,7 @@ export default function Home() {
                   as={process.env.BACKEND_URL + '/solutions/archival'}
                 >
                   <a className={style.solution}>
-                    <FaArchive size={35} />
+                    <FaArchive size={55} />
                     <span>Archival</span>
                   </a>
                 </Link>
@@ -38,7 +61,7 @@ export default function Home() {
                   as={process.env.BACKEND_URL + '/solutions/schools'}
                 >
                   <a className={style.solution}>
-                    <IoSchoolSharp size={35} />
+                    <IoSchoolSharp size={55} />
                     <span>Schools</span>
                   </a>
                 </Link>
@@ -49,7 +72,7 @@ export default function Home() {
                   as={process.env.BACKEND_URL + '/solutions/labs'}
                 >
                   <a className={style.solution}>
-                    <IoFlaskSharp size={35} />
+                    <IoFlaskSharp size={55} />
                     <span>Lab</span>
                   </a>
                 </Link>
@@ -66,7 +89,7 @@ export default function Home() {
                 the goal of allowing them and their products to be more
                 effective, efficient and ultimately more successful.
               </p>
-              <Image src="/assets/feup.png" width={555} height={370} />
+              <img src="/assets/feup.png" width={960} height={641} />
             </span>
           </section>
           <section id={style.vision}>
@@ -103,7 +126,7 @@ export default function Home() {
                 </p>
                 <Link href="/team" as={process.env.BACKEND_URL + '/team'}>
                   <a id={style.meetTheTeamButton}>
-                    <FiArrowRightCircle size={20} />
+                    <FiArrowRightCircle size={30} />
                     <span id={style.buttonText}>Meet our team members</span>
                   </a>
                 </Link>
@@ -111,13 +134,13 @@ export default function Home() {
               <img
                 id={style.meetTheTeamImg}
                 src="/assets/meet-the-team.png"
-                width={590}
-                height={385}
+                width={956}
+                height={637}
               />
             </span>
           </section>
         </main>
-        <Footer dark={false} />
+        <Footer dark={true} />
       </div>
     </>
   );
