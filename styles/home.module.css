@@ -1,3 +1,31 @@
+#about {
+  background-color: var(--dark-accent);
+  color: var(--light);
+  width: 100%;
+  padding: 50px 3rem 100px 3rem;
+}
+
+#about .content {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aboutTitle {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+#aboutContent {
+  font-size: 16px;
+  font-weight: normal;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
 #vision {
   display: flex;
   align-items: center;
@@ -54,7 +82,7 @@
   padding: 100px 3rem;
 }
 
-#meetTheTeam #content {
+#meetTheTeam .content {
   margin: 0 auto;
   max-width: 1200px;
   display: flex;

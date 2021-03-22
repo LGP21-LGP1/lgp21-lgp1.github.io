@@ -17,6 +17,19 @@ export default function Home() {
         </Head>
         <Navbar dark={true} page={'home'} />
         <main>
+          <section id={style.about}>
+            <span className={style.content}>
+              <h2 id={style.aboutTitle}>About us</h2>
+              <p id={style.aboutContent}>
+                We strive to always maintain a close relationship with clients
+                coming from various fields and provide technological solutions
+                and improvements to their specific challenges and needs, with
+                the goal of allowing them and their products to be more
+                effective, efficient and ultimately more successful.
+              </p>
+              <Image src="/assets/feup.png" width={555} height={370} />
+            </span>
+          </section>
           <section id={style.vision}>
             <h2 id={style.ourVision}>
               <FaEye size={50} />
@@ -40,7 +53,7 @@ export default function Home() {
             </span>
           </section>
           <section id={style.meetTheTeam}>
-            <span id={style.content}>
+            <span className={style.content}>
               <span id={style.textContent}>
                 <h2>Meet the team</h2>
                 <p>
