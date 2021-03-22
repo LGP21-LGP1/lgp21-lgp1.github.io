@@ -14,6 +14,7 @@
   max-width: 1800px;
   width: 1800px;
   color: var(--light);
+  padding: 2rem;
 }
 
 #jumbotronContent {
@@ -36,7 +37,7 @@
 
 #scrollDown {
   position: absolute;
-  top: 95%;
+  top: 90%;
   width: 100%;
   text-align: center;
   color: var(--gray);
@@ -61,7 +62,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 3rem 100px 3rem;
+  padding: 100px 3rem 100px 3rem;
 }
 
 #solutionsTitle {
