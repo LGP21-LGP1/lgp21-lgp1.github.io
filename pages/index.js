@@ -28,7 +28,7 @@ export default function Home() {
                 </p>
                 <Link href="/team" as={process.env.BACKEND_URL + '/team'}>
                   <a id={style.meetTheTeamButton}>
-                    <FiArrowRightCircle size={30} />
+                    <FiArrowRightCircle size={20} />
                     <span id={style.buttonText}>Meet our team members</span>
                   </a>
                 </Link>
@@ -36,8 +36,8 @@ export default function Home() {
               <img
                 id={style.meetTheTeamImg}
                 src="/assets/meet-the-team.png"
-                width={956}
-                height={637}
+                width={590}
+                height={385}
               />
             </span>
           </section>
