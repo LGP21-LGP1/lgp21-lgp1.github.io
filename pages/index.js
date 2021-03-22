@@ -5,6 +5,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import style from '../styles/home.module.css';
 import { FiArrowRightCircle } from 'react-icons/fi';
+import { FaEye } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -16,6 +17,28 @@ export default function Home() {
         </Head>
         <Navbar dark={true} page={'home'} />
         <main>
+          <section id={style.vision}>
+            <h2 id={style.ourVision}>
+              <FaEye size={50} />
+              <span>Our Vision</span>
+            </h2>
+            <span className={style.visionStatement}>
+              <span className={style.visionNo}>01</span>
+              <span className={style.separator} />
+              <span className={style.visionContent}>
+                <span className={style.visionTitle}>Lorem Ipsum</span>
+                <p className={style.visionText}>Lorem ipsum dolor sit amet.</p>
+              </span>
+            </span>
+            <span className={style.visionStatement}>
+              <span className={style.visionNo}>02</span>
+              <span className={style.separator} />
+              <span className={style.visionContent}>
+                <span className={style.visionTitle}>Lorem Ipsum</span>
+                <p className={style.visionText}>Lorem ipsum dolor sit amet.</p>
+              </span>
+            </span>
+          </section>
           <section id={style.meetTheTeam}>
             <span id={style.content}>
               <span id={style.textContent}>
