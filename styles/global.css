@@ -91,28 +91,28 @@ main {
   margin: 50px auto;
 }
 
-.page-title h1{
+.page-title h1 {
   font-size: 75px;
   margin: 0;
 }
-.page-title h3{
+.page-title h3 {
   width: 50%;
   margin: auto;
 }
 
-.regular-text{
+.regular-text {
   font-family: var(--primary-font);
   font-weight: 400;
   letter-spacing: 1px;
 }
 
-.bold-text{
+.bold-text {
   font-family: var(--primary-font);
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-.semibold-text{
+.semibold-text {
   font-family: var(--primary-font);
   font-weight: 600;
   letter-spacing: 1px;

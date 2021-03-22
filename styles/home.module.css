@@ -16,7 +16,7 @@
 #jumbotron {
   margin: 0 auto;
   max-width: 1800px;
-  width: 1800px;
+  width: 100%;
   color: var(--light);
   padding: 2rem;
 }
