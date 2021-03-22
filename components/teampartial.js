@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from '../styles/team.module.css';
-import TeamMember from './TeamMember';
+import TeamMember from './teammember';
 
 const TeamPartial = (props) => {
   const [teamMembers, setTeamMembers] = useState(props.members);

@@ -5,7 +5,7 @@ import Footer from '../components/footer';
 import PageTitle from '../components/pagetitle';
 import TeamPartial from '../components/teampartial';
 import styles from '../styles/team.module.css';
-import TeamMember from '../components/TeamMember';
+import TeamMember from '../components/teammember';
 
 export default function Team() {
   const [leaders, setLeaders] = useState([
