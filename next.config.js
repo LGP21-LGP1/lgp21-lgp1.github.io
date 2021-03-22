@@ -5,11 +5,13 @@
 const debug = process.env.NODE_ENV !== 'production';
 
 module.exports = {
+  images: {
+	      loader: "imgix",
+	      path: "https://noop/",
+  },
   exportPathMap: function () {
     return {
       '/': { page: '/' },
-      '/solutions': { page: '/solutions' },
-      '/solutions/airmeddigital': { page: '/solutions/airmeddigital' },
     };
   },
   //assetPrefix: '',
