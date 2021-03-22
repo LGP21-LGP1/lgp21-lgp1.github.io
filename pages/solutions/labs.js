@@ -1,19 +1,18 @@
 import Head from 'next/head';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import styles from '../../styles/solutions.module.css';
 
-const solution1 = () => {
+const labs = () => {
   return (
     <>
       <div className="page-container">
         <Head>
-          <title>Vortex - Solution 1</title>
+          <title>Vortex - Solution 3</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Navbar dark={true} page={'solutions'} />
         <main>
-          <h1 className="title">Solution 1</h1>
+          <h1 className="title">Solution 3</h1>
         </main>
         <Footer dark={true} />
       </div>
@@ -21,4 +20,4 @@ const solution1 = () => {
   );
 };
 
-export default solution1;
+export default labs;

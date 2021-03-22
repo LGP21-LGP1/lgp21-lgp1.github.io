@@ -1,3 +1,36 @@
+#solutions {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 3rem 100px 3rem;
+}
+
+#solutionsTitle {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+#solutionsList {
+  display: flex;
+  max-width: 775px;
+  width: 775px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.solution {
+  display: flex;
+  align-items: center;
+}
+
+.solution span {
+  margin-left: 1rem;
+  font-weight: 600;
+  font-size: 40px;
+}
+
 #about {
   background-color: var(--dark-accent);
   color: var(--light);

@@ -5,7 +5,8 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import style from '../styles/home.module.css';
 import { FiArrowRightCircle } from 'react-icons/fi';
-import { FaEye } from 'react-icons/fa';
+import { FaEye, FaArchive } from 'react-icons/fa';
+import { IoSchoolSharp, IoFlaskSharp } from 'react-icons/io5';
 
 export default function Home() {
   return (
@@ -17,6 +18,44 @@ export default function Home() {
         </Head>
         <Navbar dark={true} page={'home'} />
         <main>
+          <section id={style.solutions}>
+            <h2 id={style.solutionsTitle}>Our Solutions</h2>
+            <div id={style.solutionsList}>
+              <span>
+                <Link
+                  href="/solutions/archival"
+                  as={process.env.BACKEND_URL + '/solutions/archival'}
+                >
+                  <a className={style.solution}>
+                    <FaArchive size={35} />
+                    <span>Archival</span>
+                  </a>
+                </Link>
+              </span>
+              <span>
+                <Link
+                  href="/solutions/schools"
+                  as={process.env.BACKEND_URL + '/solutions/schools'}
+                >
+                  <a className={style.solution}>
+                    <IoSchoolSharp size={35} />
+                    <span>Schools</span>
+                  </a>
+                </Link>
+              </span>
+              <span>
+                <Link
+                  href="/solutions/labs"
+                  as={process.env.BACKEND_URL + '/solutions/labs'}
+                >
+                  <a className={style.solution}>
+                    <IoFlaskSharp size={35} />
+                    <span>Lab</span>
+                  </a>
+                </Link>
+              </span>
+            </div>
+          </section>
           <section id={style.about}>
             <span className={style.content}>
               <h2 id={style.aboutTitle}>About us</h2>
