@@ -5,7 +5,15 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-#navbar.dark .navItem {
+#navbar.dark {
+  color: var(--dark);
+}
+
+#navbar.clear {
+  color: var(--light);
+}
+
+#navbar .navItem {
   color: var(--dark);
 }
 
@@ -20,6 +28,7 @@
 
 #navbar.clear #navbarToggler {
   color: var(--light);
+  background: var(--light);
   border: none;
 }
 

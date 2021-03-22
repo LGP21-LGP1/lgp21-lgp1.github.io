@@ -7,6 +7,7 @@ import style from '../styles/home.module.css';
 import { FiArrowRightCircle } from 'react-icons/fi';
 import { FaEye, FaArchive } from 'react-icons/fa';
 import { IoSchoolSharp, IoFlaskSharp } from 'react-icons/io5';
+import { IoIosArrowDown } from 'react-icons/io';
 
 export default function Home() {
   return (
@@ -16,8 +17,29 @@ export default function Home() {
           <title>Vortex</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Navbar dark={true} page={'home'} />
         <main>
+          <section id={style.hero}>
+            <Navbar dark={false} page={'home'} />
+            <div id={style.jumbotron}>
+              <div id={style.jumbotronContent}>
+                <h1>
+                  Through innovation, we bridge the gap between people and
+                  technology.
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum.
+                </p>
+              </div>
+            </div>
+            <span id={style.scrollDown}>
+              <IoIosArrowDown size={30} />
+              <span>scroll down</span>
+              <IoIosArrowDown size={30} />
+            </span>
+          </section>
           <section id={style.solutions}>
             <h2 id={style.solutionsTitle}>Our Solutions</h2>
             <div id={style.solutionsList}>

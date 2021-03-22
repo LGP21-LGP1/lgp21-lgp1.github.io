@@ -29,7 +29,9 @@ const navbar = ({ dark, page }) => {
         light
         expand="md"
       >
-        <NavbarBrand href="/">LOGO</NavbarBrand>
+        <NavbarBrand id={style.logo} href="/">
+          LOGO
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} id={style.navbarToggler} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
