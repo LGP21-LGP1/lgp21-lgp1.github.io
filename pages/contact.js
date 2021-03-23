@@ -5,6 +5,7 @@ import Navbar from '../components/navbar';
 import ContactForm from '../components/contact/ContactForm';
 import { useCallback } from 'react';
 import PageTitle from '../components/pagetitle';
+import styles from '../styles/contact.module.css';
 
 export default function Contact() {
 
@@ -22,7 +23,7 @@ export default function Contact() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Navbar dark={false} page={'contact'} />
-        <main>
+        <main className={styles.pageContent}>
           <PageTitle
             title="Contact Us"
             description=""
