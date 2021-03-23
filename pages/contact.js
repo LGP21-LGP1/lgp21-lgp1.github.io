@@ -4,10 +4,11 @@ import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 import ContactForm from '../components/contact/ContactForm';
 import { useCallback } from 'react';
+import PageTitle from '../components/pagetitle';
 
 export default function Contact() {
 
-  const submit = useCallback((name, email, message) => { 
+  const submit = useCallback((name, email, message) => {
     console.log(name)
     console.log(email)
     console.log(message)
@@ -22,7 +23,10 @@ export default function Contact() {
         </Head>
         <Navbar dark={false} page={'contact'} />
         <main>
-          <h1 className="title">Contact Us</h1>
+          <PageTitle
+            title="Contact Us"
+            description=""
+          />
           <ContactForm submit={submit}></ContactForm>
         </main>
         <Footer dark={true} />

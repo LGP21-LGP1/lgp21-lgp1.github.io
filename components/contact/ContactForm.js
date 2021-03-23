@@ -8,8 +8,8 @@ export const ContactForm = ({ submit }) => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const name_tip = "Ex: João Pombo"
-    const email_tip = "Ex: exemplo@vortex.pt"
+    const name_tip = "Ex. João Pombo"
+    const email_tip = "Ex. exemplo@vortex.pt"
     const message_tip = "A sua mensagem"
 
     const handleSend = useCallback(() => {
@@ -27,8 +27,8 @@ export const ContactForm = ({ submit }) => {
     return (
         <div className={style.formDiv}>
             <div className={style.textInputRow}>
-                <FormInput label="Nome" placeholder={name_tip} onChange={updateName}></FormInput>
-                <FormInput label="Email" placeholder={email_tip} onChange={updateEmail}></FormInput>
+                <FormInput label="Nome" placeholder={name_tip} type="text" onChange={updateName}></FormInput>
+                <FormInput label="Email" placeholder={email_tip} type="email" onChange={updateEmail}></FormInput>
             </div>
             <FormTextArea label="Mensagem" placeholder={message_tip} onChange={updateMessage}></FormTextArea>
             <button className={style.sendButton} onClick={handleSend}>Enviar</button>
