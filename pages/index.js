@@ -30,8 +30,7 @@ export default function Home() {
                 <p>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum.
+                  aliquyam erat, sed diam voluptua.
                 </p>
               </div>
             </div>
@@ -89,13 +88,20 @@ export default function Home() {
                 the goal of allowing them and their products to be more
                 effective, efficient and ultimately more successful.
               </p>
-              <img src="/assets/feup.png" width={960} height={641} />
+              <img
+                id={style.aboutImg}
+                src="/assets/feup.png"
+                width={960}
+                height={641}
+              />
             </span>
           </section>
           <section id={style.vision}>
             <h2 id={style.ourVision}>
-              <FaEye size={50} />
-              <span>Our Vision</span>
+              <span id={style.ourVisionContent}>
+                <FaEye size={50} />
+                <span>Our Vision</span>
+              </span>
             </h2>
             <span className={style.visionStatement}>
               <span className={style.visionNo}>01</span>
@@ -126,17 +132,12 @@ export default function Home() {
                 </p>
                 <Link href="/team" as={process.env.BACKEND_URL + '/team'}>
                   <a id={style.meetTheTeamButton}>
-                    <FiArrowRightCircle size={30} />
+                    <FiArrowRightCircle size={25} />
                     <span id={style.buttonText}>Meet our team members</span>
                   </a>
                 </Link>
               </span>
-              <img
-                id={style.meetTheTeamImg}
-                src="/assets/meet-the-team.png"
-                width={956}
-                height={637}
-              />
+              <img id={style.meetTheTeamImg} src="/assets/meet-the-team.png" />
             </span>
           </section>
         </main>
