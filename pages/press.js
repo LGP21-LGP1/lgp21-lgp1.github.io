@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import DownloadFileButton from '../components/downloadFileButton';
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 import PageTitle from '../components/pagetitle';
+import DownloadFileButton from '../components/downloadFileButton';
 import style from '../styles/press.module.css';
 
 export default function Press() {

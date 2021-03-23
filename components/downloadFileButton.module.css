@@ -1,0 +1,14 @@
+.button {
+    display: flex;
+    height: 162px;
+}
+
+.icon {
+   flex-grow: 1;
+}
+
+.text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+ }

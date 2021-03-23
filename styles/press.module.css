@@ -1,15 +1,19 @@
 .pressContent {
     display: flex;
     width: 67%;
+    height: 586px;
 }
 
 .downloadButtons {
    flex-grow: 1;
+   flex-shrink: 1;
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
 }
 
 .interactiveManualDiv {
     flex-grow: 2;
+    flex-shrink: 2;
     background-color: white;
 }
