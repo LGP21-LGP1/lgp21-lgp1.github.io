@@ -63,3 +63,17 @@
   color: inherit;
   margin: 0 1rem;
 }
+
+@media only screen and (max-width: 1100px) {
+  #footerInfo {
+    flex-direction: column;
+  }
+
+  #footerInfo span {
+    margin-bottom: 40px;
+  }
+
+  #socials {
+    margin-top: 10px;
+  }
+}
