@@ -1,3 +1,4 @@
+import { useState, useRef, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -8,8 +9,31 @@ import { FiArrowRightCircle } from 'react-icons/fi';
 import { FaEye, FaArchive } from 'react-icons/fa';
 import { IoSchoolSharp, IoFlaskSharp } from 'react-icons/io5';
 import { IoIosArrowDown } from 'react-icons/io';
+import vortex from '../components/vortex/vortex';
 
 export default function Home() {
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const myRef = useRef(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        vortex({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
+
   return (
     <>
       <div className="page-container">
@@ -17,9 +41,11 @@ export default function Home() {
           <title>Vortex</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
         </Head>
         <main id={style.home}>
-          <section id={style.hero}>
+          <section ref={myRef} id={style.hero}>
             <Navbar dark={false} page={'home'} />
             <div id={style.jumbotron}>
               <div id={style.jumbotronContent}>
