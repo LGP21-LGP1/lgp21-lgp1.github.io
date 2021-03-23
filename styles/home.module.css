@@ -36,8 +36,9 @@
 }
 
 #jumbotron p {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 300;
+  font-family: var(--poppins);
 }
 
 #scrollDown {
@@ -73,7 +74,7 @@
 }
 
 #solutionsTitle {
-  font-size: 99px;
+  font-size: 65px;
   font-weight: normal;
   font-family: var(--reross);
   color: var(--cyan);
@@ -107,7 +108,7 @@
 .solution span {
   margin-left: 2rem;
   font-weight: 600;
-  font-size: 65px;
+  font-size: 50px;
   font-family: var(--secondary-font);
 }
 
@@ -127,19 +128,19 @@
 }
 
 #aboutTitle {
-  font-size: 99px;
+  font-size: 65px;
   font-weight: normal;
   font-family: var(--reross);
   color: var(--light);
 }
 
 #aboutContent {
-  font-size: 29px;
-  font-weight: medium;
+  font-size: 21px;
+  font-weight: 300;
   font-family: var(--poppins);
   max-width: 1515px;
   text-align: center;
-  margin-bottom: 35px;
+  margin: 18px 0 40px 0;
 }
 
 #vision {
@@ -158,23 +159,22 @@
 }
 
 #ourVision span {
-  font-size: 64px;
-  font-weight: bold;
-  font-family: var(--secondary-font);
+  font-size: 50px;
+  font-weight: normal;
+  font-family: var(--reross);
   margin-left: 2rem;
 }
 
 .separator {
   border: 5px solid var(--cyan);
   border-radius: 10px;
-  margin: 15px 27px 30px 27px;
+  margin: 15px 27px 25px 27px;
 }
 
 .visionStatement {
   display: flex;
   align-items: stretch;
   color: var(--light);
-  font-size: 40px;
   font-family: var(--poppins);
 }
 
@@ -183,16 +183,18 @@
   font-weight: bold;
   line-height: 60px;
   max-width: 268px;
+  font-size: 35px;
 }
 
 .visionContent {
   max-width: 268px;
-  line-height: 60px;
   margin: 0;
 }
 
 .visionContent p {
   margin-top: 8px;
+  font-size: 29px;
+  font-weight: 300;
 }
 
 #meetTheTeam {
@@ -222,7 +224,7 @@
 }
 
 #textContent h2 {
-  font-size: 99px;
+  font-size: 65px;
   font-weight: normal;
   font-family: var(--reross);
   color: var(--light);
@@ -230,9 +232,9 @@
 
 #textContent p {
   max-width: 500px;
-  font-size: 29px;
+  font-size: 21px;
   font-family: var(--poppins);
-  font-weight: normal;
+  font-weight: 300;
   margin: 10.5px 0;
 }
 
@@ -247,6 +249,6 @@
 
 #buttonText {
   margin-left: 1rem;
-  font-size: 28px;
+  font-size: 23px;
   font-weight: bold;
 }

@@ -126,7 +126,7 @@ export default function Home() {
                 </p>
                 <Link href="/team" as={process.env.BACKEND_URL + '/team'}>
                   <a id={style.meetTheTeamButton}>
-                    <FiArrowRightCircle size={30} />
+                    <FiArrowRightCircle size={25} />
                     <span id={style.buttonText}>Meet our team members</span>
                   </a>
                 </Link>
