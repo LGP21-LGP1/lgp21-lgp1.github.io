@@ -1,26 +1,29 @@
 import React from 'react';
 import style from './downloadFileButton.module.css'
+import { IoMdDownload } from 'react-icons/io';
 // import DownloadIcon from '../public/assets/download-icon.svg';
 
-const downloadFileButton = ({ fileName, children, title, description }) => {
+const downloadFileButton = ({ fileName, children, title }) => {
   return (
-    <a href={process.env.BACKEND_URL + '/files/' + fileName} download>
-      {/* <DownloadIcon fill="white" height={500} width={500}></DownloadIcon> */}
-      {/* <DownloadIcon fill="white" height={50} width={50} /> */}
-      <div className={style.button}>
-        <div className={style.icon}>
-          ICONiiiiiiiiii
-        </div>
-        <div className={style.text}>
-          <div>
-            Title asddddddddddddddddddddddddddddddd 
+    <div className={style.downloadButtonContainer}>
+      <a href={process.env.BACKEND_URL + '/files/' + fileName} download>
+        {/* <DownloadIcon fill="white" height={500} width={500}></DownloadIcon> */}
+        {/* <DownloadIcon fill="white" height={50} width={50} /> */}
+        <div className={style.downloadButton}>
+          <div className={style.iconDiv}>
+            <IoMdDownload size={70}></IoMdDownload>
           </div>
-          <div>
-            Description oiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+          <div className={style.textDiv}>
+            <div>
+              {title}
+            </div>
+            <div>
+              {children}
+            </div>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 };
 

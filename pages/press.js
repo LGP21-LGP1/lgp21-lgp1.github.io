@@ -25,9 +25,15 @@ export default function Press() {
           />
           <section className={style.pressContent}>
             <div className={style.downloadButtons}>
-              <DownloadFileButton fileName="media_kit.pdf">Media Kit</DownloadFileButton>
-              <DownloadFileButton fileName="brand_guidelines.pdf">Brand Guidelines</DownloadFileButton>
-              <DownloadFileButton fileName="media_assets.pdf">Media Assets</DownloadFileButton>
+              <DownloadFileButton fileName="media_kit.pdf" title="Media Kit">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </DownloadFileButton>
+              <DownloadFileButton fileName="brand_guidelines.pdf" title="Brand Guidelines">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </DownloadFileButton>
+              <DownloadFileButton fileName="media_assets.pdf" title="Media Assets">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </DownloadFileButton>
             </div>
             <div className={style.interactiveManualDiv}>
               boas
