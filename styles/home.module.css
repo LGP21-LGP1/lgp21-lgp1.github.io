@@ -67,6 +67,7 @@
 #solutions {
   margin: 0 auto;
   max-width: 1200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,12 +84,13 @@
 #solutionsList {
   display: flex;
   max-width: 1050px;
-  width: 1050px;
+  width: 100%;
   justify-content: space-between;
   margin-top: 30px;
 }
 
 .solution {
+  flex: 30%;
   position: relative;
   display: flex;
   align-items: center;
@@ -251,4 +253,11 @@
   margin-left: 1rem;
   font-size: 23px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 880px) {
+  #solutionsList {
+    flex-direction: column;
+    align-items: center;
+  }
 }
