@@ -13,7 +13,13 @@ import vortex from '../components/vortex/vortex';
 
 export default function Home() {
   const [vantaEffect, setVantaEffect] = useState(0);
+  const [height, setHeight] = useState(0);
   const myRef = useRef(null);
+
+  useEffect(() => {
+    setHeight(myRef.current.clientHeight);
+  });
+
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
@@ -33,6 +39,14 @@ export default function Home() {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
+
+  const handleScroll = () => {
+    window.scroll({
+      top: height,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <>
@@ -60,11 +74,11 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <span id={style.scrollDown}>
+            <button onClick={handleScroll} id={style.scrollDown}>
               <IoIosArrowDown size={30} />
               <span>scroll down</span>
               <IoIosArrowDown size={30} />
-            </span>
+            </button>
           </section>
           <section id={style.solutions}>
             <h2 id={style.solutionsTitle}>Our Solutions</h2>
