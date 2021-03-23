@@ -145,6 +145,12 @@
   margin: 18px 0 40px 0;
 }
 
+#aboutImg {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
 #vision {
   display: flex;
   align-items: center;

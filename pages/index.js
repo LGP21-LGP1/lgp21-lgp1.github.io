@@ -88,7 +88,12 @@ export default function Home() {
                 the goal of allowing them and their products to be more
                 effective, efficient and ultimately more successful.
               </p>
-              <img src="/assets/feup.png" width={960} height={641} />
+              <img
+                id={style.aboutImg}
+                src="/assets/feup.png"
+                width={960}
+                height={641}
+              />
             </span>
           </section>
           <section id={style.vision}>
