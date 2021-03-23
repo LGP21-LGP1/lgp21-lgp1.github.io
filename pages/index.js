@@ -137,12 +137,7 @@ export default function Home() {
                   </a>
                 </Link>
               </span>
-              <img
-                id={style.meetTheTeamImg}
-                src="/assets/meet-the-team.png"
-                // width={956}
-                // height={637}
-              />
+              <img id={style.meetTheTeamImg} src="/assets/meet-the-team.png" />
             </span>
           </section>
         </main>

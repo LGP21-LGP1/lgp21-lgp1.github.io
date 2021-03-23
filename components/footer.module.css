@@ -76,4 +76,13 @@
   #socials {
     margin-top: 10px;
   }
+
+  #footerInfo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #workWithUs {
+    margin-right: 0;
+    width: auto;
+  }
 }
