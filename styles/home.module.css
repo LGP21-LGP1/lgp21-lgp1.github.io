@@ -160,7 +160,7 @@
   width: 100%;
 }
 
-#ourVision {
+#ourVisionContent {
   display: flex;
   align-items: center;
   color: var(--cyan);
@@ -265,5 +265,26 @@
   #solutionsList {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #vision {
+    flex-wrap: wrap;
+    padding: 100px 10px;
+  }
+
+  #ourVision {
+    text-align: center;
+    flex: 100%;
+  }
+
+  #ourVisionContent {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .visionStatement {
+    margin-top: 2rem;
   }
 }

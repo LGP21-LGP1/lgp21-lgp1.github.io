@@ -98,8 +98,10 @@ export default function Home() {
           </section>
           <section id={style.vision}>
             <h2 id={style.ourVision}>
-              <FaEye size={50} />
-              <span>Our Vision</span>
+              <span id={style.ourVisionContent}>
+                <FaEye size={50} />
+                <span>Our Vision</span>
+              </span>
             </h2>
             <span className={style.visionStatement}>
               <span className={style.visionNo}>01</span>
