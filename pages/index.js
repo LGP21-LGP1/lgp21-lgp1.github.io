@@ -140,8 +140,8 @@ export default function Home() {
               <img
                 id={style.meetTheTeamImg}
                 src="/assets/meet-the-team.png"
-                width={956}
-                height={637}
+                // width={956}
+                // height={637}
               />
             </span>
           </section>

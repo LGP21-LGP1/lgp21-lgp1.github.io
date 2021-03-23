@@ -223,12 +223,18 @@
 
 #textContent {
   z-index: 2;
+  flex: 1 1 500px;
 }
 
 #meetTheTeamImg {
+  min-width: 0;
   position: relative;
   right: 30px;
   z-index: 1;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  flex: 2 2 500px;
 }
 
 #textContent h2 {
@@ -286,5 +292,23 @@
 
   .visionStatement {
     margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #meetTheTeam .content {
+    flex-direction: column;
+  }
+
+  #textContent {
+    flex: 1 1 auto;
+  }
+
+  #meetTheTeamImg {
+    flex: 1 1 auto;
+    right: 0px;
+    height: auto;
+    width: auto\9;
+    margin-top: 40px;
   }
 }
