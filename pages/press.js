@@ -36,7 +36,6 @@ export default function Press() {
               </DownloadFileButton>
             </div>
             <div className={style.interactiveManualDiv}>
-              boas
             </div>
           </section>
 
