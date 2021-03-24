@@ -14,6 +14,7 @@ export default function Press() {
         <Navbar dark={false} page={'press'} />
         <main>
           <h1 className="title">Press</h1>
+          <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=vh5ecucbdc" width="100%" height="586" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
         </main>
         <Footer dark={true} />
       </div>
