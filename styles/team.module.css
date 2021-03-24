@@ -1,3 +1,7 @@
+.page {
+  color: var(--light);
+}
+
 .delimiter {
   width: 100%;
   margin-bottom: 30px;
@@ -10,11 +14,11 @@
 }
 
 .hr_start {
-  left:0;
+  left: 0;
 }
 
 .hr_end {
-  right:0;
+  right: 0;
 }
 
 .member_div {
@@ -22,7 +26,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  text-align:center;
+  text-align: center;
   /* margin: auto 20px; */
   margin-bottom: 40px;
 }
@@ -45,7 +49,7 @@
   color: var(--cyan);
 }
 
-.partial_div{
+.partial_div {
   width: 90%;
   margin: auto;
 }
