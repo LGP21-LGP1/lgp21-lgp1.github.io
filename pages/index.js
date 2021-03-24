@@ -1,3 +1,4 @@
+import { useState, useRef, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -8,8 +9,45 @@ import { FiArrowRightCircle } from 'react-icons/fi';
 import { FaEye, FaArchive } from 'react-icons/fa';
 import { IoSchoolSharp, IoFlaskSharp } from 'react-icons/io5';
 import { IoIosArrowDown } from 'react-icons/io';
+import vortex from '../components/vortex/vortex';
 
 export default function Home() {
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const [height, setHeight] = useState(0);
+  const myRef = useRef(null);
+
+  useEffect(() => {
+    setHeight(myRef.current.clientHeight);
+  });
+
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        vortex({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
+
+  const handleScroll = () => {
+    window.scroll({
+      top: height,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
       <div className="page-container">
@@ -17,9 +55,11 @@ export default function Home() {
           <title>Vortex</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
         </Head>
         <main id={style.home}>
-          <section id={style.hero}>
+          <section ref={myRef} id={style.hero}>
             <Navbar dark={false} page={'home'} />
             <div id={style.jumbotron}>
               <div id={style.jumbotronContent}>
@@ -30,16 +70,15 @@ export default function Home() {
                 <p>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum.
+                  aliquyam erat, sed diam voluptua.
                 </p>
               </div>
             </div>
-            <span id={style.scrollDown}>
+            <button onClick={handleScroll} id={style.scrollDown}>
               <IoIosArrowDown size={30} />
               <span>scroll down</span>
               <IoIosArrowDown size={30} />
-            </span>
+            </button>
           </section>
           <section id={style.solutions}>
             <h2 id={style.solutionsTitle}>Our Solutions</h2>
@@ -89,13 +128,20 @@ export default function Home() {
                 the goal of allowing them and their products to be more
                 effective, efficient and ultimately more successful.
               </p>
-              <img src="/assets/feup.png" width={960} height={641} />
+              <img
+                id={style.aboutImg}
+                src="/assets/feup.png"
+                width={960}
+                height={641}
+              />
             </span>
           </section>
           <section id={style.vision}>
             <h2 id={style.ourVision}>
-              <FaEye size={50} />
-              <span>Our Vision</span>
+              <span id={style.ourVisionContent}>
+                <FaEye size={50} />
+                <span>Our Vision</span>
+              </span>
             </h2>
             <span className={style.visionStatement}>
               <span className={style.visionNo}>01</span>
@@ -126,17 +172,12 @@ export default function Home() {
                 </p>
                 <Link href="/team" as={process.env.BACKEND_URL + '/team'}>
                   <a id={style.meetTheTeamButton}>
-                    <FiArrowRightCircle size={30} />
+                    <FiArrowRightCircle size={25} />
                     <span id={style.buttonText}>Meet our team members</span>
                   </a>
                 </Link>
               </span>
-              <img
-                id={style.meetTheTeamImg}
-                src="/assets/meet-the-team.png"
-                width={956}
-                height={637}
-              />
+              <img id={style.meetTheTeamImg} src="/assets/meet-the-team.png" />
             </span>
           </section>
         </main>

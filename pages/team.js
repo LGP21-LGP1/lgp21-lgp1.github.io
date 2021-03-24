@@ -240,7 +240,7 @@ export default function Team() {
         <title>Vortex - Team</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar dark={true} page={'team'} />
+      <Navbar dark={false} page={'team'} />
       <PageTitle
         title="The Team"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus
@@ -268,12 +268,12 @@ export default function Team() {
         return (
           <div key={team.name + index}>
             <div className={`mb-5 ${styles.delimiter}`}>
-                <hr
-                  className={`${styles.hr} ${
-                    index % 2 == 0 ? styles.hr_start : styles.hr_end
-                  }`}
-                />
-              </div>
+              <hr
+                className={`${styles.hr} ${
+                  index % 2 == 0 ? styles.hr_start : styles.hr_end
+                }`}
+              />
+            </div>
             <div>
               <TeamPartial
                 name={team.name}
