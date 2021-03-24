@@ -43,6 +43,8 @@
 }
 
 #scrollDown {
+  border: none;
+  background: none;
   position: absolute;
   top: 90%;
   width: 100%;

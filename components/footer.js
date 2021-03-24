@@ -9,9 +9,17 @@ import Instagram from '../public/assets/instagram-icon.svg';
 import Linkedin from '../public/assets/linkedin-icon.svg';
 
 export const footer = ({ dark }) => {
+  const handleScroll = () => {
+    window.scroll({
+      top: -document.body.offsetHeight,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <footer id={style.footer} className={dark ? style.dark : style.clear}>
-      <button id={style.backToTop}>
+      <button onClick={handleScroll} id={style.backToTop}>
         <FaArrowUp size={22} /> <span>Back to Top</span>
       </button>
       <div id={style.footerInfo}>
