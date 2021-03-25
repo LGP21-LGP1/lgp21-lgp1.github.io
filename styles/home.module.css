@@ -22,6 +22,7 @@
   padding: 2rem;
 }
 
+
 #jumbotronContent {
   max-width: 1400px;
   position: absolute;
@@ -38,7 +39,7 @@
 
 #jumbotron p {
   font-size: 21px;
-  font-weight: 300;
+  font-weight: 450;
   font-family: var(--poppins);
 }
 
@@ -53,7 +54,7 @@
   align-items: center;
   justify-content: center;
   color: var(--light);
-  opacity: 0.6;
+  opacity: 1;
 }
 
 #scrollDown span {
@@ -141,11 +142,12 @@
 
 #aboutContent {
   font-size: 21px;
-  font-weight: 300;
+  font-weight: 400;
   font-family: var(--poppins);
   max-width: 1515px;
   text-align: center;
   margin: 18px 0 40px 0;
+  line-height: 35px;
 }
 
 #aboutImg {
@@ -204,7 +206,7 @@
 
 .visionContent p {
   margin-top: 8px;
-  font-size: 29px;
+  font-size: 25px;
   font-weight: 300;
 }
 
