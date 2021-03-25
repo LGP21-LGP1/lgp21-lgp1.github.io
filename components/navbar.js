@@ -22,7 +22,7 @@ const navbar = ({ dark, page }) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div id={style.navbarContainer}>
       <Navbar
         id={style.navbar}
         className={dark ? style.dark : style.clear}
@@ -53,7 +53,6 @@ const navbar = ({ dark, page }) => {
               </DropdownToggle>
               <DropdownMenu id={style.dropdownMenu} right>
                 <DropdownItem className={style.dropdownItem}>
-                  {' '}
                   <Link
                     href="/solutions/archival"
                     as={process.env.BACKEND_URL + '/solutions/archival'}

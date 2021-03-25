@@ -3,6 +3,11 @@
   padding-right: 4rem;
   min-height: 100px;
   background-color: rgba(0, 0, 0, 0);
+  z-index: 100;
+}
+
+#navbarContainer {
+  z-index: 3;
 }
 
 #navbar.dark {
@@ -49,12 +54,18 @@
 
 #dropdownMenu {
   border-radius: 9px;
-  left: -20px;
+  position: absolute;
 }
 
 .dropdownItem {
   font: normal 20px var(--secondary-font);
   text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.dropdownItem a {
+  display: block;
 }
 
 .dropdownDivider {

@@ -6,13 +6,17 @@ let THREE = typeof window == 'object' && window.THREE;
 class Rings extends VantaBase {
   static initClass() {
     this.prototype.defaultOptions = {
-      backgroundColor: 0x202428,
+      backgroundColor: 0x141414,
       color: 0x88ff00,
     };
 
     this.prototype.colors = [
-      0xff2255, // red
-      0x88ff00, // green
+      // 0xff2255, // red
+      // 0x88ff00, // green
+      // 0x14213D, // VORTEX dark blue
+      0x2D4B8B, // VORTEX medium blue
+      0x92C8C8, // VORTEX turquoise
+      0xFCA311, // VORTEX orange
       // 0xff2255, // red
       // 0xff1199, // pink
       // 0xff66cc, // light pink
@@ -65,10 +69,10 @@ class Rings extends VantaBase {
       radius = 1;
     }
     const extrudeSettings = {
-      depth: 0.4,
+      depth: 1,
       bevelEnabled: false,
       steps: 1,
-      curveSegments: ~~((64 * ang) / 6.14),
+      curveSegments: ~~((128 * ang) / 6.14),
     };
     const shape = new THREE.Shape();
     shape.absarc(0, 0, radius + width, 0, ang, false);
@@ -212,7 +216,7 @@ class Rings extends VantaBase {
     this.camera.position.set(0, 150, 200);
     this.scene.add(this.camera);
 
-    const ambience = new THREE.AmbientLight(0xffffff, 0.5);
+    const ambience = new THREE.AmbientLight(0xffffff, 0.25);
     this.scene.add(ambience);
 
     this.pointLight = new THREE.PointLight(0xffffff, 0.5);
