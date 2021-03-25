@@ -1,0 +1,24 @@
+.pressContent {
+    display: flex;
+    width: 70%;
+    height: 410px;
+    justify-content: space-between;
+    margin-bottom: 131px;
+    margin-top: 20px;
+}
+
+.downloadButtons {
+   flex-basis: 35%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.downloadButtons > div {
+    height: 120px;
+}
+
+.interactiveManualDiv {
+    flex-basis: 55%;
+    background-color: #110818;
+}

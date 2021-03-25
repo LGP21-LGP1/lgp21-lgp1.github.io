@@ -1,0 +1,40 @@
+.downloadButtonContainer > a {
+    height: inherit;
+}
+
+.downloadButton {
+    height: inherit;
+    display: flex;
+    /* width: 422px; */
+    background-color: var(--light);
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.downloadButton:hover {
+    background-color: var(--gray);
+}
+
+.iconDiv {
+   flex-basis: 20%;
+   align-self: center;
+   padding: 20px;
+}
+
+.textDiv {
+    /* display: flex; */
+    flex-basis: 80%;
+    flex-direction: column;
+    align-self: center;
+    padding: 30px 0px 30px 0px;
+}
+
+.textDiv > div {
+    color: var(--dark);
+    font: normal normal normal em var(--secondary-font);
+    letter-spacing: 0px;
+}
+
+.textDiv :first-child {
+    font-weight: bold;
+}

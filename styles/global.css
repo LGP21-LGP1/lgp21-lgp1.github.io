@@ -87,15 +87,21 @@ main {
   min-height: 200px;
   text-align: center;
   margin: 50px auto;
+  color: var(--light);
 }
 
 .page-title h1 {
   font-size: 75px;
   margin: 0;
 }
+
 .page-title h3 {
   width: 50%;
   margin: auto;
+}
+
+.page-title h3.titleContact {
+  color: var(--orange);
 }
 
 .regular-text {
