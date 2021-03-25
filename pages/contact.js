@@ -10,9 +10,10 @@ import styles from '../styles/contact.module.css';
 export default function Contact() {
 
   const submit = useCallback((name, email, message) => {
-    console.log(name)
-    console.log(email)
-    console.log(message)
+
+    const subject = "Contact Us: " + name
+    const contactRecipient = "exemplo@vortex.pt"
+    window.location.href = "mailto:" + contactRecipient + "?subject=" + subject + "&cc=" + email + "&body=" + message;
   }, [])
 
   return (
