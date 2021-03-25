@@ -12,7 +12,7 @@ export default function Contact() {
   const submit = useCallback((name, email, message) => {
 
     const subject = "Contact Us: " + name
-    const contactRecipient = "exemplo@vortex.pt"
+    const contactRecipient = "general@vortex-tech.pt"
     window.location.href = "mailto:" + contactRecipient + "?subject=" + subject + "&cc=" + email + "&body=" + message;
   }, [])
 
