@@ -235,7 +235,7 @@ export default function Team() {
   ]);
   const nteams = teams.length;
   return (
-    <div className="page-container">
+    <div className={`page-container ${styles.page}`}>
       <Head>
         <title>Vortex - Team</title>
         <link rel="icon" href="/favicon.ico" />
