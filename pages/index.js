@@ -68,9 +68,7 @@ export default function Home() {
                   technology.
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua.
+                  We provide technological solutions with the goal of allowing products to be more effective,<br></br> efficient and ultimately more successful.
                 </p>
               </div>
             </div>
@@ -122,11 +120,7 @@ export default function Home() {
             <span className={style.content}>
               <h2 id={style.aboutTitle}>About us</h2>
               <p id={style.aboutContent}>
-                We strive to always maintain a close relationship with clients
-                coming from various fields and provide technological solutions
-                and improvements to their specific challenges and needs, with
-                the goal of allowing them and their products to be more
-                effective, efficient and ultimately more successful.
+              The Vortex family is a multidisciplinary team, where the knowledge of different backgrounds allows the company to have complementary know-how, experience, skills and qualifications that will contribute to the achievement of the expected results by the company and each corresponding project.
               </p>
               <img
                 id={style.aboutImg}
@@ -147,16 +141,16 @@ export default function Home() {
               <span className={style.visionNo}>01</span>
               <span className={style.separator} />
               <span className={style.visionContent}>
-                <span className={style.visionTitle}>Lorem Ipsum</span>
-                <p className={style.visionText}>Lorem ipsum dolor sit amet.</p>
+                <span className={style.visionTitle}>Co-Creative</span>
+                <p className={style.visionText}>Engaging and inspiring the people we work with.</p>
               </span>
             </span>
             <span className={style.visionStatement}>
               <span className={style.visionNo}>02</span>
               <span className={style.separator} />
               <span className={style.visionContent}>
-                <span className={style.visionTitle}>Lorem Ipsum</span>
-                <p className={style.visionText}>Lorem ipsum dolor sit amet.</p>
+                <span className={style.visionTitle}>Flexible</span>
+                <p className={style.visionText}>We create solutions adapted to your needs.</p>
               </span>
             </span>
           </section>
