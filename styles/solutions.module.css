@@ -24,7 +24,6 @@
     text-align: left;
     font-family: var(--reross);
     color: var(--light);
-    padding-left: 30px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -41,7 +40,6 @@
     text-align: left;
     font-family: var(--poppins);
     color: var(--light);
-    padding-left: 30px;
     padding-bottom: 30px;
     padding-top:15px;
     grid-column-start: 2;
