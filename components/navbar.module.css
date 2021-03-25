@@ -26,15 +26,14 @@
   color: var(--light);
 }
 
-#navbar.dark #navbarToggler {
+#navbar #navbarToggler {
   color: var(--dark);
   border: none;
+  background-color: none;
 }
 
-#navbar.clear #navbarToggler {
-  color: var(--light);
-  background: var(--light);
-  border: none;
+#navbarToggler span {
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%3E%0A%20%20%3Cpath%20id%3D%22Icon_open-menu%22%20data-name%3D%22Icon%20open-menu%22%20d%3D%22M0%2C0V4.3H30V0ZM0%2C12.783v4.3H30v-4.3ZM0%2C25.7V30H30V25.7Z%22%20fill%3D%22%23f5f5f5%22%2F%3E%0A%3C%2Fsvg%3E%0A');
 }
 
 #navbar .navItem {
