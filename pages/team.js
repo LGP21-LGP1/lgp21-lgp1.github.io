@@ -243,9 +243,7 @@ export default function Team() {
       <Navbar dark={false} page={'team'} />
       <PageTitle
         title="The Team"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus
-          nisl accumsan velit tincidunt, eget condimentum lectus venenatis.
-          Nullam volutpat"
+        description="We are a multi-complementary team made up of: IT developers, UI/UX designers and business analysts. We work together to achieve successful solutions. "
       />
       <div className="my-5 w-100 d-flex flex-column justify-content-center align-items-center">
         <h3 className="bold-text mb-4">Our Leaders</h3>

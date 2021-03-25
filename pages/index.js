@@ -120,7 +120,7 @@ export default function Home() {
             <span className={style.content}>
               <h2 id={style.aboutTitle}>About us</h2>
               <p id={style.aboutContent}>
-              The Vortex family is a multidisciplinary team, where the knowledge of different backgrounds allows the company to have complementary know-how, experience, skills and qualifications that will contribute to the achievement of the expected results by the company and each corresponding project.
+              We are a company that provides top quality software products for businesses and institutions who seek the best solutions for their customer needs through simplicity and quality.
               </p>
               <img
                 id={style.aboutImg}
@@ -159,15 +159,12 @@ export default function Home() {
               <span id={style.textContent}>
                 <h2>Meet the team</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                  culpa modi corporis. Hic sequi possimus dolorum commodi
-                  dolorem blanditiis, accusantium atque nulla, quibusdam
-                  reiciendis voluptate maxime corrupti, delectus eos odit.
+                The Vortex family is a multidisciplinary team, where the knowledge of different backgrounds allows the company to have complementary know-how, experience, skills and qualifications that will contribute to the achievement of the expected results by the company and each corresponding project.
                 </p>
                 <Link href="/team" as={process.env.BACKEND_URL + '/team'}>
                   <a id={style.meetTheTeamButton}>
                     <FiArrowRightCircle size={25} />
-                    <span id={style.buttonText}>Meet our team members</span>
+                    <span id={style.buttonText}>Get to know us.</span>
                   </a>
                 </Link>
               </span>
