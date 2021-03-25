@@ -73,13 +73,6 @@ main {
   align-items: center;
 }
 
-.page-title {
-  font-family: var(--primary-font);
-  font-weight: bold;
-  font-size: 99px;
-  color: var(--light);
-}
-
 .description {
   font-family: var(--primary-font);
   font-weight: normal;
@@ -87,10 +80,14 @@ main {
 }
 
 .page-title {
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 99px;
   width: 100%;
   min-height: 200px;
   text-align: center;
   margin: 50px auto;
+  color: var(--light);
 }
 
 .page-title h1 {
@@ -123,4 +120,26 @@ main {
   font-family: var(--primary-font);
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 760px) {
+  .page-title {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 99px;
+    width:100%;
+    min-height: 200px;
+    text-align: center;
+    margin: 20px auto 50px  auto;
+  }
+  
+  .page-title h1 {
+    font-size: 55px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .page-title h3 {
+    width: 90%;
+    margin: auto;
+  }
 }
