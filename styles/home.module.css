@@ -110,6 +110,14 @@
   margin-top: 0;
 }
 
+.solution svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.solution:hover svg {
+  fill: var(--orange);
+}
+
 .solution span {
   margin-left: 1rem;
   font-weight: 600;
