@@ -36,7 +36,7 @@
 }
 
 #workWithUs {
-  font-size: 65px;
+  font-size: 50px;
   font-weight: bold;
   font-family: var(--secondary-font);
   text-decoration: underline;
@@ -56,12 +56,17 @@
 }
 
 #socials {
-  margin: 60px auto;
+  margin: 40px auto 60px auto;
 }
 
 #socials a {
   color: inherit;
   margin: 0 1rem;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 1100px) {
