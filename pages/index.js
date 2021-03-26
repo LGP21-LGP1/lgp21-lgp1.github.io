@@ -10,6 +10,10 @@ import { FaEye, FaArchive } from 'react-icons/fa';
 import { IoSchoolSharp, IoFlaskSharp } from 'react-icons/io5';
 import { IoIosArrowDown } from 'react-icons/io';
 import vortex from '../components/vortex/vortex';
+import EducationIcon from '../public/assets/Education.svg';
+import ResearchIcon from '../public/assets/Research.svg';
+import PhotographyIcon from '../public/assets/Photography.svg';
+import AviationIcon from '../public/assets/Aviation.svg';
 
 export default function Home() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -68,7 +72,9 @@ export default function Home() {
                   technology.
                 </h1>
                 <p>
-                  We provide technological solutions with the goal of allowing products to be more effective,<br></br> efficient and ultimately more successful.
+                  We provide technological solutions with the goal of allowing
+                  products to be more effective,<br></br> efficient and
+                  ultimately more successful.
                 </p>
               </div>
             </div>
@@ -83,34 +89,45 @@ export default function Home() {
             <div id={style.solutionsList}>
               <span>
                 <Link
-                  href="/solutions/archival"
-                  as={process.env.BACKEND_URL + '/solutions/archival'}
+                  href="/solutions/photography"
+                  as={process.env.BACKEND_URL + '/solutions/photography'}
                 >
                   <a className={style.solution}>
-                    <FaArchive size={55} />
-                    <span>Archival</span>
+                    <PhotographyIcon fill={'#F5F5F5'} width={35} height={35} />
+                    <span>Photography</span>
                   </a>
                 </Link>
               </span>
               <span>
                 <Link
-                  href="/solutions/schools"
-                  as={process.env.BACKEND_URL + '/solutions/schools'}
+                  href="/solutions/education"
+                  as={process.env.BACKEND_URL + '/solutions/education'}
                 >
                   <a className={style.solution}>
-                    <IoSchoolSharp size={55} />
-                    <span>Schools</span>
+                    <EducationIcon fill={'#F5F5F5'} width={35} height={35} />
+                    <span>Education</span>
                   </a>
                 </Link>
               </span>
               <span>
                 <Link
-                  href="/solutions/labs"
-                  as={process.env.BACKEND_URL + '/solutions/labs'}
+                  href="/solutions/aviation"
+                  as={process.env.BACKEND_URL + '/solutions/aviation'}
                 >
                   <a className={style.solution}>
-                    <IoFlaskSharp size={55} />
-                    <span>Lab</span>
+                    <AviationIcon fill={'#F5F5F5'} width={35} height={35} />
+                    <span>Aviation</span>
+                  </a>
+                </Link>
+              </span>
+              <span>
+                <Link
+                  href="/solutions/research"
+                  as={process.env.BACKEND_URL + '/solutions/research'}
+                >
+                  <a className={style.solution}>
+                    <ResearchIcon fill={'#F5F5F5'} width={35} height={35} />
+                    <span>Research</span>
                   </a>
                 </Link>
               </span>
@@ -120,7 +137,9 @@ export default function Home() {
             <span className={style.content}>
               <h2 id={style.aboutTitle}>About us</h2>
               <p id={style.aboutContent}>
-              We are a company that provides top quality software products for businesses and institutions who seek the best solutions for their customer needs through simplicity and quality.
+                We are a company that provides top quality software products for
+                businesses and institutions who seek the best solutions for
+                their customer needs through simplicity and quality.
               </p>
               <img
                 id={style.aboutImg}
@@ -142,7 +161,9 @@ export default function Home() {
               <span className={style.separator} />
               <span className={style.visionContent}>
                 <span className={style.visionTitle}>Co-Creative</span>
-                <p className={style.visionText}>Engaging and inspiring the people we work with.</p>
+                <p className={style.visionText}>
+                  Engaging and inspiring the people we work with.
+                </p>
               </span>
             </span>
             <span className={style.visionStatement}>
@@ -150,7 +171,9 @@ export default function Home() {
               <span className={style.separator} />
               <span className={style.visionContent}>
                 <span className={style.visionTitle}>Flexible</span>
-                <p className={style.visionText}>We create solutions adapted to your needs.</p>
+                <p className={style.visionText}>
+                  We create solutions adapted to your needs.
+                </p>
               </span>
             </span>
           </section>
@@ -159,7 +182,11 @@ export default function Home() {
               <span id={style.textContent}>
                 <h2>Meet the team</h2>
                 <p>
-                The Vortex family is a multidisciplinary team, where the knowledge of different backgrounds allows the company to have complementary know-how, experience, skills and qualifications that will contribute to the achievement of the expected results by the company and each corresponding project.
+                  The Vortex family is a multidisciplinary team, where the
+                  knowledge of different backgrounds allows the company to have
+                  complementary know-how, experience, skills and qualifications
+                  that will contribute to the achievement of the expected
+                  results by the company and each corresponding project.
                 </p>
                 <Link href="/team" as={process.env.BACKEND_URL + '/team'}>
                   <a id={style.meetTheTeamButton}>

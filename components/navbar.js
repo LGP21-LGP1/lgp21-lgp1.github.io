@@ -54,30 +54,40 @@ const navbar = ({ dark, page }) => {
               <DropdownMenu id={style.dropdownMenu} right>
                 <DropdownItem className={style.dropdownItem}>
                   <Link
-                    href="/solutions/archival"
-                    as={process.env.BACKEND_URL + '/solutions/archival'}
+                    href="/solutions/photography"
+                    as={process.env.BACKEND_URL + '/solutions/photography'}
                   >
-                    <a>Archival</a>
+                    <a>Photography</a>
                   </Link>
                 </DropdownItem>
                 <DropdownItem divider className={style.dropdownDivider} />
                 <DropdownItem className={style.dropdownItem}>
                   {' '}
                   <Link
-                    href="/solutions/schools"
-                    as={process.env.BACKEND_URL + '/solutions/schools'}
+                    href="/solutions/education"
+                    as={process.env.BACKEND_URL + '/solutions/education'}
                   >
-                    <a>Schools</a>
+                    <a>Education</a>
                   </Link>
                 </DropdownItem>
                 <DropdownItem divider className={style.dropdownDivider} />
                 <DropdownItem className={style.dropdownItem}>
                   {' '}
                   <Link
-                    href="/solutions/labs"
-                    as={process.env.BACKEND_URL + '/solutions/labs'}
+                    href="/solutions/aviation"
+                    as={process.env.BACKEND_URL + '/solutions/aviation'}
                   >
-                    <a>Labs</a>
+                    <a>Aviation</a>
+                  </Link>
+                </DropdownItem>
+                <DropdownItem divider className={style.dropdownDivider} />
+                <DropdownItem className={style.dropdownItem}>
+                  {' '}
+                  <Link
+                    href="/solutions/research"
+                    as={process.env.BACKEND_URL + '/solutions/research'}
+                  >
+                    <a>Research</a>
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
