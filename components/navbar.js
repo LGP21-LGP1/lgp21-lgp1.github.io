@@ -15,6 +15,8 @@ import {
   NavbarText,
 } from 'reactstrap';
 import style from './navbar.module.css';
+import DesktopLogo from '../public/assets/desktop-logo.svg';
+import MobileLogo from '../public/assets/mobile-logo.svg';
 
 const navbar = ({ dark, page }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +32,8 @@ const navbar = ({ dark, page }) => {
         expand="md"
       >
         <NavbarBrand id={style.logo} href="/">
-          LOGO
+          <MobileLogo id={style.mobileLogo} />
+          <DesktopLogo id={style.desktopLogo} />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} id={style.navbarToggler} />
         <Collapse isOpen={isOpen} navbar>
