@@ -8,17 +8,7 @@
 }
 
 .hr {
-  border: 2px solid var(--orange);
-  width: 60%;
-  position: absolute;
-}
-
-.hr_start {
-  left: 0;
-}
-
-.hr_end {
-  right: 0;
+  border: 1px solid var(--orange);
 }
 
 .member_div {
