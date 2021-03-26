@@ -10,17 +10,19 @@ const changeAppearance = event => {
   event.preventDefault()
 }
 
-const schoolsDetail = () => {
+const photographyDetail = () => {
   return (
     <>
       <div className="page-container">
         <Head>
-          <title>Vortex - Solution: Schools - Product Detail</title>
+          <title>Vortex - Solution: Photography - Product Detail</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
         </Head>
         <Navbar dark={false} page={'solutions'} />
-        <Link href="/solutions/schools">
+        <Link 
+          href="/solutions/photography"
+          as={process.env.BACKEND_URL + '/solutions/photography'}>
           <h3 className={style.solutionback}>
             <IoArrowBackCircleOutline size={30} />        
             <a className={style.marginleft}>Back to Product List</a>
@@ -28,8 +30,8 @@ const schoolsDetail = () => {
         </Link>
         <div className={style.container}>
           <img className={style.solutionimagedetail}
-            src="/assets/logo2.png"
-            alt="Schools solution"
+            src="/assets/logo1.png"
+            alt="Photography solution"
             width={300}
             height={300}
           />
@@ -57,4 +59,4 @@ const schoolsDetail = () => {
   );
 };
 
-export default schoolsDetail;
+export default photographyDetail;

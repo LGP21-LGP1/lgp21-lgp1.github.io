@@ -24,6 +24,7 @@
     text-align: left;
     font-family: var(--reross);
     color: var(--light);
+    padding-left: 30px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -42,6 +43,7 @@
     color: var(--light);
     padding-bottom: 30px;
     padding-top:15px;
+    padding-left: 30px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;

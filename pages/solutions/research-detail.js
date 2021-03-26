@@ -10,17 +10,19 @@ const changeAppearance = event => {
   event.preventDefault()
 }
 
-const labsDetail = () => {
+const researchDetail = () => {
   return (
     <>
       <div className="page-container">
         <Head>
-          <title>Vortex - Solution: Labs - Product Detail</title>
+          <title>Vortex - Solution: Research - Product Detail</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
         </Head>
         <Navbar dark={false} page={'solutions'} />
-        <Link href="/solutions/labs">
+        <Link 
+          href="/solutions/research"
+          as={process.env.BACKEND_URL + '/solutions/research'}>
           <h3 className={style.solutionback}>
             <IoArrowBackCircleOutline size={30} />        
             <a className={style.marginleft}>Back to Product List</a>
@@ -29,7 +31,7 @@ const labsDetail = () => {
         <div className={style.container}>
           <img className={style.solutionimagedetail}
             src="/assets/logo3.png"
-            alt="Labs solution"
+            alt="Research solution"
             width={300}
             height={300}
           />
@@ -57,4 +59,4 @@ const labsDetail = () => {
   );
 };
 
-export default labsDetail;
+export default researchDetail;

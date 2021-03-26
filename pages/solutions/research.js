@@ -6,28 +6,30 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 
-const labs = () => {
+const research = () => {
   return (
     <>
       <div className="page-container">
         <Head>
-          <title>Vortex - Solutions: Labs</title>
+          <title>Vortex - Solutions: Research</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
         </Head>
         <Navbar dark={false} page={'solutions'} />
         <main>
-          <h1 className={style.solutiontitle}>Solutions: Labs</h1> 
+          <h1 className={style.solutiontitle}>Solutions: Research</h1> 
           <img className={style.solutionimage}
             src="/assets/logo3.png"
-            alt="Labs solution"
+            alt="Research solution"
             width={300}
             height={300}
           />
           <p className={style.productname}>Product Name</p>
           <p className={style.solutiontext}>Short Project Description</p>
           <p>
-          <Link href="/solutions/labs-detail">
+          <Link 
+            href="/solutions/research-detail"
+            as={process.env.BACKEND_URL + '/solutions/research-detail'}>
             <a className={style.solutionlink}>
               Read More...
             </a>
@@ -41,4 +43,4 @@ const labs = () => {
   );
 };
 
-export default labs;
+export default research;

@@ -6,28 +6,30 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 
-const archival = () => {
+const education = () => {
   return (
     <>
       <div className="page-container">
         <Head>
-          <title>Vortex - Solutions: Archival</title>
+          <title>Vortex - Solutions: Education</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
         </Head>
         <Navbar dark={false} page={'solutions'} />
         <main>
-          <h1 className={style.solutiontitle}>Solutions: Archival</h1>
+          <h1 className={style.solutiontitle}>Solutions: Education</h1>
           <img className={style.solutionimage}
-            src="/assets/logo1.png"
-            alt="Archival solution"
+            src="/assets/logo2.png"
+            alt="Education solution"
             width={300}
             height={300}
           />
-          <h3 className={style.productname}>Product Name</h3>
+          <p className={style.productname}>Product Name</p>
           <p className={style.solutiontext}>Short Project Description</p>
           <p>
-          <Link href="/solutions/archival-detail">
+          <Link 
+            href="/solutions/education-detail"
+            as={process.env.BACKEND_URL + '/solutions/education-detail'}>
             <a className={style.solutionlink}>
               Read More...
             </a>
@@ -41,4 +43,4 @@ const archival = () => {
   );
 };
 
-export default archival;
+export default education;

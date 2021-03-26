@@ -10,17 +10,19 @@ const changeAppearance = event => {
   event.preventDefault()
 }
 
-const archivalDetail = () => {
+const aviationDetail = () => {
   return (
     <>
       <div className="page-container">
         <Head>
-          <title>Vortex - Solution: Archival - Product Detail</title>
+          <title>Vortex - Solution: Aviation - Product Detail</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
         </Head>
         <Navbar dark={false} page={'solutions'} />
-        <Link href="/solutions/archival">
+        <Link 
+          href="/solutions/aviation"
+          as={process.env.BACKEND_URL + '/solutions/aviation'}>
           <h3 className={style.solutionback}>
             <IoArrowBackCircleOutline size={30} />        
             <a className={style.marginleft}>Back to Product List</a>
@@ -28,8 +30,8 @@ const archivalDetail = () => {
         </Link>
         <div className={style.container}>
           <img className={style.solutionimagedetail}
-            src="/assets/logo1.png"
-            alt="Archival solution"
+            src="/assets/logo4.png"
+            alt="Aviation solution"
             width={300}
             height={300}
           />
@@ -57,4 +59,4 @@ const archivalDetail = () => {
   );
 };
 
-export default archivalDetail;
+export default aviationDetail;
