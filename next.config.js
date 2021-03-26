@@ -13,7 +13,6 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/team': { page: '/team' },
-      '/solutions': { page: '/solutions' },
       '/press': { page: '/press' },
       '/contact': { page: '/contact' },
       '/blog': { page: '/blog' },
