@@ -6,12 +6,23 @@ const debug = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   images: {
-	      loader: "imgix",
-	      path: "https://noop/",
+    loader: 'imgix',
+    path: 'https://noop/',
   },
   exportPathMap: function () {
     return {
       '/': { page: '/' },
+      '/team': { page: '/team' },
+      '/solutions': { page: '/solutions' },
+      '/press': { page: '/press' },
+      '/contact': { page: '/contact' },
+      '/blog': { page: '/blog' },
+      '/solutions/archival': { page: '/solutions/archival' },
+      '/solutions/schools': { page: '/solutions/schools' },
+      '/solutions/labs': { page: '/solutions/labs' },
+      '/solutions/archival-detail': { page: '/solutions/archival-detail' },
+      '/solutions/schools-detail': { page: '/solutions/schools-detail' },
+      '/solutions/labs-detail': { page: '/solutions/labs-detail' },
     };
   },
   //assetPrefix: '',
