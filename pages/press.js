@@ -36,7 +36,7 @@ export default function Press() {
               </DownloadFileButton>
             </div>
             <div className={style.interactiveManualDiv}>
-              <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=vh5ecucbdc" width="100%" height="100%" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+              <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=hiabmm3xu3" width="100%" height="100%" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
             </div>
           </section>
         </main>
