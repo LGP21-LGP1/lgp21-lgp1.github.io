@@ -19,12 +19,12 @@ const photography = () => {
         <main>
           <h1 className={style.solutiontitle}>Solutions: Photography</h1>
           <img className={style.solutionimage}
-            src="/assets/logo1.png"
+            src="/assets/photography.png"
             alt="Photography solution"
             width={300}
             height={300}
           />
-          <h3 className={style.productname}>Product Name</h3>
+          <h3 className={style.productname}>APP</h3>
           <p className={style.solutiontext}>Short Project Description</p>
           <p>
           <Link 

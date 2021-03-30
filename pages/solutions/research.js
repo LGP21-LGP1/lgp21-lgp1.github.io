@@ -19,12 +19,12 @@ const research = () => {
         <main>
           <h1 className={style.solutiontitle}>Solutions: Research</h1> 
           <img className={style.solutionimage}
-            src="/assets/logo3.png"
+            src="/assets/research.png"
             alt="Research solution"
             width={300}
             height={300}
           />
-          <p className={style.productname}>Product Name</p>
+          <h3 className={style.productname}>Labcentric</h3>
           <p className={style.solutiontext}>Short Project Description</p>
           <p>
           <Link 

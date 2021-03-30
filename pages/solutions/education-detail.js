@@ -15,7 +15,7 @@ const educationDetail = () => {
     <>
       <div className="page-container">
         <Head>
-          <title>Vortex - Solution: Education - Product Detail</title>
+          <title>Vortex - Solution: e-Valuate</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
         </Head>
@@ -30,15 +30,23 @@ const educationDetail = () => {
         </Link>
         <div className={style.container}>
           <img className={style.solutionimagedetail}
-            src="/assets/logo2.png"
+            src="/assets/education.png"
             alt="Education solution"
             width={300}
             height={300}
           />
-          <h1 className={style.productnamedetail}>Product Name</h1>
-          <p className={style.solutiontextdetail}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id urna tempus, dapibus nisl vel, malesuada ligula. Ut consectetur enim commodo, tincidunt ligula in, volutpat lacus. Proin interdum libero eget enim iaculis, ac hendrerit erat iaculis. Aliquam feugiat est neque, et consectetur risus vulputate id. Maecenas at dolor non augue cursus tempus. Suspendisse sagittis facilisis maximus.</p>
+          <h1 className={style.productnamedetail}>e-Valuate</h1>
+          <p className={style.solutiontextdetail}>Our aim is to provide a platform that allows schools to define their courses, along with their evaluation criteria, and domains their and respective descriptors freely and according to their organization of periods of the school year, capable of storing and presenting evaluation data for the various grades and courses of a school, capitalizing on the use of Microsoft Teams to simplify the setup phase for each course of a class and using intuitive and appealing interfaces to help teachers determine the needs of their classes, as well as exchange feedback with their students to help them improve.</p>
           <h3 className={style.learnmore}>Learn more:</h3>
-          <p className={style.solutiontextbelowdetail}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id urna tempus, dapibus nisl vel, malesuada ligula. Ut consectetur enim commodo, tincidunt ligula in, volutpat lacus. Proin interdum libero eget enim iaculis, ac hendrerit erat iaculis. Aliquam feugiat est neque, et consectetur risus vulputate id. Maecenas at dolor non augue cursus tempus. Suspendisse sagittis facilisis maximus. Quisque egestas nunc turpis. Mauris orci ex, efficitur id interdum ac, faucibus ut nibh. Vivamus tempus bibendum turpis, sit amet pharetra eros aliquet quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <p className={style.solutiontextbelowdetail}>The COVID-19 pandemic motivated a new paradigm in the way educational systems work around the world. <br></br><br></br>
+        
+          Microsoft Teams is one of the tools that saw the most use growth during this period, being used by an increasing number of educational institutions. The workflow used by many schools is for lecturers to create a Team inside the platform for each class they teach in each of their subjects, and then add all the students to it. <br></br><br></br>
+          
+          This makes it very useful to be able to import this information to an external student assessment registration App, in order to avoid the tedious repetitive task of manually adding each student of each class in each subject. <br></br><br></br>
+          
+          The portuguese educational system is also evolving, so a new innovative App that supports the latest conceptual changes in the assessment system defended by specialists and academics alike is very necessary.    <br></br><br></br>
+          
+          This product helps evolve the evaluation process used in schools, not only adapting it to work well on remote situations but also improving the feedback between students and teachers overall and establishing an evaluation method better suited to assess a student's learning.</p>
         </div>
         <div className={style.updates}>
           <h3 className={style.solutionforward}>

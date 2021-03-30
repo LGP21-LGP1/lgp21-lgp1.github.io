@@ -24,7 +24,7 @@ const education = () => {
             width={300}
             height={300}
           />
-          <p className={style.productname}>Product Name</p>
+          <h3 className={style.productname}>e-Valuate</h3>
           <p className={style.solutiontext}>Short Project Description</p>
           <p>
           <Link 

@@ -19,12 +19,12 @@ const aviation = () => {
         <main>
           <h1 className={style.solutiontitle}>Solutions: Aviation</h1>
           <img className={style.solutionimage}
-            src="/assets/logo4.png"
+            src="/assets/aviation.png"
             alt="Aviation solution"
             width={300}
             height={300}
           />
-          <h3 className={style.productname}>Product Name</h3>
+          <h3 className={style.productname}>AIR Med Digital</h3>
           <p className={style.solutiontext}>Short Project Description</p>
           <p>
           <Link 

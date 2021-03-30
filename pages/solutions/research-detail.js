@@ -15,7 +15,7 @@ const researchDetail = () => {
     <>
       <div className="page-container">
         <Head>
-          <title>Vortex - Solution: Research - Product Detail</title>
+          <title>Vortex - Solution: Labcentric</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
         </Head>
@@ -30,15 +30,15 @@ const researchDetail = () => {
         </Link>
         <div className={style.container}>
           <img className={style.solutionimagedetail}
-            src="/assets/logo3.png"
+            src="/assets/research.png"
             alt="Research solution"
             width={300}
             height={300}
           />
-          <h1 className={style.productnamedetail}>Product Name</h1>
-          <p className={style.solutiontextdetail}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id urna tempus, dapibus nisl vel, malesuada ligula. Ut consectetur enim commodo, tincidunt ligula in, volutpat lacus. Proin interdum libero eget enim iaculis, ac hendrerit erat iaculis. Aliquam feugiat est neque, et consectetur risus vulputate id. Maecenas at dolor non augue cursus tempus. Suspendisse sagittis facilisis maximus.</p>
+          <h1 className={style.productnamedetail}>Labcentric</h1>
+          <p className={style.solutiontextdetail}>Our goal is to help the enhancement of laboratories all over the world, making them more productive and capable of responding to public health issues. Our product helps laboratories become more efficient, leading to less costs and fewer errors. Their staff can work better and more efficiently, which boosts confidence in their work. All of this contributes to a better and quicker response to society needs, which helps to improve the quality of life.</p>
           <h3 className={style.learnmore}>Learn more:</h3>
-          <p className={style.solutiontextbelowdetail}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id urna tempus, dapibus nisl vel, malesuada ligula. Ut consectetur enim commodo, tincidunt ligula in, volutpat lacus. Proin interdum libero eget enim iaculis, ac hendrerit erat iaculis. Aliquam feugiat est neque, et consectetur risus vulputate id. Maecenas at dolor non augue cursus tempus. Suspendisse sagittis facilisis maximus. Quisque egestas nunc turpis. Mauris orci ex, efficitur id interdum ac, faucibus ut nibh. Vivamus tempus bibendum turpis, sit amet pharetra eros aliquet quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+          <p className={style.solutiontextbelowdetail}>Our product is an information system focused on digitalizing and monitoring all processes, workflows and activities of a laboratory. It is designed with adaptability and extensibility in mind, which means it can easily expand to encompass new fields inside the laboratory. <br></br><br></br>The product combines different knowledge areas, good practices and already existing tools, which make it a good and feasible solution for our customers. <br></br><br></br>Finally, it offers a simple and intuitive interface for good user experience, with many ways of interacting with the product that are configurable by the user. </p>
         </div>
         <div className={style.updates}>
           <h3 className={style.solutionforward}>
