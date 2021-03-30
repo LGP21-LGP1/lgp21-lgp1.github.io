@@ -19,7 +19,7 @@ const education = () => {
         <main>
           <h1 className={style.solutiontitle}>Solutions: Education</h1>
           <img className={style.solutionimage}
-            src="/assets/logo2.png"
+            src="/assets/education.png"
             alt="Education solution"
             width={300}
             height={300}
