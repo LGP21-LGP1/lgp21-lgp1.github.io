@@ -60,6 +60,10 @@
   position: absolute;
 }
 
+#dropdownMenu .dropdownItem:active {
+  background: none;
+}
+
 .dropdownItem {
   font: normal 20px var(--secondary-font);
   text-align: center;
