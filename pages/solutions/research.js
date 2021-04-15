@@ -25,13 +25,13 @@ const research = () => {
             height={300}
           />
           <h3 className={style.productname}>Labcentric</h3>
-          <p className={style.solutiontext}>Short Project Description</p>
+          <p className={style.solutiontext}>Labcentric is an information system focused on digitizing and monitoring laboratory activities, allowing a decrease in errors, resulting in a cost reduction.</p>
           <p>
           <Link 
             href="/solutions/research-detail"
             as={process.env.BACKEND_URL + '/solutions/research-detail'}>
             <a className={style.solutionlink}>
-              Read More...
+            Get details about Labcentric
             </a>
           </Link>
           </p>

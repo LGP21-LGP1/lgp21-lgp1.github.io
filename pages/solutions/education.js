@@ -24,14 +24,14 @@ const education = () => {
             width={300}
             height={300}
           />
-          <h3 className={style.productname}>e-Valuate</h3>
-          <p className={style.solutiontext}>Short Project Description</p>
+          <h3 className={style.productname}>E-valuate</h3>
+          <p className={style.solutiontext}>E-valuate is a platform adapted to remote classes, helping schools to manage aspects related to the classes, assessment cycle and transparency among students and teachers.</p>
           <p>
           <Link 
             href="/solutions/education-detail"
             as={process.env.BACKEND_URL + '/solutions/education-detail'}>
             <a className={style.solutionlink}>
-              Read More...
+            Get details about E-valuate
             </a>
           </Link>
           </p>

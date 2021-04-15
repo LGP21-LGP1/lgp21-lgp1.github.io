@@ -25,13 +25,13 @@ const aviation = () => {
             height={300}
           />
           <h3 className={style.productname}>AIR Med Digital</h3>
-          <p className={style.solutiontext}>Short Project Description</p>
+          <p className={style.solutiontext}>AIR Med Digital is a platform that centralizes medical information in the aviation field, aiming to be more sustainable, straightforward, and reduce bureaucracy on the current processes.</p>
           <p>
           <Link 
             href="/solutions/aviation-detail"
             as={process.env.BACKEND_URL + '/solutions/aviation-detail'}>
           <a className={style.solutionlink}>
-              Read More...
+          Get details about AIR Med Digital
             </a>
           </Link>
           </p>

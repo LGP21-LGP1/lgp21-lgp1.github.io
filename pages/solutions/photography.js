@@ -25,13 +25,13 @@ const photography = () => {
             height={300}
           />
           <h3 className={style.productname}>APP</h3>
-          <p className={style.solutiontext}>Short Project Description</p>
+          <p className={style.solutiontext}>APP is an information system designed to assist cultural institutions on art pieces' conservation, allowing them to manage all the necessary procedures in an automatic way.</p>
           <p>
           <Link 
             href="/solutions/photography-detail"
             as={process.env.BACKEND_URL + '/solutions/photography-detail'}>
             <a className={style.solutionlink}>
-              Read More...
+            Get details about APP
             </a>
           </Link>
           </p>

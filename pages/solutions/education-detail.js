@@ -15,7 +15,7 @@ const educationDetail = () => {
     <>
       <div className="page-container">
         <Head>
-          <title>Vortex - Solution: e-Valuate</title>
+          <title>Vortex - Solution: E-valuate</title>
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
         </Head>
@@ -35,8 +35,8 @@ const educationDetail = () => {
             width={300}
             height={300}
           />
-          <h1 className={style.productnamedetail}>e-Valuate</h1>
-          <p className={style.solutiontextdetail}>Our aim is to provide a platform that allows schools to define their courses, along with their evaluation criteria, and domains their and respective descriptors freely and according to their organization of periods of the school year, capable of storing and presenting evaluation data for the various grades and courses of a school, capitalizing on the use of Microsoft Teams to simplify the setup phase for each course of a class and using intuitive and appealing interfaces to help teachers determine the needs of their classes, as well as exchange feedback with their students to help them improve.</p>
+          <h1 className={style.productnamedetail}>E-valuate</h1>
+          <p className={style.solutiontextdetail}>E-valuate is a platform adapted to remote classes, helping schools to manage aspects related to the classes, assessment cycle and transparency among students and teachers.</p>
           <h3 className={style.learnmore}>Learn more:</h3>
           <p className={style.solutiontextbelowdetail}>The COVID-19 pandemic motivated a new paradigm in the way educational systems work around the world. <br></br><br></br>
         

@@ -36,7 +36,7 @@ const researchDetail = () => {
             height={300}
           />
           <h1 className={style.productnamedetail}>Labcentric</h1>
-          <p className={style.solutiontextdetail}>Our goal is to help the enhancement of laboratories all over the world, making them more productive and capable of responding to public health issues. Our product helps laboratories become more efficient, leading to less costs and fewer errors. Their staff can work better and more efficiently, which boosts confidence in their work. All of this contributes to a better and quicker response to society needs, which helps to improve the quality of life.</p>
+          <p className={style.solutiontextdetail}>Labcentric is an information system focused on digitizing and monitoring laboratory activities, allowing a decrease in errors, resulting in a cost reduction.</p>
           <h3 className={style.learnmore}>Learn more:</h3>
           <p className={style.solutiontextbelowdetail}>Our product is an information system focused on digitalizing and monitoring all processes, workflows and activities of a laboratory. It is designed with adaptability and extensibility in mind, which means it can easily expand to encompass new fields inside the laboratory. <br></br><br></br>The product combines different knowledge areas, good practices and already existing tools, which make it a good and feasible solution for our customers. <br></br><br></br>Finally, it offers a simple and intuitive interface for good user experience, with many ways of interacting with the product that are configurable by the user. </p>
         </div>

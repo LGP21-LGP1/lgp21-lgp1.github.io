@@ -36,7 +36,7 @@ const photographyDetail = () => {
             height={300}
           />
           <h1 className={style.productnamedetail}>APP</h1>
-          <p className={style.solutiontextdetail}>Existing software solutions related to art pieces' conservation leave much to be desired as they are only centered in building condition reports, and fail to have processes to automate the management of the pieces' lifecycles, historical paths, light exposure calculations and loan requests. Having a fully integrated information system to address these gaps, where users only need to input the information they collect, will save a lot of time and provide more accurate and reliable information that is crucial in what concerns the cultural heritage management.	</p>
+          <p className={style.solutiontextdetail}>APP is an information system designed to assist cultural institutions on art pieces' conservation, allowing them to manage all the necessary procedures in an automatic way.	</p>
           <h3 className={style.learnmore}>Learn more:</h3>
           <p className={style.solutiontextbelowdetail}>This product is essentially an information system designed to assist cultural institutions in what concerns the preservation of the cultural heritage of their responsibility. <br></br><br></br>
           It covers the major workflows that an institution of this nature may use, from the light exposure recording and artwork state assement, to loan requests management, and even features a decision-making system to speed up the process. <br></br><br></br>
