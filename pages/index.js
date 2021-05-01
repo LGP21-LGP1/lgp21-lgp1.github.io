@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import style from '../styles/home.module.css';
-import { FiArrowRightCircle } from 'react-icons/fi';
+import { GoTriangleRight } from 'react-icons/go';
 import { FaEye, FaArchive, FaLongArrowAltDown } from 'react-icons/fa';
 import { IoSchoolSharp, IoFlaskSharp } from 'react-icons/io5';
 import { IoIosArrowDown } from 'react-icons/io';
@@ -137,7 +137,7 @@ export default function Home() {
           <section id={style.meetTheTeam}>
             <span className={style.content}>
               <span id={style.textContent}>
-                <h2>Meet the team</h2>
+                <h2>Who are we?</h2>
                 <p>
                   The Vortex family is a multidisciplinary team, where the
                   knowledge of different backgrounds allows the company to have
@@ -147,12 +147,11 @@ export default function Home() {
                 </p>
                 <Link href="/team" as={process.env.BACKEND_URL + '/team'}>
                   <a id={style.meetTheTeamButton}>
-                    <FiArrowRightCircle size={25} />
-                    <span id={style.buttonText}>Get to know us.</span>
+                    <GoTriangleRight size={25} />
+                    <span id={style.buttonText}>Meet our team members</span>
                   </a>
                 </Link>
               </span>
-              <img id={style.meetTheTeamImg} src="/assets/meet-the-team.png" />
             </span>
           </section>
         </main>

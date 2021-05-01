@@ -148,6 +148,7 @@
 
 #aboutContent {
   font-size: 22px;
+  line-height: 40px;
   font-weight: 400;
   max-width: 622px;
 }
@@ -208,53 +209,35 @@
 .visionText {
   font-weight: 400;
   font-size: 26px;
+  line-height: 39px;
 }
 
 #meetTheTeam {
-  display: flex;
-  align-items: center;
-  background-color: var(--blue);
-  color: var(--light);
+  padding: 100px 3rem 100px 3rem;
+  max-width: 1200px;
   width: 100%;
-  padding: 100px 3rem;
 }
 
 #meetTheTeam .content {
-  margin: 0 auto;
-  max-width: 1700px;
-  display: flex;
-  align-items: center;
-}
-
-#textContent {
-  z-index: 2;
-  flex: 1 1 500px;
-}
-
-#meetTheTeamImg {
-  min-width: 0;
-  position: relative;
-  right: 30px;
-  z-index: 1;
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-  flex: 2 2 500px;
+  width: 100%;
+  text-align: right;
 }
 
 #textContent h2 {
-  font-size: 65px;
-  font-weight: normal;
-  font-family: var(--reross);
-  color: var(--light);
+  font-size: 46px;
+  font-weight: bold;
+  color: var(--dark);
+  width: 100%;
+  margin-bottom: 35px;
 }
 
 #textContent p {
-  max-width: 500px;
-  font-size: 21px;
-  font-family: var(--poppins);
+  font-size: 22px;
   font-weight: 400;
-  margin: 10.5px 0;
+  line-height: 40px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 #meetTheTeamButton {
@@ -264,11 +247,13 @@
   display: flex;
   align-items: center;
   margin-top: 20px;
+  flex-direction: row-reverse;
+  color: #2d4b8b;
 }
 
 #buttonText {
-  margin-left: 1rem;
-  font-size: 23px;
+  margin-right: 0.5rem;
+  font-size: 16px;
   font-weight: bold;
 }
 
