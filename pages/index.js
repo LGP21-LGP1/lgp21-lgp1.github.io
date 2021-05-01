@@ -6,43 +6,21 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import style from '../styles/home.module.css';
 import { FiArrowRightCircle } from 'react-icons/fi';
-import { FaEye, FaArchive } from 'react-icons/fa';
+import { FaEye, FaArchive, FaLongArrowAltDown } from 'react-icons/fa';
 import { IoSchoolSharp, IoFlaskSharp } from 'react-icons/io5';
 import { IoIosArrowDown } from 'react-icons/io';
-import vortex from '../components/vortex/vortex';
 import EducationIcon from '../public/assets/Education.svg';
 import ResearchIcon from '../public/assets/Research.svg';
 import PhotographyIcon from '../public/assets/Photography.svg';
 import AviationIcon from '../public/assets/Aviation.svg';
 
 export default function Home() {
-  const [vantaEffect, setVantaEffect] = useState(0);
   const [height, setHeight] = useState(0);
   const myRef = useRef(null);
 
   useEffect(() => {
     setHeight(myRef.current.clientHeight);
   });
-
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        vortex({
-          el: myRef.current,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          scale: 1.0,
-          scaleMobile: 1.0,
-        })
-      );
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaEffect]);
 
   const handleScroll = () => {
     window.scroll({
@@ -61,6 +39,7 @@ export default function Home() {
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
+          <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
         </Head>
         <main id={style.home}>
           <section ref={myRef} id={style.hero}>
@@ -71,17 +50,10 @@ export default function Home() {
                   Through innovation, we bridge the gap between people and
                   technology.
                 </h1>
-                <p>
-                  We provide technological solutions with the goal of allowing
-                  products to be more effective,<br></br> efficient and
-                  ultimately more successful.
-                </p>
               </div>
             </div>
             <button onClick={handleScroll} id={style.scrollDown}>
-              <IoIosArrowDown size={30} />
-              <span>scroll down</span>
-              <IoIosArrowDown size={30} />
+              <FaLongArrowAltDown size={40} />
             </button>
           </section>
           <section id={style.solutions}>
@@ -93,10 +65,10 @@ export default function Home() {
                   as={process.env.BACKEND_URL + '/solutions/photography'}
                 >
                   <a className={style.solution}>
-                    <PhotographyIcon fill={'#F5F5F5'} width={35} height={35} />
                     <span>Photography</span>
                   </a>
                 </Link>
+                <span class={style.dot}></span>
               </span>
               <span>
                 <Link
@@ -104,10 +76,10 @@ export default function Home() {
                   as={process.env.BACKEND_URL + '/solutions/education'}
                 >
                   <a className={style.solution}>
-                    <EducationIcon fill={'#F5F5F5'} width={35} height={35} />
                     <span>Education</span>
                   </a>
                 </Link>
+                <span class={style.dot}></span>
               </span>
               <span>
                 <Link
@@ -115,10 +87,10 @@ export default function Home() {
                   as={process.env.BACKEND_URL + '/solutions/aviation'}
                 >
                   <a className={style.solution}>
-                    <AviationIcon fill={'#F5F5F5'} width={35} height={35} />
                     <span>Aviation</span>
                   </a>
                 </Link>
+                <span class={style.dot}></span>
               </span>
               <span>
                 <Link
@@ -126,10 +98,10 @@ export default function Home() {
                   as={process.env.BACKEND_URL + '/solutions/research'}
                 >
                   <a className={style.solution}>
-                    <ResearchIcon fill={'#F5F5F5'} width={35} height={35} />
                     <span>Research</span>
                   </a>
                 </Link>
+                <span class={style.dot}></span>
               </span>
             </div>
           </section>

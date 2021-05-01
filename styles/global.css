@@ -11,6 +11,7 @@
   --orange: #fca311;
   --accent: #6e13b9;
   --dark-accent: #260f39;
+  --background: #ebebeb;
   --primary-font: 'Montserrat', sans-serif;
   --secondary-font: 'Blinker', sans-serif;
   --poppins: 'Poppins', sans-serif;
@@ -23,15 +24,20 @@
   box-sizing: inherit;
 }
 
+canvas {
+  position: fixed;
+  touch-action: none;
+}
+
 body,
 html {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--dark);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
-  background: var(--blue);
+  background: var(--background);
   scroll-behavior: smooth;
 }
 
@@ -108,8 +114,8 @@ main {
   color: var(--orange);
 }
 
-.w-90{
-  width:90%;
+.w-90 {
+  width: 90%;
 }
 
 .regular-text {
