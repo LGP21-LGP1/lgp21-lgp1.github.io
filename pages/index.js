@@ -105,6 +105,24 @@ export default function Home() {
               </span>
             </div>
           </section>
+          <section id={style.vision}>
+            <h2 id={style.ourVision}>Our Vision</h2>
+            <hr id={style.visionLine}></hr>
+            <span id={style.visionStatements}>
+              <span className={style.visionStatement}>
+                <span className={style.visionTitle}>Co-Creative</span>
+                <p className={style.visionText}>
+                  Engaging and inspiring the people we work with.
+                </p>
+              </span>
+              <span className={style.visionStatement}>
+                <span className={style.visionTitle}>Flexible</span>
+                <p className={style.visionText}>
+                  We create solutions adapted to your needs.
+                </p>
+              </span>
+            </span>
+          </section>
           <section id={style.about}>
             <span className={style.content}>
               <h2 id={style.aboutTitle}>About us</h2>
@@ -121,34 +139,7 @@ export default function Home() {
               />
             </span>
           </section>
-          <section id={style.vision}>
-            <h2 id={style.ourVision}>
-              <span id={style.ourVisionContent}>
-                <FaEye size={50} />
-                <span>Our Vision</span>
-              </span>
-            </h2>
-            <span className={style.visionStatement}>
-              <span className={style.visionNo}>01</span>
-              <span className={style.separator} />
-              <span className={style.visionContent}>
-                <span className={style.visionTitle}>Co-Creative</span>
-                <p className={style.visionText}>
-                  Engaging and inspiring the people we work with.
-                </p>
-              </span>
-            </span>
-            <span className={style.visionStatement}>
-              <span className={style.visionNo}>02</span>
-              <span className={style.separator} />
-              <span className={style.visionContent}>
-                <span className={style.visionTitle}>Flexible</span>
-                <p className={style.visionText}>
-                  We create solutions adapted to your needs.
-                </p>
-              </span>
-            </span>
-          </section>
+
           <section id={style.meetTheTeam}>
             <span className={style.content}>
               <span id={style.textContent}>

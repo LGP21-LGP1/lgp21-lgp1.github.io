@@ -77,13 +77,13 @@
   color: var(--dark);
   width: 100%;
   text-align: left;
+  margin-bottom: 35px;
 }
 
 #solutionsList {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 30px;
   border-top: 2px solid var(--dark);
 }
 
@@ -170,12 +170,10 @@
 }
 
 #vision {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  max-width: 1700px;
-  padding: 100px;
+  margin: 0 auto;
+  max-width: 1200px;
   width: 100%;
+  padding: 100px 3rem 100px 3rem;
 }
 
 #ourVisionContent {
@@ -184,11 +182,18 @@
   color: var(--cyan);
 }
 
-#ourVision span {
-  font-size: 50px;
-  font-weight: normal;
-  font-family: var(--reross);
-  margin-left: 2rem;
+#ourVision {
+  font-size: 46px;
+  font-weight: bold;
+  color: var(--dark);
+  width: 100%;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+#visionLine {
+  border-top: 2px solid var(--dark);
+  margin-bottom: 60px;
 }
 
 .separator {
@@ -197,30 +202,23 @@
   margin: 15px 27px 25px 27px;
 }
 
-.visionStatement {
+#visionStatements {
   display: flex;
-  align-items: stretch;
-  color: var(--light);
-  font-family: var(--poppins);
 }
 
-.visionNo,
+.visionStatement {
+  max-width: 407px;
+}
+
 .visionTitle {
-  font-weight: bold;
+  font-weight: 600;
   line-height: 60px;
-  max-width: 268px;
-  font-size: 35px;
+  font-size: 29px;
 }
 
-.visionContent {
-  max-width: 268px;
-  margin: 0;
-}
-
-.visionContent p {
-  margin-top: 8px;
-  font-size: 25px;
-  font-weight: 300;
+.visionText {
+  font-weight: 400;
+  font-size: 26px;
 }
 
 #meetTheTeam {
