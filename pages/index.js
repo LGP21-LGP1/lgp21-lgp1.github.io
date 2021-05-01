@@ -131,12 +131,6 @@ export default function Home() {
                 businesses and institutions who seek the best solutions for
                 their customer needs through simplicity and quality.
               </p>
-              <img
-                id={style.aboutImg}
-                src="/assets/feup.png"
-                width={960}
-                height={641}
-              />
             </span>
           </section>
 
