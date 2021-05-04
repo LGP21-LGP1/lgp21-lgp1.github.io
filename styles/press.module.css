@@ -22,3 +22,7 @@
     flex-basis: 55%;
     background-color: #110818;
 }
+
+.geometric {
+    align-self: flex-start;
+}

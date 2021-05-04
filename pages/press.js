@@ -5,6 +5,7 @@ import Navbar from '../components/navbar';
 import PageTitle from '../components/pagetitle';
 import DownloadFileButton from '../components/downloadFileButton';
 import style from '../styles/press.module.css';
+import PressGeometric from '../public/assets/pressGeometric.svg'
 
 export default function Press() {
   return (
@@ -23,15 +24,16 @@ export default function Press() {
             sed diam voluptua.'
             titleContact='press@vortex-tech.pt'
           />
+          <PressGeometric width={'85%'} className={style.geometric}></PressGeometric>
           <section className={style.pressContent}>
             <div className={style.downloadButtons}>
-              <DownloadFileButton fileName="media_kit.pdf" title="Media Kit">
+              <DownloadFileButton fileName="media_kit.pdf" title="Media Kit" type="top">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
               </DownloadFileButton>
               <DownloadFileButton fileName="brand_guidelines.pdf" title="Brand Guidelines">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
               </DownloadFileButton>
-              <DownloadFileButton fileName="media_assets.pdf" title="Media Assets">
+              <DownloadFileButton fileName="media_assets.pdf" title="Media Assets" type="bottom">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
               </DownloadFileButton>
             </div>
