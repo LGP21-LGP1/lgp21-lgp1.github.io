@@ -68,7 +68,7 @@ export default function Home() {
                     <span>Photography</span>
                   </a>
                 </Link>
-                <span class={style.dot}></span>
+                <span className={style.dot}></span>
               </span>
               <span>
                 <Link
@@ -79,7 +79,7 @@ export default function Home() {
                     <span>Education</span>
                   </a>
                 </Link>
-                <span class={style.dot}></span>
+                <span className={style.dot}></span>
               </span>
               <span>
                 <Link
@@ -90,7 +90,7 @@ export default function Home() {
                     <span>Aviation</span>
                   </a>
                 </Link>
-                <span class={style.dot}></span>
+                <span className={style.dot}></span>
               </span>
               <span>
                 <Link
@@ -101,7 +101,7 @@ export default function Home() {
                     <span>Research</span>
                   </a>
                 </Link>
-                <span class={style.dot}></span>
+                <span className={style.dot}></span>
               </span>
             </div>
           </section>
