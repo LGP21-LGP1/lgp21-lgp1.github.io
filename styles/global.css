@@ -79,12 +79,18 @@ main {
   font-size: 29px;
 }
 
+.page-content{
+  width:90%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
 .page-title {
   font-weight: bold;
   font-size: 99px;
   width: 100%;
   min-height: 200px;
-  text-align: center;
+  text-align: start;
   margin: 50px auto;
   color: var(--light);
 }
@@ -100,7 +106,6 @@ main {
   font-family: var(--poppins);
   font-weight: 300;
   width: 50%;
-  margin: auto;
   color: #f5f5f5;
 }
 
