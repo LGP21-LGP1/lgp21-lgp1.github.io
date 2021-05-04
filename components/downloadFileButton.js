@@ -5,13 +5,14 @@ import { IoMdDownload } from 'react-icons/io';
 
 const downloadFileButton = ({ fileName, children, title, type }) => {
 
+  const border_radius_size = 40;
   let border_radius_style = {
     "border-radius": 0
   }
   if (type == 'top')
-    border_radius_style['border-radius'] = '0px 50px 0px 0px'
+    border_radius_style['border-radius'] = `0px ${border_radius_size}px 0px 0px`
   else if (type == "bottom")
-    border_radius_style['border-radius'] = '0px 0px 50px 0px'
+    border_radius_style['border-radius'] = `0px 0px ${border_radius_size}px 0px `
 
   return (
     <div className={style.downloadButtonContainer}>

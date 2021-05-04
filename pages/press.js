@@ -28,13 +28,13 @@ export default function Press() {
           <section className={style.pressContent}>
             <div className={style.downloadButtons}>
               <DownloadFileButton fileName="media_kit.pdf" title="Media Kit" type="top">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                Learn more about our company and solutions.
               </DownloadFileButton>
               <DownloadFileButton fileName="brand_guidelines.pdf" title="Brand Guidelines">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                Find out the best practices in order to use our image.
               </DownloadFileButton>
               <DownloadFileButton fileName="media_assets.pdf" title="Media Assets" type="bottom">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                Download our company's visual identity elements.
               </DownloadFileButton>
             </div>
             <div className={style.interactiveManualDiv}>
