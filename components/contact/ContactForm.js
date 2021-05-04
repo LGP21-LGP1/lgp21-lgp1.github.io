@@ -26,14 +26,13 @@ export const ContactForm = ({ submit }) => {
     }, [])
     return (
         <div className={style.formDiv}>
-            <div className={style.textInputRow}>
-                <FormInput label="Nome" placeholder={name_tip} type="text" onChange={updateName}></FormInput>
-                <FormInput label="Email" placeholder={email_tip} type="email" onChange={updateEmail}></FormInput>
-            </div>
+            {/* <div className={style.textInputRow}> */}
+            <FormInput label="Nome" placeholder={name_tip} type="text" onChange={updateName}></FormInput>
+            <FormInput label="Email" placeholder={email_tip} type="email" onChange={updateEmail}></FormInput>
+            {/* </div> */}
             <FormTextArea label="Mensagem" placeholder={message_tip} onChange={updateMessage}></FormTextArea>
             <button className={style.sendButton} onClick={handleSend}>Enviar</button>
         </div>
-        //onChange={handleChange}
     );
 };
 

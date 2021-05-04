@@ -1,3 +1,33 @@
 .pageContent {
-    margin-bottom: 131px;
+    display: flex;
+    flex-direction: row;    
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.content {
+    flex-basis: 59%;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.decoration {
+    
+    /* margin: 50px auto; */
+    flex-basis: 40%;   
+    /* border: 1px solid red; */
+}
+
+.form {
+}
+
+.geometricFigure {
+    /* border: 2px solid black; */
+}
+
+.emptySpace{
+    height: 200px;
 }
