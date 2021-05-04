@@ -24,24 +24,24 @@ export const footer = ({ dark }) => {
       </button>
       <div id={style.footerInfo}>
         <span id={style.workWithUs}>Interested in working with us?</span>
+        <span id={style.socials}>
+          <a href="https://www.facebook.com/">
+            <Facebook fill="white" height={50} width={50} />
+          </a>
+          <a href="https://www.github.com/">
+            <Github fill="white" height={50} width={50} />
+          </a>
+          <a href="https://www.instagram.com/">
+            <Instagram fill="white" height={50} width={50} />
+          </a>
+          <a href="https://www.linkedin.com/">
+            <Linkedin fill="white" height={50} width={50} />
+          </a>
+        </span>
         <span id={style.contacts}>
           <span id={style.email}>general@vortex.pt</span>
           <span id={style.phone}>+351 222 123 456</span>
         </span>
-      </div>
-      <div id={style.socials}>
-        <a href="https://www.facebook.com/">
-          <Facebook fill="white" height={50} width={50} />
-        </a>
-        <a href="https://www.github.com/">
-          <Github fill="white" height={50} width={50} />
-        </a>
-        <a href="https://www.instagram.com/">
-          <Instagram fill="white" height={50} width={50} />
-        </a>
-        <a href="https://www.linkedin.com/">
-          <Linkedin fill="white" height={50} width={50} />
-        </a>
       </div>
     </footer>
   );

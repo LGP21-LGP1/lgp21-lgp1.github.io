@@ -5,44 +5,22 @@ import Image from 'next/image';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import style from '../styles/home.module.css';
-import { FiArrowRightCircle } from 'react-icons/fi';
-import { FaEye, FaArchive } from 'react-icons/fa';
+import { GoTriangleRight } from 'react-icons/go';
+import { FaEye, FaArchive, FaLongArrowAltDown } from 'react-icons/fa';
 import { IoSchoolSharp, IoFlaskSharp } from 'react-icons/io5';
 import { IoIosArrowDown } from 'react-icons/io';
-import vortex from '../components/vortex/vortex';
 import EducationIcon from '../public/assets/Education.svg';
 import ResearchIcon from '../public/assets/Research.svg';
 import PhotographyIcon from '../public/assets/Photography.svg';
 import AviationIcon from '../public/assets/Aviation.svg';
 
 export default function Home() {
-  const [vantaEffect, setVantaEffect] = useState(0);
   const [height, setHeight] = useState(0);
   const myRef = useRef(null);
 
   useEffect(() => {
     setHeight(myRef.current.clientHeight);
   });
-
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        vortex({
-          el: myRef.current,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          scale: 1.0,
-          scaleMobile: 1.0,
-        })
-      );
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaEffect]);
 
   const handleScroll = () => {
     window.scroll({
@@ -61,6 +39,7 @@ export default function Home() {
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
+          <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
         </Head>
         <main id={style.home}>
           <section ref={myRef} id={style.hero}>
@@ -71,17 +50,10 @@ export default function Home() {
                   Through innovation, we bridge the gap between people and
                   technology.
                 </h1>
-                <p>
-                  We provide technological solutions with the goal of allowing
-                  products to be more effective,<br></br> efficient and
-                  ultimately more successful.
-                </p>
               </div>
             </div>
             <button onClick={handleScroll} id={style.scrollDown}>
-              <IoIosArrowDown size={30} />
-              <span>scroll down</span>
-              <IoIosArrowDown size={30} />
+              <FaLongArrowAltDown size={40} />
             </button>
           </section>
           <section id={style.solutions}>
@@ -93,10 +65,10 @@ export default function Home() {
                   as={process.env.BACKEND_URL + '/solutions/photography'}
                 >
                   <a className={style.solution}>
-                    <PhotographyIcon fill={'#F5F5F5'} width={35} height={35} />
                     <span>Photography</span>
                   </a>
                 </Link>
+                <span class={style.dot}></span>
               </span>
               <span>
                 <Link
@@ -104,10 +76,10 @@ export default function Home() {
                   as={process.env.BACKEND_URL + '/solutions/education'}
                 >
                   <a className={style.solution}>
-                    <EducationIcon fill={'#F5F5F5'} width={35} height={35} />
                     <span>Education</span>
                   </a>
                 </Link>
+                <span class={style.dot}></span>
               </span>
               <span>
                 <Link
@@ -115,10 +87,10 @@ export default function Home() {
                   as={process.env.BACKEND_URL + '/solutions/aviation'}
                 >
                   <a className={style.solution}>
-                    <AviationIcon fill={'#F5F5F5'} width={35} height={35} />
                     <span>Aviation</span>
                   </a>
                 </Link>
+                <span class={style.dot}></span>
               </span>
               <span>
                 <Link
@@ -126,12 +98,30 @@ export default function Home() {
                   as={process.env.BACKEND_URL + '/solutions/research'}
                 >
                   <a className={style.solution}>
-                    <ResearchIcon fill={'#F5F5F5'} width={35} height={35} />
                     <span>Research</span>
                   </a>
                 </Link>
+                <span class={style.dot}></span>
               </span>
             </div>
+          </section>
+          <section id={style.vision}>
+            <h2 id={style.ourVision}>Our Vision</h2>
+            <hr id={style.visionLine}></hr>
+            <span id={style.visionStatements}>
+              <span className={style.visionStatement}>
+                <span className={style.visionTitle}>Co-Creative</span>
+                <p className={style.visionText}>
+                  Engaging and inspiring the people we work with.
+                </p>
+              </span>
+              <span className={style.visionStatement}>
+                <span className={style.visionTitle}>Flexible</span>
+                <p className={style.visionText}>
+                  We create solutions adapted to your needs.
+                </p>
+              </span>
+            </span>
           </section>
           <section id={style.about}>
             <span className={style.content}>
@@ -141,46 +131,13 @@ export default function Home() {
                 businesses and institutions who seek the best solutions for
                 their customer needs through simplicity and quality.
               </p>
-              <img
-                id={style.aboutImg}
-                src="/assets/feup.png"
-                width={960}
-                height={641}
-              />
             </span>
           </section>
-          <section id={style.vision}>
-            <h2 id={style.ourVision}>
-              <span id={style.ourVisionContent}>
-                <FaEye size={50} />
-                <span>Our Vision</span>
-              </span>
-            </h2>
-            <span className={style.visionStatement}>
-              <span className={style.visionNo}>01</span>
-              <span className={style.separator} />
-              <span className={style.visionContent}>
-                <span className={style.visionTitle}>Co-Creative</span>
-                <p className={style.visionText}>
-                  Engaging and inspiring the people we work with.
-                </p>
-              </span>
-            </span>
-            <span className={style.visionStatement}>
-              <span className={style.visionNo}>02</span>
-              <span className={style.separator} />
-              <span className={style.visionContent}>
-                <span className={style.visionTitle}>Flexible</span>
-                <p className={style.visionText}>
-                  We create solutions adapted to your needs.
-                </p>
-              </span>
-            </span>
-          </section>
+
           <section id={style.meetTheTeam}>
             <span className={style.content}>
               <span id={style.textContent}>
-                <h2>Meet the team</h2>
+                <h2>Who are we?</h2>
                 <p>
                   The Vortex family is a multidisciplinary team, where the
                   knowledge of different backgrounds allows the company to have
@@ -190,12 +147,11 @@ export default function Home() {
                 </p>
                 <Link href="/team" as={process.env.BACKEND_URL + '/team'}>
                   <a id={style.meetTheTeamButton}>
-                    <FiArrowRightCircle size={25} />
-                    <span id={style.buttonText}>Get to know us.</span>
+                    <GoTriangleRight size={25} />
+                    <span id={style.buttonText}>Meet our team members</span>
                   </a>
                 </Link>
               </span>
-              <img id={style.meetTheTeamImg} src="/assets/meet-the-team.png" />
             </span>
           </section>
         </main>
