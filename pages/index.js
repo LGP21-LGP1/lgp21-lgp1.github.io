@@ -16,6 +16,7 @@ import AviationIcon from '../public/assets/Aviation.svg';
 import LShape from '../public/assets/Lshape.svg';
 import DarkCircle from '../public/assets/very-nice-circle.svg';
 import AbstractArt from '../public/assets/abstract-art.svg';
+import BackgroundBlob from '../public/assets/home-bg.svg';
 
 export default function Home() {
   const [height, setHeight] = useState(0);
@@ -46,6 +47,7 @@ export default function Home() {
         </Head>
         <main id={style.home}>
           <section ref={myRef} id={style.hero}>
+            <BackgroundBlob id={style.backgroundBlob} />
             <Navbar dark={false} page={'home'} />
             <div id={style.jumbotron}>
               <div id={style.jumbotronContent}>

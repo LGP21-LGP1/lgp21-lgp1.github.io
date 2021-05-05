@@ -7,15 +7,19 @@
   position: relative;
   max-width: 1365px;
   width: 1365px;
+  margin-top: 300px;
 }
 
 #hero {
   height: 100vh;
   width: 100%;
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   position: relative;
+}
+
+#backgroundBlob {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #jumbotron {
