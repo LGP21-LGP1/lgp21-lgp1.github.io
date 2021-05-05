@@ -14,6 +14,7 @@ import ResearchIcon from '../public/assets/Research.svg';
 import PhotographyIcon from '../public/assets/Photography.svg';
 import AviationIcon from '../public/assets/Aviation.svg';
 import LShape from '../public/assets/Lshape.svg';
+import DarkCircle from '../public/assets/very-nice-circle.svg';
 import AbstractArt from '../public/assets/abstract-art.svg';
 
 export default function Home() {
@@ -159,7 +160,8 @@ export default function Home() {
                 </span>
               </span>
             </section>
-            <LShape id={style.lShape} fill="#76b9b9" />
+            <DarkCircle id={style.darkCircle} />
+            <LShape id={style.lShape} />
           </span>
         </main>
         <Footer dark={true} />
