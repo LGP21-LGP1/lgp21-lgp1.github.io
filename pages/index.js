@@ -177,6 +177,7 @@ export default function Home() {
             </section>
             <DarkCircle id={style.darkCircle} />
             <LShape id={style.lShape} />
+            <YellowLines id={style.yellowLines} />
           </span>
         </main>
         <Footer dark={true} />

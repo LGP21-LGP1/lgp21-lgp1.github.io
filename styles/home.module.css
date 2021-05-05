@@ -145,7 +145,7 @@
 
 #about {
   width: 100%;
-  padding: 100px 180px 100px 0;
+  padding: 50px 180px 30px 0;
   max-width: 1365px;
   border-right: 2px solid var(--dark);
   position: relative;
@@ -165,6 +165,7 @@
   line-height: 40px;
   font-weight: 400;
   max-width: 622px;
+  margin-bottom: 0;
 }
 
 #aboutImg {
@@ -174,7 +175,6 @@
   position: relative;
   left: -110px;
   top: 210px;
-  margin-bottom: 100px;
 }
 
 #vision {
@@ -241,7 +241,7 @@
 }
 
 #meetTheTeam {
-  padding: 100px 180px 270px 0;
+  padding: 200px 180px 270px 0;
   max-width: 1365px;
   border-right: 2px solid var(--dark);
   width: 100%;
@@ -258,27 +258,27 @@
 }
 
 #meetTheTeam .dot1 {
-  top: -10px;
-}
-
-#meetTheTeam .dot2 {
-  top: 40px;
-}
-
-#meetTheTeam .dot3 {
-  top: 90px;
-}
-
-#meetTheTeam .dot4 {
   top: 140px;
 }
 
-#meetTheTeam .dot5 {
+#meetTheTeam .dot2 {
   top: 190px;
 }
 
-#meetTheTeam .dot6 {
+#meetTheTeam .dot3 {
   top: 240px;
+}
+
+#meetTheTeam .dot4 {
+  top: 290px;
+}
+
+#meetTheTeam .dot5 {
+  top: 340px;
+}
+
+#meetTheTeam .dot6 {
+  top: 390px;
 }
 
 #meetTheTeam .content {
@@ -352,6 +352,13 @@
   position: absolute;
   bottom: 102px;
   left: 150px;
+  z-index: -1;
+}
+
+#yellowLines {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   z-index: -1;
 }
 
