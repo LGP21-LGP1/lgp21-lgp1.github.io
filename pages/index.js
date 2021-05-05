@@ -17,6 +17,7 @@ import LShape from '../public/assets/Lshape.svg';
 import DarkCircle from '../public/assets/very-nice-circle.svg';
 import AbstractArt from '../public/assets/abstract-art.svg';
 import BackgroundBlob from '../public/assets/home-bg.svg';
+import YellowLines from '../public/assets/yellow-lines.svg';
 
 export default function Home() {
   const [height, setHeight] = useState(0);
@@ -139,8 +140,12 @@ export default function Home() {
                   for their customer needs through simplicity and quality.
                 </p>
               </span>
+              <img
+                id={style.aboutImg}
+                src="/assets/feup.png"
+                alt="FEUP Building"
+              />
             </section>
-
             <section id={style.meetTheTeam}>
               <span className={style.content}>
                 <span id={style.textContent}>

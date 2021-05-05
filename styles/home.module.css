@@ -148,6 +148,7 @@
   padding: 100px 180px 100px 0;
   max-width: 1365px;
   border-right: 2px solid var(--dark);
+  position: relative;
 }
 
 #aboutTitle {
@@ -170,6 +171,10 @@
   max-width: 100%;
   height: auto;
   width: auto\9;
+  position: relative;
+  left: -110px;
+  top: 210px;
+  margin-bottom: 100px;
 }
 
 #vision {
