@@ -169,10 +169,18 @@
 }
 
 #vision {
-  padding: 100px 180px 100px 0;
+  padding: 550px 180px 100px 0;
   max-width: 1365px;
   border-right: 2px solid var(--dark);
   width: 100%;
+  position: relative;
+}
+
+#abstractArt {
+  position: absolute;
+  bottom: 100px;
+  left: 407px;
+  z-index: -1;
 }
 
 #ourVisionContent {
@@ -192,7 +200,6 @@
 
 #visionLine {
   border-top: 2px solid var(--dark);
-  margin-bottom: 60px;
   width: 3800px;
 }
 
@@ -208,6 +215,8 @@
 
 .visionStatement {
   max-width: 407px;
+  height: 213px;
+  padding: 40px 0;
 }
 
 .visionTitle {

@@ -14,6 +14,7 @@ import ResearchIcon from '../public/assets/Research.svg';
 import PhotographyIcon from '../public/assets/Photography.svg';
 import AviationIcon from '../public/assets/Aviation.svg';
 import LShape from '../public/assets/Lshape.svg';
+import AbstractArt from '../public/assets/abstract-art.svg';
 
 export default function Home() {
   const [height, setHeight] = useState(0);
@@ -110,6 +111,7 @@ export default function Home() {
             <section id={style.vision}>
               <h2 id={style.ourVision}>Our Vision</h2>
               <hr id={style.visionLine}></hr>
+              <AbstractArt id={style.abstractArt} />
               <span id={style.visionStatements}>
                 <span className={style.visionStatement}>
                   <span className={style.visionTitle}>Co-Creative</span>
