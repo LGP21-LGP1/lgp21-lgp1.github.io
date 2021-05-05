@@ -240,6 +240,40 @@
   max-width: 1365px;
   border-right: 2px solid var(--dark);
   width: 100%;
+  position: relative;
+}
+
+#meetTheTeam .dots span {
+  position: absolute;
+  right: -11px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  background-color: var(--dark);
+}
+
+#meetTheTeam .dot1 {
+  top: -10px;
+}
+
+#meetTheTeam .dot2 {
+  top: 40px;
+}
+
+#meetTheTeam .dot3 {
+  top: 90px;
+}
+
+#meetTheTeam .dot4 {
+  top: 140px;
+}
+
+#meetTheTeam .dot5 {
+  top: 190px;
+}
+
+#meetTheTeam .dot6 {
+  top: 240px;
 }
 
 #meetTheTeam .content {

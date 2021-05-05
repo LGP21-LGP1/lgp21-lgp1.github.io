@@ -161,6 +161,14 @@ export default function Home() {
                   </Link>
                 </span>
               </span>
+              <span className={style.dots}>
+                <span className={style.dot1}></span>
+                <span className={style.dot2}></span>
+                <span className={style.dot3}></span>
+                <span className={style.dot4}></span>
+                <span className={style.dot5}></span>
+                <span className={style.dot6}></span>
+              </span>
             </section>
             <DarkCircle id={style.darkCircle} />
             <LShape id={style.lShape} />
