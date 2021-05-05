@@ -1,4 +1,12 @@
 #home {
+  z-index: 0;
+  margin-bottom: 200px;
+}
+
+#homeContent {
+  position: relative;
+  max-width: 1365px;
+  width: 1365px;
 }
 
 #hero {
@@ -63,12 +71,11 @@
 
 #solutions {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1365px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 3rem 100px 3rem;
 }
 
 #solutionsTitle {
@@ -85,6 +92,7 @@
   width: 100%;
   justify-content: space-between;
   border-top: 2px solid var(--dark);
+  border-right: 2px solid var(--dark);
 }
 
 #solutionsList span {
@@ -133,8 +141,9 @@
 
 #about {
   width: 100%;
-  padding: 50px 3rem 100px 3rem;
-  max-width: 1200px;
+  padding: 100px 180px 100px 0;
+  max-width: 1365px;
+  border-right: 2px solid var(--dark);
 }
 
 #aboutTitle {
@@ -160,10 +169,10 @@
 }
 
 #vision {
-  margin: 0 auto;
-  max-width: 1200px;
+  padding: 100px 180px 100px 0;
+  max-width: 1365px;
+  border-right: 2px solid var(--dark);
   width: 100%;
-  padding: 100px 3rem 100px 3rem;
 }
 
 #ourVisionContent {
@@ -184,6 +193,7 @@
 #visionLine {
   border-top: 2px solid var(--dark);
   margin-bottom: 60px;
+  width: 3800px;
 }
 
 .separator {
@@ -213,8 +223,9 @@
 }
 
 #meetTheTeam {
-  padding: 100px 3rem 100px 3rem;
-  max-width: 1200px;
+  padding: 100px 180px 270px 0;
+  max-width: 1365px;
+  border-right: 2px solid var(--dark);
   width: 100%;
 }
 
@@ -276,6 +287,13 @@
   .visionStatement {
     margin-top: 2rem;
   }
+}
+
+#lShape {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
 }
 
 @media only screen and (max-width: 1000px) {
