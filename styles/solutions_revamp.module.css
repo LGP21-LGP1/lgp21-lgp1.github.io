@@ -1,0 +1,54 @@
+@import url('https://use.typekit.net/yda2ola.css');
+
+.main {
+    margin-bottom: 50px; 
+}
+
+.pageTitle {
+    font-weight: bold;
+    margin: 80px;
+    align-self: flex-start;
+    padding-left: 100px;
+}
+
+.solution {
+    display: flex;
+    padding: 20px;
+    align-items: stretch; 
+    width: 50%;
+}
+
+.solutionDescription {
+    color: var(--dark);
+    background-color: var(--light);
+    padding-top: 125px;
+    padding-bottom: 110px;
+}
+
+.boxLeft {
+    border-top-left-radius: 50%;
+    box-shadow: 5px 5px 30px 0px lightgrey;
+    padding-left: 80px;
+    padding-right: 25px;
+    text-align: right;
+}
+
+.boxRight {
+    border-top-right-radius: 50%;
+    box-shadow: 5px 5px 30px 0px lightgrey;
+    padding-left: 25px;
+    padding-right: 80px;
+}
+
+
+
+.solutionTitle {
+    font-weight: bold;
+}
+
+.imageSolution{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    object-fit: contain;
+}
+
