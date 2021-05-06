@@ -26,3 +26,8 @@
 .geometric {
     align-self: flex-start;
 }
+
+.title {
+    align-self: flex-start;
+    margin-left: 14.5%;
+}

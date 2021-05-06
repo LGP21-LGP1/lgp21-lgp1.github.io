@@ -14,6 +14,10 @@
     align-items: center;
 }
 
+.title {
+    width: 57%;
+}
+
 .decoration {
     
     /* margin: 50px auto; */
@@ -29,5 +33,5 @@
 }
 
 .emptySpace{
-    height: 200px;
+    height: 225px;
 }

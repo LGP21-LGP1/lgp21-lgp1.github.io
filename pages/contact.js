@@ -28,10 +28,12 @@ export default function Contact() {
         <Navbar dark={false} page={'contact'} />
         <main className={styles.pageContent}>
           <div className={styles.content}>
-            <PageTitle
-              title="Contact Us"
-              description="Write to us here or through smoke signals."
-            />
+            <div className={styles.title}>
+              <PageTitle
+                title="Contact Us"
+                description="Write to us here or through smoke signals."
+              />
+            </div>
             <ContactForm className={styles.form} submit={submit}></ContactForm>
             <div className={styles.emptySpace}></div>
           </div>

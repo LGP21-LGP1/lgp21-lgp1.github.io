@@ -17,13 +17,12 @@ export default function Press() {
         </Head>
         <Navbar dark={false} page={'press'} />
         <main>
-          <PageTitle
-            title="Press"
-            description='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-            sed diam voluptua.'
-            titleContact='press@vortex-tech.pt'
-          />
+          <div className={style.title}>
+            <PageTitle
+              title="Press"
+              description=''
+            />
+          </div>
           <PressGeometric width={'85%'} className={style.geometric}></PressGeometric>
           <section className={style.pressContent}>
             <div className={style.downloadButtons}>
