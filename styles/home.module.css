@@ -100,15 +100,15 @@
 }
 
 #solutionsList span {
-  flex-grow: 1;
+  flex-grow: 1 1 0px;
   text-align: center;
   height: 100px;
+  width: 100%;
   line-height: 100px;
   position: relative;
 }
 
 .solution {
-  flex: 30%;
   position: relative;
   display: flex;
   align-items: center;
@@ -210,6 +210,7 @@
 #visionLine {
   border-top: 2px solid var(--dark);
   width: 3800px;
+  margin-bottom: 0;
 }
 
 .separator {
@@ -220,6 +221,7 @@
 
 #visionStatements {
   display: flex;
+  height: 230px;
 }
 
 .visionStatement {
