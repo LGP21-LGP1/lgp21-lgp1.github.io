@@ -224,6 +224,7 @@
 
 #visionStatements {
   display: flex;
+  flex-wrap: wrap;
   height: 230px;
 }
 
