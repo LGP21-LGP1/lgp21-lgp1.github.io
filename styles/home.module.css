@@ -8,7 +8,6 @@
   max-width: 1365px;
   width: 100%;
   margin-top: 300px;
-  padding: 0 1rem;
 }
 
 #hero {
@@ -172,11 +171,11 @@
 }
 
 #aboutImg {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1150px;
   height: auto;
-  width: auto\9;
   position: relative;
-  left: -110px;
+  left: -5vw;
   top: 210px;
 }
 
@@ -225,7 +224,7 @@
 #visionStatements {
   display: flex;
   flex-wrap: wrap;
-  height: 230px;
+  min-height: 230px;
 }
 
 .visionStatement {
@@ -348,23 +347,29 @@
 }
 
 #lShape {
+  max-width: 1183px;
+  max-height: 1355px;
   position: absolute;
   bottom: 0px;
-  left: 0px;
+  left: 1rem;
   z-index: -1;
 }
 
 #darkCircle {
+  max-width: 559px;
+  max-height: 559px;
   position: absolute;
   bottom: 102px;
-  left: 150px;
+  left: 166px;
   z-index: -1;
 }
 
 #yellowLines {
+  max-width: 1333px;
+  /* height="2551.73" */
   position: absolute;
   bottom: 0px;
-  left: 0px;
+  left: 1rem;
   z-index: -1;
 }
 

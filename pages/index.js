@@ -146,6 +146,7 @@ export default function Home() {
                 alt="FEUP Building"
               />
             </section>
+
             <section id={style.meetTheTeam}>
               <span className={style.content}>
                 <span id={style.textContent}>
@@ -175,6 +176,7 @@ export default function Home() {
                 <span className={style.dot6}></span>
               </span>
             </section>
+
             <DarkCircle id={style.darkCircle} />
             <LShape id={style.lShape} />
             <YellowLines id={style.yellowLines} />
