@@ -24,6 +24,7 @@ module.exports = {
       '/solutions/education-detail': { page: '/solutions/education-detail' },
       '/solutions/research-detail': { page: '/solutions/research-detail' },
       '/solutions/aviation-detail': { page: '/solutions/aviation-detail' },
+      '/solutions': { page: '/solutions' },
     };
   },
   //assetPrefix: '',
