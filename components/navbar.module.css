@@ -1,33 +1,13 @@
 #navbar {
   padding-left: 4rem;
   padding-right: 4rem;
-  min-height: 100px;
+  min-height: 135px;
   background-color: rgba(0, 0, 0, 0);
   z-index: 100;
 }
 
 #navbarContainer {
   z-index: 3;
-}
-
-#logo {
-  padding-top: 10px;
-}
-
-#navbar.dark {
-  color: var(--dark);
-}
-
-#navbar.clear {
-  color: var(--light);
-}
-
-#navbar .navItem {
-  color: var(--dark);
-}
-
-#navbar.clear .navItem {
-  color: var(--light);
 }
 
 #navbar #navbarToggler {
@@ -43,16 +23,14 @@
 #navbar .navItem {
   margin: 0 1rem;
   padding: 0.5rem;
-  font: normal 26px var(--secondary-font);
-  color: var(--dark);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blue);
+  transition: all 0.2s;
 }
 
-#navbar.dark #selectedPage {
-  border-bottom: 2px solid var(--orange);
-}
-
-#navbar.clear #selectedPage {
-  border-bottom: 2px solid var(--orange);
+#navbar .navItem:hover {
+  color: white;
 }
 
 #dropdownMenu {
@@ -83,10 +61,6 @@
 
 #mobileLogo {
   display: none;
-}
-
-#desktopLogo {
-  margin-top: 5px;
 }
 
 @media only screen and (max-width: 1200px) {
