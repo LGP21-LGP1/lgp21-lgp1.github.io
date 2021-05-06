@@ -112,7 +112,7 @@ export default function Home() {
                 </span>
               </div>
             </section>
-            <section id={style.vision}>
+            {/* <section id={style.vision}>
               <h2 id={style.ourVision}>Our Vision</h2>
               <hr id={style.visionLine}></hr>
               <AbstractArt id={style.abstractArt} />
@@ -177,7 +177,7 @@ export default function Home() {
             </section>
             <DarkCircle id={style.darkCircle} />
             <LShape id={style.lShape} />
-            <YellowLines id={style.yellowLines} />
+            <YellowLines id={style.yellowLines} /> */}
           </span>
         </main>
         <Footer dark={true} />

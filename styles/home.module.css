@@ -6,8 +6,9 @@
 #homeContent {
   position: relative;
   max-width: 1365px;
-  width: 1365px;
+  width: 100%;
   margin-top: 300px;
+  padding: 0 1rem;
 }
 
 #hero {
@@ -93,6 +94,7 @@
 
 #solutionsList {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   border-top: 2px solid var(--dark);
@@ -100,10 +102,11 @@
 }
 
 #solutionsList span {
-  flex-grow: 1 1 0px;
+  flex-grow: 1;
   text-align: center;
   height: 100px;
-  width: 100%;
+  max-width: 100%;
+  flex: 25%;
   line-height: 100px;
   position: relative;
 }
