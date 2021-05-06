@@ -68,8 +68,8 @@ export default function Home() {
               <div id={style.solutionsList}>
                 <span>
                   <Link
-                    href="/solutions/photography"
-                    as={process.env.BACKEND_URL + '/solutions/photography'}
+                    href="/solutions#app"
+                    as={process.env.BACKEND_URL + '/solutions#app'}
                   >
                     <a className={style.solution}>
                       <span>Photography</span>
@@ -79,8 +79,8 @@ export default function Home() {
                 </span>
                 <span>
                   <Link
-                    href="/solutions/education"
-                    as={process.env.BACKEND_URL + '/solutions/education'}
+                    href="/solutions#evaluate"
+                    as={process.env.BACKEND_URL + '/solutions#evaluate'}
                   >
                     <a className={style.solution}>
                       <span>Education</span>
@@ -90,8 +90,8 @@ export default function Home() {
                 </span>
                 <span>
                   <Link
-                    href="/solutions/aviation"
-                    as={process.env.BACKEND_URL + '/solutions/aviation'}
+                    href="/solutions#airmeddigital"
+                    as={process.env.BACKEND_URL + '/solutions#airmeddigital'}
                   >
                     <a className={style.solution}>
                       <span>Aviation</span>
@@ -101,8 +101,8 @@ export default function Home() {
                 </span>
                 <span>
                   <Link
-                    href="/solutions/research"
-                    as={process.env.BACKEND_URL + '/solutions/research'}
+                    href="/solutions#labcentric"
+                    as={process.env.BACKEND_URL + '/solutions#labcentric'}
                   >
                     <a className={style.solution}>
                       <span>Research</span>
