@@ -559,10 +559,6 @@
     display: none;
   }
 
-  #abstractArt {
-    display: none;
-  }
-
   #lShape {
     display: none;
   }
@@ -575,5 +571,12 @@
 
   #yellowLines {
     display: none;
+  }
+
+  #abstractArt {
+    bottom: 350px;
+    width: 247px;
+    height: 237px;
+    left: 50%;
   }
 }
