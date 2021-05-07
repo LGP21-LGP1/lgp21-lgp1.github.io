@@ -8,6 +8,8 @@
   max-width: 1365px;
   width: 100%;
   margin-top: 300px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 #hero {
@@ -147,7 +149,7 @@
 
 #about {
   width: 100%;
-  padding: 50px 180px 30px 0;
+  padding: 150px 180px 390px 0;
   max-width: 1365px;
   border-right: 2px solid var(--dark);
   position: relative;
@@ -180,7 +182,7 @@
 }
 
 #vision {
-  padding: 550px 180px 100px 0;
+  padding: 550px 180px 0px 0;
   max-width: 1365px;
   border-right: 2px solid var(--dark);
   width: 100%;
@@ -188,10 +190,10 @@
 }
 
 #abstractArt {
-  max-width: 718px;
-  max-height: 691px;
+  width: 718px;
+  height: 691px;
   position: absolute;
-  bottom: 100px;
+  bottom: 0px;
   left: 407px;
   z-index: -1;
 }
@@ -231,8 +233,8 @@
 
 .visionStatement {
   max-width: 407px;
-  height: 213px;
-  padding: 40px 0;
+  height: 210px;
+  padding: 45px 0;
 }
 
 .visionTitle {
@@ -327,10 +329,37 @@
   font-weight: bold;
 }
 
+#lShape {
+  max-width: 1404px;
+  max-height: 2563px;
+  position: absolute;
+  bottom: 0px;
+  left: -1rem;
+  z-index: -1;
+  margin-right: 2rem;
+}
+
+#lMobile {
+  max-width: 1333px;
+  position: absolute;
+  bottom: 0px;
+  left: 46px;
+  z-index: -1;
+  position: relative;
+  width: 70%;
+  left: -14px;
+  display: none;
+}
+
+@media only screen and (max-width: 1275px) {
+  #meetTheTeam {
+    padding-right: 2rem;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   #vision {
     flex-wrap: wrap;
-    padding: 100px 10px;
   }
 
   #ourVision {
@@ -343,27 +372,17 @@
     margin: 0 auto;
   }
 
-  .visionStatement {
-    margin-top: 2rem;
+  #visionStatements {
+    height: 420px;
   }
-}
 
-#lShape {
-  max-width: 1183px;
-  max-height: 1355px;
-  position: absolute;
-  bottom: 0px;
-  left: 1rem;
-  z-index: -1;
-}
-
-#yellowLines {
-  max-width: 1333px;
-  /* height="2551.73" */
-  position: absolute;
-  bottom: 0px;
-  left: 1rem;
-  z-index: -1;
+  #abstractArt {
+    bottom: 420px;
+    max-width: 450px;
+    max-height: 433px;
+    width: auto;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -389,9 +408,18 @@
     flex-direction: column;
     align-items: center;
   }
+
+  #vision {
+    padding-top: 200px;
+  }
 }
 
 @media only screen and (max-width: 770px) {
+  #home #homeContent {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   #jumbotron h1 {
     font-size: 21px;
     margin-right: 0;
@@ -422,5 +450,130 @@
 
   #homeContent {
     margin-top: 4rem;
+  }
+
+  #home section h2 {
+    font-size: 21px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    line-height: 0.1em;
+    margin: 0;
+  }
+
+  #home section h2 span {
+    background: var(--background);
+    padding: 0 10px;
+  }
+
+  #solutionsList {
+    align-items: flex-start;
+    border-top: none;
+    padding: 60px 0;
+    border-right: none;
+    border-left: 2px solid var(--dark);
+  }
+
+  #solutionsList span {
+    padding-left: 0.5rem;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  #solutions .dot {
+    height: 16px;
+    width: 16px;
+    background-color: var(--dark);
+    border-radius: 50%;
+    position: absolute;
+    left: -9px;
+    top: calc(50% - 8px);
+  }
+
+  #visionLine {
+    display: none;
+  }
+
+  #vision {
+    padding: 0;
+    border-right: none;
+    border-left: 2px solid var(--dark);
+    margin-bottom: 0;
+  }
+
+  #visionStatements {
+    justify-content: center;
+    padding: 4rem 0;
+    height: 350px;
+  }
+
+  .visionStatement {
+    text-align: center;
+    padding: 0 1rem;
+    height: auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .visionTitle {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .visionText {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  #about {
+    padding: 0;
+    margin-bottom: 0;
+    border-right: none;
+    border-left: 2px solid var(--dark);
+  }
+
+  #aboutContent {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 40px;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  #meetTheTeam {
+    display: none;
+  }
+
+  #home {
+    margin-bottom: 2rem;
+  }
+
+  #yellowLines {
+    display: none;
+  }
+
+  #abstractArt {
+    display: none;
+  }
+
+  #lShape {
+    display: none;
+  }
+
+  #lMobile {
+    display: inline-block;
+    width: 450px;
+    left: -1.1rem;
+  }
+
+  #yellowLines {
+    display: none;
   }
 }

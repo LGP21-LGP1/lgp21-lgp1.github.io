@@ -14,6 +14,7 @@ import ResearchIcon from '../public/assets/Research.svg';
 import PhotographyIcon from '../public/assets/Photography.svg';
 import AviationIcon from '../public/assets/Aviation.svg';
 import LShape from '../public/assets/Lshape.svg';
+import LShapeMobile from '../public/assets/LshapeMobile.svg';
 import DarkCircle from '../public/assets/very-nice-circle.svg';
 import AbstractArt from '../public/assets/abstract-art.svg';
 import BackgroundBlob from '../public/assets/home-bg.svg';
@@ -64,7 +65,9 @@ export default function Home() {
           </section>
           <span id={style.homeContent}>
             <section id={style.solutions}>
-              <h2 id={style.solutionsTitle}>Our Solutions</h2>
+              <h2 id={style.solutionsTitle}>
+                <span>Our Solutions</span>
+              </h2>
               <div id={style.solutionsList}>
                 <span>
                   <Link
@@ -113,7 +116,9 @@ export default function Home() {
               </div>
             </section>
             <section id={style.vision}>
-              <h2 id={style.ourVision}>Our Vision</h2>
+              <h2 id={style.ourVision}>
+                <span>Our Vision</span>
+              </h2>
               <hr id={style.visionLine}></hr>
               <AbstractArt id={style.abstractArt} />
               <span id={style.visionStatements}>
@@ -133,24 +138,24 @@ export default function Home() {
             </section>
             <section id={style.about}>
               <span className={style.content}>
-                <h2 id={style.aboutTitle}>About us</h2>
+                <h2 id={style.aboutTitle}>
+                  <span>About us</span>
+                </h2>
                 <p id={style.aboutContent}>
                   We are a company that provides top quality software products
                   for businesses and institutions who seek the best solutions
                   for their customer needs through simplicity and quality.
                 </p>
               </span>
-              <img
-                id={style.aboutImg}
-                src="/assets/feup.png"
-                alt="FEUP Building"
-              />
+              <LShapeMobile id={style.lMobile} />
             </section>
 
             <section id={style.meetTheTeam}>
               <span className={style.content}>
                 <span id={style.textContent}>
-                  <h2>Who are we?</h2>
+                  <h2>
+                    <span>Who are we?</span>
+                  </h2>
                   <p>
                     The Vortex family is a multidisciplinary team, where the
                     knowledge of different backgrounds allows the company to
@@ -176,9 +181,7 @@ export default function Home() {
                 <span className={style.dot6}></span>
               </span>
             </section>
-
             <LShape id={style.lShape} />
-            <YellowLines id={style.yellowLines} />
           </span>
         </main>
         <Footer dark={true} />

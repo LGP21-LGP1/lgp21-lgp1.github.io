@@ -81,3 +81,42 @@
     width: auto;
   }
 }
+
+@media only screen and (max-width: 770px) {
+  #footer.dark {
+    background: none;
+    color: var(--dark);
+  }
+
+  #backToTop {
+    font-size: 19px;
+  }
+
+  #footerInfo {
+    margin-top: 0.85rem;
+  }
+
+  #footerInfo #workWithUs {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 1rem;
+  }
+
+  #footerInfo #contacts {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+
+  #contacts span {
+    margin-bottom: 20px;
+  }
+
+  #footerInfo #socials {
+    margin-bottom: 1rem;
+  }
+
+  #socials svg {
+    width: 35px;
+  }
+}
