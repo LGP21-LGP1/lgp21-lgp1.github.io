@@ -43,7 +43,7 @@
   font-size: 70px;
   font-weight: bold;
   font-family: var(--poppins-font);
-  width: 968px;
+  max-width: 968px;
   color: var(--blue);
 }
 
@@ -391,22 +391,36 @@
   }
 }
 
-@media only screen and (max-width: 750px) {
-  #jumbotron p {
-    display: none;
+@media only screen and (max-width: 770px) {
+  #jumbotron h1 {
+    font-size: 21px;
+    margin-right: 0;
+    padding: 0 60px;
   }
 
   #jumbotron {
     height: 50%;
   }
-}
 
-@media only screen and (max-width: 600px) {
-  #jumbotron h1 {
-    font-size: 40px;
+  #jumbotronContent {
+    width: 100%;
+    text-align: center;
+    position: static;
+    display: inline-block;
+    margin-top: 100px;
   }
 
-  #jumbotron p {
-    font-size: 19px;
+  #backgroundBlob {
+    left: 0px;
+    top: -850px;
+    transform: rotate(-80deg);
+  }
+
+  #hero {
+    height: auto;
+  }
+
+  #homeContent {
+    margin-top: 4rem;
   }
 }
