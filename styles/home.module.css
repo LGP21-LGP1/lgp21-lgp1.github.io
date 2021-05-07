@@ -188,6 +188,8 @@
 }
 
 #abstractArt {
+  max-width: 718px;
+  max-height: 691px;
   position: absolute;
   bottom: 100px;
   left: 407px;
@@ -352,15 +354,6 @@
   position: absolute;
   bottom: 0px;
   left: 1rem;
-  z-index: -1;
-}
-
-#darkCircle {
-  max-width: 559px;
-  max-height: 559px;
-  position: absolute;
-  bottom: 102px;
-  left: 166px;
   z-index: -1;
 }
 
