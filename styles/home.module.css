@@ -439,9 +439,7 @@
   }
 
   #backgroundBlob {
-    left: 0px;
-    top: -850px;
-    transform: rotate(-80deg);
+    display: none;
   }
 
   #hero {

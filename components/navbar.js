@@ -37,7 +37,7 @@ const navbar = ({ dark, page }) => {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} id={style.navbarToggler} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
+          <Nav className="ml-auto" navbar id={style.navList}>
             <NavItem
               className={style.navItem}
               id={page === 'home' ? style.selectedPage : ''}
