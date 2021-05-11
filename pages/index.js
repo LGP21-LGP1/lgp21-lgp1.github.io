@@ -147,6 +147,7 @@ export default function Home() {
                   for their customer needs through simplicity and quality.
                 </p>
               </span>
+              <img id={style.feupImg} src="/assets/feup.png" alt="FEUP" />
               <LShapeMobile id={style.lMobile} />
             </section>
 

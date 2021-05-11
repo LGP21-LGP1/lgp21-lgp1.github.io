@@ -149,7 +149,7 @@
 
 #about {
   width: 100%;
-  padding: 150px 180px 390px 0;
+  padding: 150px 0 0 0;
   max-width: 1365px;
   border-right: 2px solid var(--dark);
   position: relative;
@@ -170,6 +170,7 @@
   font-weight: 400;
   max-width: 622px;
   margin-bottom: 0;
+  padding-right: 30px;
 }
 
 #aboutImg {
@@ -351,6 +352,14 @@
   display: none;
 }
 
+#feupImg {
+  display: none;
+  position: relative;
+  left: -35px;
+  max-width: 100%;
+  margin-top: 3.5rem;
+}
+
 @media only screen and (max-width: 1275px) {
   #meetTheTeam {
     padding-right: 2rem;
@@ -382,6 +391,14 @@
     max-height: 433px;
     width: auto;
     height: auto;
+  }
+
+  #lShape path:nth-of-type(2) {
+    display: none;
+  }
+
+  #feupImg {
+    display: inline-block;
   }
 }
 
@@ -423,7 +440,7 @@
   #jumbotron h1 {
     font-size: 21px;
     margin-right: 0;
-    padding: 0 60px;
+    padding: 0 1.5rem;
   }
 
   #jumbotron {
@@ -576,5 +593,9 @@
     width: 247px;
     height: 237px;
     left: 50%;
+  }
+
+  #feupImg {
+    margin-bottom: 2.5rem;
   }
 }

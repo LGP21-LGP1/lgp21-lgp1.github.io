@@ -74,6 +74,14 @@
 
 @media only screen and (max-width: 770px) {
   #navbarContainer {
+    min-height: 75px;
+  }
+
+  #navbar {
+    padding: 1.5rem 2rem;
+  }
+
+  #navbarContainer {
     background-color: var(--cyan);
   }
 
