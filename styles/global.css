@@ -67,6 +67,7 @@ nav > * {
   padding: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 main {
@@ -86,8 +87,8 @@ main {
   font-size: 29px;
 }
 
-.page-content{
-  width:90%;
+.page-content {
+  width: 90%;
   margin: 0 auto;
   padding: 0 50px;
 }

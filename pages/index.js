@@ -148,7 +148,6 @@ export default function Home() {
                 </p>
               </span>
               <img id={style.feupImg} src="/assets/feup.png" alt="FEUP" />
-              <LShapeMobile id={style.lMobile} />
             </section>
 
             <section id={style.meetTheTeam}>
@@ -181,6 +180,7 @@ export default function Home() {
                 <span className={style.dot5}></span>
                 <span className={style.dot6}></span>
               </span>
+              <LShapeMobile id={style.lMobile} />
             </section>
             <LShape id={style.lShape} />
           </span>

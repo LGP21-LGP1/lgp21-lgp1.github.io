@@ -149,7 +149,7 @@
 
 #about {
   width: 100%;
-  padding: 150px 0 0 0;
+  padding: 150px 0 220px 0;
   max-width: 1365px;
   border-right: 2px solid var(--dark);
   position: relative;
@@ -400,6 +400,10 @@
   #feupImg {
     display: inline-block;
   }
+
+  #about {
+    padding-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -539,8 +543,8 @@
   }
 
   .visionText {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 21px;
     text-align: center;
     margin-top: 1rem;
   }
@@ -553,8 +557,8 @@
   }
 
   #aboutContent {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 21px;
     text-align: center;
     padding: 0 2rem;
     margin-top: 40px;
@@ -563,7 +567,47 @@
   }
 
   #meetTheTeam {
+    border-right: none;
+    border-left: 2px solid var(--dark);
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 0;
+    height: 515px;
+    position: relative;
+  }
+
+  #meetTheTeam .content {
+    float: right;
+    width: auto;
+  }
+
+  #meetTheTeam p {
+    font-size: 13px;
+    line-height: 21px;
+    max-width: 60vw;
+  }
+
+  #meetTheTeam .dots {
     display: none;
+  }
+
+  #home #meetTheTeam h2 {
+    border-bottom: none;
+    text-align: right;
+    margin-bottom: 35px;
+  }
+
+  #home #meetTheTeam h2 span {
+    padding-right: 0;
+  }
+
+  #lMobile {
+    position: absolute;
+    display: inline;
+    width: 450px;
+    height: 515px;
+    left: -1px;
+    top: 0;
   }
 
   #home {
@@ -576,12 +620,6 @@
 
   #lShape {
     display: none;
-  }
-
-  #lMobile {
-    display: inline-block;
-    width: 450px;
-    left: -1.1rem;
   }
 
   #yellowLines {
