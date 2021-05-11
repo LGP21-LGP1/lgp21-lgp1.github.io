@@ -18,7 +18,7 @@ import LShapeMobile from '../public/assets/LshapeMobile.svg';
 import DarkCircle from '../public/assets/very-nice-circle.svg';
 import AbstractArt from '../public/assets/abstract-art.svg';
 import BackgroundBlob from '../public/assets/home-bg.svg';
-import YellowLines from '../public/assets/yellow-lines.svg';
+import YellowLinesMobile from '../public/assets/yellow-lines-mobile.svg';
 
 export default function Home() {
   const [height, setHeight] = useState(0);
@@ -186,6 +186,7 @@ export default function Home() {
           </span>
         </main>
         <Footer dark={true} />
+        <YellowLinesMobile id={style.yellowLinesMobile} />
       </div>
     </>
   );

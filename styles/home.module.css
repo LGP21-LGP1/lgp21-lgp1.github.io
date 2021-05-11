@@ -1,5 +1,4 @@
 #home {
-  z-index: 0;
   margin-bottom: 200px;
 }
 
@@ -10,6 +9,7 @@
   margin-top: 300px;
   padding-left: 2rem;
   padding-right: 2rem;
+  z-index: 0;
 }
 
 #hero {
@@ -360,6 +360,10 @@
   margin-top: 3.5rem;
 }
 
+#yellowLinesMobile {
+  display: none;
+}
+
 @media only screen and (max-width: 1275px) {
   #meetTheTeam {
     padding-right: 2rem;
@@ -608,6 +612,16 @@
     height: 515px;
     left: -1px;
     top: 0;
+  }
+
+  #yellowLinesMobile {
+    display: inline;
+    position: absolute;
+    bottom: 0px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    max-height: 2020px;
+    z-index: 0;
   }
 
   #home {
