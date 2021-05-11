@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import style from './footer.module.css';
@@ -17,6 +17,8 @@ export const footer = ({ dark }) => {
       behavior: 'smooth',
     });
   };
+
+  const [toggle, setToggle] = useState(false);
 
   return (
     <footer id={style.footer} className={dark ? style.dark : style.clear}>

@@ -35,7 +35,11 @@ const navbar = ({ dark, page }) => {
           <MobileLogo id={style.mobileLogo} />
           <DesktopLogo id={style.desktopLogo} />
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} id={style.navbarToggler} />
+        <NavbarToggler
+          onClick={toggle}
+          id={style.navbarToggler}
+          className={isOpen ? style.open : style.closed}
+        />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar id={style.navList}>
             <NavItem
@@ -79,14 +83,6 @@ const navbar = ({ dark, page }) => {
             >
               <Link href="/press" as={process.env.BACKEND_URL + '/press'}>
                 <a>Press</a>
-              </Link>
-            </NavItem>
-            <NavItem
-              className={style.navItem}
-              id={page === 'blog' ? style.selectedPage : ''}
-            >
-              <Link href="/blog" as={process.env.BACKEND_URL + '/blog'}>
-                <a>Blog</a>
               </Link>
             </NavItem>
           </Nav>
