@@ -2,6 +2,7 @@ import styles from '../styles/team.module.css';
 
 const TeamMember = (props) => {
 	const { photo, name, role, background, overlayColor } = props;
+	console.log(photo);
 	return (
 		<div className={`${styles.member_div} ${styles[background]}`}>
 			<img className={styles.member_photo} src={photo} />

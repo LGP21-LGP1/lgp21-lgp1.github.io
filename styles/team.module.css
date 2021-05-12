@@ -11,6 +11,10 @@
 	border: 1px solid var(--orange);
 }
 
+.allLeaderMembers {
+	width: 75%;
+}
+
 .member_div {
 	height: auto;
 	width: 100%;
@@ -19,7 +23,7 @@
 .member_photo {
 	display: block;
 	width: 100%;
-	height: 200px;
+	height: auto;
 }
 
 .member_div:hover > .member_info {
@@ -211,6 +215,17 @@
 }*/
 @media only screen and (max-width: 600px) {
 	.dotsRow {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.dotsRow {
 		opacity: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.allLeaderMembers {
+		width: auto;
 	}
 }

@@ -8,251 +8,258 @@ import styles from '../styles/team.module.css';
 import TeamMember from '../components/teammember';
 
 export default function Team() {
+	const commonUrl = 'https://raw.githubusercontent.com/LGP21-LGP1/lgp21-lgp1.github.io/assets/add-team-pictures/assets/'
 	const [leaders, setLeaders] = useState([
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'César Nogueira',
 			role: 'CEO',
+			pic:'César_Nogueira_MIEIC_CEO'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'José Silva ',
 			role: 'CTO',
+			pic:'JOSE_SILVA_MIEIC_RapazDasAguas'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Marta Faria',
 			role: 'CBO',
+			pic:'Marta_Faria_CBO'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Mariana Ribeiro',
 			role: 'CMO',
+			pic:'MARIANA_RIBEIRO_MM_CMO'
 		},
 	]);
 	const [teams, setTeams] = useState([
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
+			name: 'Rita Garcia',
+			role: 'UI/UX Designer',
+			pic: 'Ana_Rita_Garcia_MM_TeamLeaderPI'
+		},
+		{
 			name: 'André Mori',
 			role: 'IT Developer',
+			pic: 'André_Mori_MIEIC_ImplementationManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Augusto Osório',
 			role: 'UI/UX Designer',
+			pic:'Augusto_Osório_MM_Design_Manager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Cláudia Martins',
 			role: 'IT Developer',
+			pic:'CláudiaMartins_MIEIC_TeamLeader'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'João Lopes',
 			role: 'Business Analyst',
+			pic: 'João_Lopes_MESG_Gestor de Usabilidade e Desenho de Interfaces'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'João Pacheco',
 			role: 'UI/UX Designer',
+			pic:'João_Pacheco_MM_UIUXDesigner'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Lucas Stein',
 			role: 'IT Developer',
+			pic:'LUCAS_STEIN_MIEIC_RequirementsManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Luís Oliveira',
 			role: 'IT Developer',
+			pic:'Luis_Oliveira_MIEIC_ProcessManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Miguel Romariz',
 			role: 'IT Developer',
+			pic:'Miguel_Romariz_MIEIC_ProcessManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Paulo Pinto',
 			role: 'IT Developer',
+			pic:'PAULO_PINTO_MIEIC_IMPLEMENTATION_MANAGER'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Sérgio Dias',
 			role: 'IT Developer',
+			pic:'Sérgio_Dias_MIEIC_PlanningManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Vitor Ventuzelos',
 			role: 'IT Developer',
+			pic:'Vitor_Ventuzelos_MIEIC_TeamLeader'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Matilde Santiago',
 			role: 'Business Analyst',
+			pic:'Matilde_Santiago_MESG_QualityManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Filipe Barbosa',
 			role: 'IT Developer',
+			pic:'Filipe_Barbosa_MIEIC_ProcessManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Bernardo Branco',
 			role: 'UI/UX Designer',
+			pic:'Bernardo_Branco_MM_Branding_UI_UX_Design'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Bruno Vale Fernandes',
 			role: 'IT Developer',
+			pic:'BRUNO_FERNANDES_MIEIC_QUALITYMANAGER'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'José Miguel Simões',
 			role: 'IT Developer',
+			pic:'Miguel_Simões_MIEIC_ProcessManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'José Diogo Martins',
 			role: 'IT Developer',
+			pic:'JoséDiogo_Martins_MIEIC_DesignManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Margarida Alves Pinho',
 			role: 'IT Developer',
+			pic:'Margarida_Pinho_MIEIC_PlanningManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Afonso Carvalho Pereira de Sá',
 			role: 'IT Developer',
+			pic:'Afonso_Sá_MIEIC_DesignManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Paulo Jorge Palhau Moutinho',
 			role: 'IT Developer',
+			pic:'Paulo_Moutinho_MIEIC_ImplementationManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Leonardo Fernandes Moura',
 			role: 'IT Developer',
+			pic:'LEOBARDO_MOURA_MIEIC_IMPLEMENTATION_MANAGER'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Célio Ighour de Castro Rodrigues',
 			role: 'UI/UX Designer',
+			pic:'CELIO_RODRIGUES_MM_UIUXDESIGNER'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Mafalda Santos',
 			role: 'IT Developer',
+			pic:'Mafalda_Santos_MIEIC_RequirementsManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'António Pedro Reis Ribeiro Sousa Dantas',
 			role: 'IT Developer',
+			pic:'António_Dantas_MIEIC_QualityManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Eduardo João Santana Macedo',
 			role: 'IT Developer',
+			pic:'Eduardo_Macedo_MIEIC_RequirementManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'João Pedro Pinto Mota',
 			role: 'IT Developer',
+			pic:'João_Mota_MIEIC_SupportManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'João Rafael Gomes Varela',
 			role: 'IT Developer',
+			pic:'João_Varela_MIEIC_DesignManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'José Pedro Moreira de Almeida Baptista',
 			role: 'IT Developer',
+			pic:'José_Baptista_MIEIC_ProcessManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Luís Miguel Pedrosa de Moura Oliveira Henriques',
 			role: 'IT Developer',
+			pic:'Luis_Henriques_MIEIC_SupportManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Tito Alexandre Trindade Griné',
 			role: 'IT Developer',
+			pic:'Tito_Griné_MIEIC_TeamLeader'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Tomás Moreira Santos',
 			role: 'IT Developer',
+			pic:'Tomás_Santos_MIEIC_TestingManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Jéssica Leão',
 			role: 'Business Analyst',
+			pic:'Jessica_Leao_ProcessManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Carmen Silva',
 			role: 'UI/UX Designer',
+			pic:'Carmen_Silva_Multimédia_Gestor_de_Imagem_Comunicação_e_Marketing'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Gracielle Sampaio',
 			role: 'UI/UX Designer',
+			pic:'Grace_Sampaio_MM_UXUIDesigner'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Eduardo Carreira Ribeiro',
 			role: 'IT Developer',
+			pic:'Eduardo_Ribeiro_MIEIC_ProjectManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Carlos Jorge Direito Albuquerque',
 			role: 'IT Developer',
+			pic:'Carlos_Albuquerque_MIEIC_RequirementsManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Daniel Silva',
 			role: 'UI/UX Designer',
+			pic: 'Daniel_Silva_MM_UIUXDesigner'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'William Tostes Lobo',
 			role: 'Business Analyst',
+			pic: 'William_Tostes_Mesg_ProcessManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Pedro Esteves',
 			role: 'IT Developer',
+			pic:'Pedro_Esteves_MIEIC_TestingManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Miguel Pires',
 			role: 'IT Developer',
+			pic:'MIGUEL_PIRES_MIEIC_DIICMM'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'Luís Castro e Costa',
 			role: 'UI/UX Designer',
+			pic:'Luís_CastroeCosta_VideoContent_MM_'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'André Filipe da Silva Moutinho',
 			role: 'IT Developer',
+			pic:'André_Moutinho_MIEIC_DesignAndImplementationManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'João Luz',
 			role: 'IT Developer',
+			pic:'João_Luz_MIEIC_RequirementsManager'
 		},
 		{
-			photo: 'https://pngimg.com/uploads/batman/batman_PNG52.png',
 			name: 'João Veiga de Macedo',
 			role: 'IT Developer',
+			pic:'Joao_Macedo_MIEIC_TestingManager'
 		},
 	]);
 	const nteams = teams.length;
+	console.log(nteams);
 	let photoBgColor;
 	let overlayColor;
 	return (
@@ -268,7 +275,7 @@ export default function Team() {
 					description='We are a multi-complementary team made up of: IT developers, UI/UX designers and business analysts. We work together to achieve successful solutions. '
 				/>
 				<div
-					className={`w-75 d-flex flex-wrap align-items-center ${styles.allLeaderMembers}`}
+					className={`d-flex flex-wrap align-items-center ${styles.allLeaderMembers}`}
 				>
 					{leaders.map((member, index) => {
 						photoBgColor =
@@ -279,11 +286,11 @@ export default function Team() {
 							index % 2 == 0 ? 'member_info_orange_bg' : 'member_info_blue_bg';
 						return (
 							<div
-								className={`col-md-6 col-lg-3 px-0 ${styles.leaderMember}`}
-								key={member.photo + index}
+								className={`col-6 col-md-3 col-lg-3 px-0 ${styles.leaderMember}`}
+								key={member.pic + index}
 							>
 								<TeamMember
-									photo={member.photo}
+									photo={encodeURI(commonUrl + member.pic+".png")}
 									name={member.name}
 									role={member.role}
 									background={photoBgColor}
@@ -302,7 +309,9 @@ export default function Team() {
 						<span className={styles.dot}></span>
 					</div>
 				</div>
-				<div className={`mt-5 d-flex mx-auto d-flex flex-wrap justify-content-center ${styles.teamMemberdiv}`}>
+				<div
+					className={`mt-5 d-flex mx-auto d-flex flex-wrap justify-content-center ${styles.teamMemberdiv}`}
+				>
 					{teams.map((member, index) => {
 						photoBgColor =
 							index % 2 == 0
@@ -312,11 +321,11 @@ export default function Team() {
 							index % 2 == 0 ? 'member_info_orange_bg' : 'member_info_blue_bg';
 						return (
 							<div
-								className={`${styles.teamMemberCol} col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 px-0`}
-								key={member.photo + index}
+								className={`${styles.teamMemberCol} col-6 col-md-4 col-lg-3 col-xl-2 px-0`}
+								key={member.pic + index}
 							>
 								<TeamMember
-									photo={member.photo}
+									photo={encodeURI(commonUrl + member.pic+".png")}
 									name={member.name}
 									role={member.role}
 									background={photoBgColor}
