@@ -310,7 +310,7 @@ export default function Team() {
 					</div>
 				</div>
 				<div
-					className={`mt-5 d-flex mx-auto d-flex flex-wrap justify-content-start ${styles.teamMemberdiv}`}
+					className={`d-flex mx-auto d-flex flex-wrap justify-content-start ${styles.teamMemberdiv}`}
 				>
 					{teams.map((member, index) => {
 						photoBgColor =

@@ -84,7 +84,7 @@
 }
 
 .separator {
-	margin: 30px auto 10px;
+	margin: 50px auto 25px;
 	border-top: 3px solid var(--blue);
 	display: flex;
 	width: 100%;
