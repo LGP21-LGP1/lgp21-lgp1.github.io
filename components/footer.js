@@ -33,35 +33,35 @@ export const footer = ({ dark }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Facebook fill="white" height={50} width={50} />
+            <Facebook fill="white" height={40} width={40} />
           </a>
           <a
             href="https://twitter.com/vortex_tech_"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Twitter fill="white" height={50} width={50} />
+            <Twitter fill="white" height={40} width={40} />
           </a>
           <a
             href="https://www.instagram.com/vortex_tech_/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Instagram fill="white" height={50} width={50} />
+            <Instagram fill="white" height={40} width={40} />
           </a>
           <a
             href="https://www.youtube.com/channel/UCkiX1rw5PSS_p_LagUmdI_A"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Youtube fill="white" height={50} width={50} />
+            <Youtube fill="white" height={40} width={40} />
           </a>
           <a
             href="https://www.linkedin.com/in/vortex-tech/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Linkedin fill="white" height={50} width={50} />
+            <Linkedin fill="white" height={40} width={40} />
           </a>
         </span>
         <span id={style.contacts}>
