@@ -9,7 +9,7 @@ export const ContactForm = ({ submit }) => {
     const [message, setMessage] = useState("");
 
     const name_tip = "Ex. João Pombo"
-    const email_tip = "Ex. exemplo@vortex.pt"
+    const email_tip = "Ex. general@vortex-tech.pt"
     const message_tip = "A sua mensagem"
 
     const handleSend = useCallback(() => {
