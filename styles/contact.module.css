@@ -35,3 +35,13 @@
 .emptySpace{
     height: 330px;
 }
+
+@media only screen and (max-width: 1024px) {
+
+    .pageContent {
+        display: block;
+    }
+	.decoration {
+        display: none;
+    }
+}

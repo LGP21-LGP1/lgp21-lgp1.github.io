@@ -52,6 +52,8 @@
 
 .formDiv {
     width: 57%;
+    display: flex;
+    flex-direction: column;
 }
 
 .textInputLabelDiv {
@@ -87,4 +89,26 @@
 
 .sendButton:hover {
     background-color: #5b8b8b;;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .sendButton {
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 758px) {
+
+    .formDiv{
+        width: 75%;
+    }
+
+    .textArea, .textInput {
+        font-size: 20px;
+    }
+
+    .sendButton {
+        font-size: 20px;
+    }
 }
