@@ -4,6 +4,6 @@
   <circle class="a" cx="1018.146" cy="136.749" r="67" style="fill: rgb(119, 187, 187);"/>
   <path class="a" d="M 1001.424 158.626 L 1068.424 274.626 L 934.424 274.626 Z" style="fill: rgb(252, 163, 17);" transform="matrix(-0.5, -0.866025, 0.866025, -0.5, 1314.53249, 1192.197528)"/>
   <circle class="a" cx="9" cy="9" r="9" transform="matrix(0, 1, -1, 0, -272.220158, 239.673969)" style="fill: rgb(31, 31, 31);"/>
-  <circle class="a" cx="9" cy="9" r="9" transform="matrix(0, 1, -1, 0, -242.459049, 239.484165)" style="fill: rgb(31, 31, 31);"/>
-  <circle class="a" cx="9" cy="9" r="9" transform="matrix(0, 1, -1, 0, -211.964511, 238.512577)" style="fill: rgb(31, 31, 31);"/>
+  <circle class="a" cx="9" cy="9" r="9" transform="matrix(0, 1, -1, 0, -234.459045, 239.484161)" style="fill: rgb(31, 31, 31);"/>
+  <circle class="a" cx="9" cy="9" r="9" transform="matrix(0, 1, -1, 0, -193.964508, 238.512573)" style="fill: rgb(31, 31, 31);"/>
 </svg>
