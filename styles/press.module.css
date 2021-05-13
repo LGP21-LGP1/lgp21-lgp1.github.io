@@ -22,3 +22,73 @@
     flex-basis: 55%;
     background-color: #110818;
 }
+
+.geometric {
+    align-self: flex-start;
+}
+
+.title {
+    align-self: flex-start;
+    margin-left: 14.5%;
+    height: 3.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .title {
+        height: 6rem;
+    }
+	.pressContent {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .downloadButtons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1024px){
+	.pressContent {
+        height: 900px;
+    }
+
+    .downloadButtons {
+        flex-basis: 45%;
+    }
+
+    .interactiveManualDiv {
+        flex-basis: 50%;
+    }   
+}
+
+@media only screen and (min-width: 400px) and (max-width: 650px) {
+	.pressContent {
+        height: 700px;
+    }
+
+    .downloadButtons {
+        flex-basis: 55%;
+    }
+
+    .interactiveManualDiv {
+        flex-basis: 40%;
+    }   
+}
+
+@media only screen and (max-width: 400px) {
+	.pressContent {
+        height: 600px;
+    }
+
+    .downloadButtons {
+        flex-basis: 65%;
+    }
+
+    .interactiveManualDiv {
+        flex-basis: 30%;
+    }   
+}

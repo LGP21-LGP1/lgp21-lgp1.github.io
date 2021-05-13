@@ -5,6 +5,7 @@ import Navbar from '../components/navbar';
 import PageTitle from '../components/pagetitle';
 import DownloadFileButton from '../components/downloadFileButton';
 import style from '../styles/press.module.css';
+import PressGeometric from '../public/assets/pressGeometric.svg'
 
 export default function Press() {
   return (
@@ -16,23 +17,23 @@ export default function Press() {
         </Head>
         <Navbar dark={false} page={'press'} />
         <main>
-          <PageTitle
-            title="Press"
-            description='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-            sed diam voluptua.'
-            titleContact='press@vortex-tech.pt'
-          />
+          <div className={style.title}>
+            <PageTitle
+              title="Press"
+              description=''
+            />
+          </div>
+          <PressGeometric width={'85%'} className={style.geometric}></PressGeometric>
           <section className={style.pressContent}>
             <div className={style.downloadButtons}>
-              <DownloadFileButton fileName="media_kit.pdf" title="Media Kit">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              <DownloadFileButton fileName="media_kit.pdf" title="Media Kit" type="top">
+                Learn more about our company and solutions.
               </DownloadFileButton>
               <DownloadFileButton fileName="brand_guidelines.pdf" title="Brand Guidelines">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                Find out the best practices in order to use our image.
               </DownloadFileButton>
-              <DownloadFileButton fileName="media_assets.pdf" title="Media Assets">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              <DownloadFileButton fileName="media_assets.pdf" title="Media Assets" type="bottom">
+                Download our company's visual identity elements.
               </DownloadFileButton>
             </div>
             <div className={style.interactiveManualDiv}>
