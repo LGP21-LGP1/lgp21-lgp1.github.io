@@ -28,8 +28,8 @@ export default function Solutions() {
           </div>
           <div className={style.solution} id="evaluate">
             <div className={`${style.solutionDescription} ${style.boxLeft}`}>
-                <h2 className={style.solutionTitle}>E-valuate</h2>
-                <p>E-valuate is a platform adapted to remote classes, helping schools to manage aspects related to the classes, assessment cycle and transparency among students and teachers.</p>
+                <h2 className={style.solutionTitle}>e-Valuate</h2>
+                <p>e-Valuate is a platform adapted to remote classes, helping schools to manage aspects related to the classes, assessment cycle and transparency among students and teachers.</p>
             </div>
             <img className={style.imageSolution}
                 src="/assets/education.png"

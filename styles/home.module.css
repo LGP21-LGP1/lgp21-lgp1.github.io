@@ -1,13 +1,15 @@
 #home {
-  z-index: 0;
   margin-bottom: 200px;
 }
 
 #homeContent {
   position: relative;
   max-width: 1365px;
-  width: 1365px;
+  width: 100%;
   margin-top: 300px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  z-index: 0;
 }
 
 #hero {
@@ -43,7 +45,7 @@
   font-size: 70px;
   font-weight: bold;
   font-family: var(--poppins-font);
-  width: 968px;
+  max-width: 968px;
   color: var(--blue);
 }
 
@@ -93,6 +95,7 @@
 
 #solutionsList {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   border-top: 2px solid var(--dark);
@@ -103,12 +106,13 @@
   flex-grow: 1;
   text-align: center;
   height: 100px;
+  max-width: 100%;
+  flex: 25%;
   line-height: 100px;
   position: relative;
 }
 
 .solution {
-  flex: 30%;
   position: relative;
   display: flex;
   align-items: center;
@@ -145,7 +149,7 @@
 
 #about {
   width: 100%;
-  padding: 50px 180px 30px 0;
+  padding: 150px 0 220px 0;
   max-width: 1365px;
   border-right: 2px solid var(--dark);
   position: relative;
@@ -166,19 +170,20 @@
   font-weight: 400;
   max-width: 622px;
   margin-bottom: 0;
+  padding-right: 30px;
 }
 
 #aboutImg {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1150px;
   height: auto;
-  width: auto\9;
   position: relative;
-  left: -110px;
+  left: -5vw;
   top: 210px;
 }
 
 #vision {
-  padding: 550px 180px 100px 0;
+  padding: 550px 180px 0px 0;
   max-width: 1365px;
   border-right: 2px solid var(--dark);
   width: 100%;
@@ -186,8 +191,10 @@
 }
 
 #abstractArt {
+  width: 718px;
+  height: 691px;
   position: absolute;
-  bottom: 100px;
+  bottom: 0px;
   left: 407px;
   z-index: -1;
 }
@@ -210,6 +217,7 @@
 #visionLine {
   border-top: 2px solid var(--dark);
   width: 3800px;
+  margin-bottom: 0;
 }
 
 .separator {
@@ -220,12 +228,14 @@
 
 #visionStatements {
   display: flex;
+  flex-wrap: wrap;
+  min-height: 230px;
 }
 
 .visionStatement {
   max-width: 407px;
-  height: 213px;
-  padding: 40px 0;
+  height: 210px;
+  padding: 45px 0;
 }
 
 .visionTitle {
@@ -320,10 +330,49 @@
   font-weight: bold;
 }
 
+#lShape {
+  max-width: 1404px;
+  max-height: 2563px;
+  position: absolute;
+  bottom: 0px;
+  left: -1rem;
+  z-index: -1;
+  margin-right: 2rem;
+}
+
+#lMobile {
+  max-width: 1333px;
+  position: absolute;
+  bottom: 0px;
+  left: 46px;
+  z-index: -1;
+  position: relative;
+  width: 70%;
+  left: -14px;
+  display: none;
+}
+
+#feupImg {
+  display: none;
+  position: relative;
+  left: -35px;
+  max-width: 100%;
+  margin-top: 3.5rem;
+}
+
+#yellowLinesMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1275px) {
+  #meetTheTeam {
+    padding-right: 2rem;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   #vision {
     flex-wrap: wrap;
-    padding: 100px 10px;
   }
 
   #ourVision {
@@ -336,30 +385,29 @@
     margin: 0 auto;
   }
 
-  .visionStatement {
-    margin-top: 2rem;
+  #visionStatements {
+    height: 420px;
   }
-}
 
-#lShape {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  z-index: -1;
-}
+  #abstractArt {
+    bottom: 420px;
+    max-width: 450px;
+    max-height: 433px;
+    width: auto;
+    height: auto;
+  }
 
-#darkCircle {
-  position: absolute;
-  bottom: 102px;
-  left: 150px;
-  z-index: -1;
-}
+  #lShape path:nth-of-type(2) {
+    display: none;
+  }
 
-#yellowLines {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  z-index: -1;
+  #feupImg {
+    display: inline-block;
+  }
+
+  #about {
+    padding-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -385,24 +433,221 @@
     flex-direction: column;
     align-items: center;
   }
+
+  #vision {
+    padding-top: 200px;
+  }
 }
 
-@media only screen and (max-width: 750px) {
-  #jumbotron p {
-    display: none;
+@media only screen and (max-width: 770px) {
+  #home #homeContent {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #jumbotron h1 {
+    font-size: 21px;
+    margin-right: 0;
+    padding: 0 1.5rem;
   }
 
   #jumbotron {
     height: 50%;
   }
-}
 
-@media only screen and (max-width: 600px) {
-  #jumbotron h1 {
-    font-size: 40px;
+  #jumbotronContent {
+    width: 100%;
+    text-align: center;
+    position: static;
+    display: inline-block;
+    margin-top: 100px;
   }
 
-  #jumbotron p {
-    font-size: 19px;
+  #backgroundBlob {
+    display: none;
+  }
+
+  #hero {
+    height: auto;
+  }
+
+  #homeContent {
+    margin-top: 4rem;
+  }
+
+  #home section h2 {
+    font-size: 21px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    line-height: 0.1em;
+    margin: 0;
+  }
+
+  #home section h2 span {
+    background: var(--background);
+    padding: 0 10px;
+  }
+
+  #solutionsList {
+    align-items: flex-start;
+    border-top: none;
+    padding: 60px 0;
+    border-right: none;
+    border-left: 2px solid var(--dark);
+  }
+
+  #solutionsList span {
+    padding-left: 0.5rem;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  #solutions .dot {
+    height: 16px;
+    width: 16px;
+    background-color: var(--dark);
+    border-radius: 50%;
+    position: absolute;
+    left: -9px;
+    top: calc(50% - 8px);
+  }
+
+  #visionLine {
+    display: none;
+  }
+
+  #vision {
+    padding: 0;
+    border-right: none;
+    border-left: 2px solid var(--dark);
+    margin-bottom: 0;
+  }
+
+  #visionStatements {
+    justify-content: center;
+    padding: 4rem 0;
+    height: 350px;
+  }
+
+  .visionStatement {
+    text-align: center;
+    padding: 0 1rem;
+    height: auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .visionTitle {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .visionText {
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  #about {
+    padding: 0;
+    margin-bottom: 0;
+    border-right: none;
+    border-left: 2px solid var(--dark);
+  }
+
+  #aboutContent {
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 40px;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  #meetTheTeam {
+    border-right: none;
+    border-left: 2px solid var(--dark);
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 0;
+    height: 515px;
+    position: relative;
+  }
+
+  #meetTheTeam .content {
+    float: right;
+    width: auto;
+  }
+
+  #meetTheTeam p {
+    font-size: 13px;
+    line-height: 21px;
+    max-width: 60vw;
+  }
+
+  #meetTheTeam .dots {
+    display: none;
+  }
+
+  #home #meetTheTeam h2 {
+    border-bottom: none;
+    text-align: right;
+    margin-bottom: 35px;
+  }
+
+  #home #meetTheTeam h2 span {
+    padding-right: 0;
+  }
+
+  #lMobile {
+    position: absolute;
+    display: inline;
+    width: 450px;
+    height: 515px;
+    left: -1px;
+    top: 0;
+  }
+
+  #yellowLinesMobile {
+    display: inline;
+    position: absolute;
+    bottom: 0px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    max-height: 2020px;
+    z-index: 0;
+  }
+
+  #home {
+    margin-bottom: 2rem;
+  }
+
+  #yellowLines {
+    display: none;
+  }
+
+  #lShape {
+    display: none;
+  }
+
+  #yellowLines {
+    display: none;
+  }
+
+  #abstractArt {
+    bottom: 350px;
+    width: 247px;
+    height: 237px;
+    left: 50%;
+  }
+
+  #feupImg {
+    margin-bottom: 2.5rem;
   }
 }
