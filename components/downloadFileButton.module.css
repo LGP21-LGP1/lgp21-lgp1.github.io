@@ -6,6 +6,7 @@
     height: inherit;
     display: flex;
     /* width: 422px; */
+    max-width: 422px;
     background-color: var(--light);
     box-shadow: 0px 3px 6px #00000029;
     /* border-radius: 20px; */
@@ -32,7 +33,7 @@
 
 .textDiv > div {
     color: var(--dark);
-    font: normal normal normal em var(--secondary-font);
+    font: normal normal normal 0.95em var(--secondary-font);
     letter-spacing: 0px;
 }
 
