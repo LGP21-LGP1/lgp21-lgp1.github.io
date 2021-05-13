@@ -16,6 +16,7 @@
 
 .title {
     width: 57%;
+    /* border: 1px solid red; */
 }
 
 .decoration {
@@ -43,5 +44,12 @@
     }
 	.decoration {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 758px) {
+
+    .title{
+        width: 75%;
     }
 }
