@@ -32,6 +32,7 @@ export default function Contact() {
               <PageTitle
                 title="Contact Us"
                 description="Write to us here or through smoke signals."
+                fullWidth
               />
             </div>
             <ContactForm className={styles.form} submit={submit}></ContactForm>
