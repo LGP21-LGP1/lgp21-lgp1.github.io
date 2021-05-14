@@ -31,7 +31,7 @@ export const ContactForm = ({ submit }) => {
             <FormInput label="Email" placeholder={email_tip} type="email" onChange={updateEmail}></FormInput>
             {/* </div> */}
             <FormTextArea label="Message" placeholder={message_tip} onChange={updateMessage}></FormTextArea>
-            <button className={style.sendButton} onClick={handleSend}>Enviar</button>
+            <button className={style.sendButton} onClick={handleSend}>Send</button>
         </div>
     );
 };
