@@ -13,42 +13,83 @@
 
 .solution {
     display: flex;
-    padding: 20px;
+    margin: 5vh;
     align-items: stretch; 
-    width: 50%;
+    width: 70%;
 }
 
 .solutionDescription {
     color: var(--dark);
     background-color: var(--light);
-    padding-top: 125px;
-    padding-bottom: 110px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+
+.solutionTitle {
+    font-weight: bold;
+    line-height: 1.5em;
+    font-size: 2.5vw;
+}
+
+.solutionText {
+    line-height: 1.5em;
+    font-size: 1.25vw;
 }
 
 .boxLeft {
     border-top-left-radius: 50%;
     box-shadow: 5px 5px 30px 0px lightgrey;
-    padding-left: 80px;
-    padding-right: 25px;
+    padding-left: 7%;
+    padding-right: 3%;
     text-align: right;
+
 }
 
 .boxRight {
     border-top-right-radius: 50%;
     box-shadow: 5px 5px 30px 0px lightgrey;
-    padding-left: 25px;
-    padding-right: 80px;
+    padding-left: 3%;
+    padding-right: 7%;
 }
 
 
 
-.solutionTitle {
-    font-weight: bold;
+
+.imageSolution {
+    width: 45%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: orange;
 }
 
-.imageSolution{
+.imageContainer{
     padding-top: 20px;
     padding-bottom: 20px;
     object-fit: contain;
+    /*border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(/../public/assets/orange-shape.svg) 30 round;*/
 }
 
+.img-container {
+    position: relative;
+}
+
+.img-corner {
+    position: absolute; 
+    top: 5px;
+    right: 5px; 
+    
+}
+
+.borderimg {
+    border: 10px solid transparent;
+    background-image: url(/../public/assets/orange-shape.png);
+}
