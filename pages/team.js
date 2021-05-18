@@ -78,11 +78,6 @@ export default function Team() {
 			pic:'Miguel_Romariz_MIEIC_ProcessManager'
 		},
 		{
-			name: 'Paulo Pinto',
-			role: 'IT Developer',
-			pic:'PAULO_PINTO_MIEIC_IMPLEMENTATION_MANAGER'
-		},
-		{
 			name: 'Sérgio Dias',
 			role: 'IT Developer',
 			pic:'Sérgio_Dias_MIEIC_PlanningManager'
