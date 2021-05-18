@@ -44,8 +44,10 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://use.typekit.net/ajk2viw.css" />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
+          <script src="https://cdn.spline.design/lib/anime.min.js"></script>
           <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+          <script src="/spline/js/spline.runtime.min.js"></script>
+          <script src="/spline/js/main.js"></script>
         </Head>
         <main id={style.home}>
           <section ref={myRef} id={style.hero}>
@@ -62,6 +64,9 @@ export default function Home() {
             <button onClick={handleScroll} id={style.scrollDown}>
               <FaLongArrowAltDown size={40} />
             </button>
+            <div id={style.canvasContainer}>
+              <canvas style={{ "width": "800px", "height": "600px" }} id={"canvas3d"}></canvas>
+            </div>
           </section>
           <span id={style.homeContent}>
             <section id={style.solutions}>
