@@ -165,6 +165,6 @@ main {
 }
 
 canvas {
-  width: 500px !important;
-  height: 500px !important;
+  width: 50% !important;
+  height: 50% !important;
 }

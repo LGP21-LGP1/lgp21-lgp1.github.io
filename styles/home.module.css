@@ -25,12 +25,12 @@
 }
 
 #canvasContainer {
-  width: 500px;
-  height: 500px;
   position: absolute;
-  bottom: 0;
+  top: 50%;
   right: 0;
+  transform: translate(0, -50%);
   background: none;
+  text-align: right;
 }
 
 #container {
