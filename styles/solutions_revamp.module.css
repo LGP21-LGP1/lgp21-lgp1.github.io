@@ -6,16 +6,17 @@
 
 .pageTitle {
     font-weight: bold;
-    margin: 80px;
+    margin: 5%;
+    margin-left: 10%;
     align-self: flex-start;
-    padding-left: 100px;
 }
+
 
 .solution {
     display: flex;
     margin: 5vh;
-    align-items: stretch; 
-    width: 70%;
+    align-items: center; 
+    width: 50%;
 }
 
 .solutionDescription {
@@ -92,4 +93,15 @@
 .borderimg {
     border: 10px solid transparent;
     background-image: url(/../public/assets/orange-shape.png);
+}
+
+
+@media only screen and (max-width: 600px){
+    
+.solution {
+    display: flex;
+    margin: 5vh;
+    align-items: center; 
+    width: 85%;
+}
 }
