@@ -143,6 +143,18 @@ main {
   color: #f5f5f5;
 }
 
+canvas {
+  width: 50% !important;
+  height: 50% !important;
+}
+
+@media only screen and (max-width: 1275px) {
+  canvas {
+    width: 30% !important;
+    height: 30% !important;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   .page-title {
     font-family: var(--primary-font);
@@ -162,9 +174,4 @@ main {
     width: 90%;
     margin: 0;
   }
-}
-
-canvas {
-  width: 50% !important;
-  height: 50% !important;
 }

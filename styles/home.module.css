@@ -54,6 +54,7 @@
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 4;
 }
 
 #jumbotron h1 {
@@ -379,9 +380,17 @@
   display: none;
 }
 
-@media only screen and (max-width: 1275px) {
+@media only screen and (max-width: 1350px) {
   #meetTheTeam {
     padding-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1275px) {
+  #canvasContainer {
+    transform: translate(0, 0);
+    top: auto;
+    bottom: 50px;
   }
 }
 
@@ -458,6 +467,10 @@
   #home #homeContent {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  #canvasContainer {
+    display: none;
   }
 
   #jumbotron h1 {
