@@ -1,2 +1,1 @@
-const app = new SpeRuntime.Application();
-app.start('./scene.json');
+new SpeRuntime.Application().start('./scene.json');
