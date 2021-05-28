@@ -29,7 +29,6 @@
     flex-direction: column;
     justify-content: center;
 
-    
 }
 
 
@@ -48,7 +47,7 @@
     border-top-left-radius: 50%;
     box-shadow: 5px 5px 30px 0px lightgrey;
     padding-left: 7%;
-    padding-right: 3%;
+    padding-right: 5%;
     text-align: right;
 
 }
@@ -56,18 +55,47 @@
 .boxRight {
     border-top-right-radius: 50%;
     box-shadow: 5px 5px 30px 0px lightgrey;
-    padding-left: 3%;
+    padding-left: 5%;
     padding-right: 7%;
 }
 
+.squareLeft {
+    width: 33%;
+    height: 33%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -5%;
+    margin-left: -5%;
+    background-color: orange;
+    z-index: 1;
+}
 
+.squareRight {
+    width: 33%;
+    height: 33%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -5%;
+    margin-right: -5%;
+    background-color: orange;
+    z-index: 1;
+}
 
 
 .imageSolution {
     width: 45%;
     margin-top: 5%;
     margin-bottom: 5%;
-    background-color: orange;
+    position: relative;
+    
+}
+
+.imageSolution > img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .imageContainer{

@@ -16,14 +16,15 @@ export default function Solutions() {
         <Navbar dark={false} page={'solutions'} />
         <main className={style.main}>
           <h1 className={style.pageTitle}>Solutions</h1>
-          
             <div className={style.solution} id="app">
-              <img className={style.imageSolution}
+              <div className={style.imageSolution}>
+                <img 
                   src="/assets/photography.png"
-                  alt="Archival solution"
-              
-              />
-           
+                  alt="Archival solution"      
+                />
+                <div className={style.squareRight}></div>
+              </div>
+
               <div className={`${style.solutionDescription} ${style.boxRight}`}>
                   <h2 className={style.solutionTitle}>APP</h2>
                   <p className={style.solutionText}>APP is an information system designed to assist cultural institutions on art pieces' conservation, allowing them to manage all the necessary procedures in an automatic way.	</p>
@@ -34,16 +35,22 @@ export default function Solutions() {
                   <h2 className={style.solutionTitle}>e-Valuate</h2>
                   <p className={style.solutionText}>e-Valuate is a platform adapted to remote classes, helping schools to manage aspects related to the classes, assessment cycle and transparency among students and teachers.</p>
               </div>
-              <img className={style.imageSolution}
+              <div className={style.imageSolution}>
+                <img 
                   src="/assets/education.png"
-                  alt="Education solution"
-              />
+                  alt="Education solution"      
+                />
+                <div className={style.squareLeft}></div>
+              </div>
             </div>
             <div className={style.solution} id="airmeddigital">
-              <img className={style.imageSolution}
+            <div className={style.imageSolution}>
+                <img 
                   src="/assets/aviation.png"
-                  alt="Aviation solution"
-              />
+                  alt="Aviation solution"      
+                />
+                <div className={style.squareRight}></div>
+              </div>
               <div className={`${style.solutionDescription} ${style.boxRight}`}>
                   <h2 className={style.solutionTitle}>AIR Med Digital</h2>
                   <p className={style.solutionText}>AIR Med Digital is a platform that centralizes medical information in the aviation field, aiming to be more sustainable, straightforward, and reduce bureaucracy on the current processes.</p>
@@ -51,13 +58,17 @@ export default function Solutions() {
             </div>
             <div className={style.solution} id="labcentric">
               <div className={`${style.solutionDescription} ${style.boxLeft}`}>
+                  <br></br>
                   <h2 className={style.solutionTitle}>Labcentric</h2>
                   <p className={style.solutionText}>Labcentric is an information system focused on digitizing and monitoring laboratory activities, allowing a decrease in errors, resulting in a cost reduction.</p>
               </div>
-              <img className={style.imageSolution}
+              <div className={style.imageSolution}>
+                <img 
                   src="/assets/research.png"
-                  alt="Research solution"
-              />
+                  alt="Research solution"      
+                />
+                <div className={style.squareLeft}></div>
+              </div>
             </div>
           
         </main>
