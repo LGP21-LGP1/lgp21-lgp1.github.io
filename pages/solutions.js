@@ -26,14 +26,16 @@ export default function Solutions() {
               </div>
 
               <div className={`${style.solutionDescription} ${style.boxRight}`}>
-                  <h2 className={style.solutionTitle}>APP</h2>
-                  <p className={style.solutionText}>APP is an information system designed to assist cultural institutions on art pieces' conservation, allowing them to manage all the necessary procedures in an automatic way.	</p>
+                <h2 className={style.solutionTitle}>APP</h2>
+                <p className={style.solutionText}>APP is an information system designed to assist cultural institutions on art pieces' conservation, allowing them to manage all the necessary procedures in an automatic way.	</p>
+                <div className={style.squareLeftMobile}></div>
               </div>  
             </div>
             <div className={style.solution} id="evaluate">
               <div className={`${style.solutionDescription} ${style.boxLeft}`}>
-                  <h2 className={style.solutionTitle}>e-Valuate</h2>
-                  <p className={style.solutionText}>e-Valuate is a platform adapted to remote classes, helping schools to manage aspects related to the classes, assessment cycle and transparency among students and teachers.</p>
+                <div className={style.squareRightMobile}></div>
+                <h2 className={style.solutionTitle}>e-Valuate</h2>
+                <p className={style.solutionText}>e-Valuate is a platform adapted to remote classes, helping schools to manage aspects related to the classes, assessment cycle and transparency among students and teachers.</p>
               </div>
               <div className={style.imageSolution}>
                 <img 
@@ -52,15 +54,17 @@ export default function Solutions() {
                 <div className={style.squareRight}></div>
               </div>
               <div className={`${style.solutionDescription} ${style.boxRight}`}>
-                  <h2 className={style.solutionTitle}>AIR Med Digital</h2>
-                  <p className={style.solutionText}>AIR Med Digital is a platform that centralizes medical information in the aviation field, aiming to be more sustainable, straightforward, and reduce bureaucracy on the current processes.</p>
+                <div className={style.squareLeftMobile}></div>
+                <h2 className={style.solutionTitle}>AIR Med Digital</h2>
+                <p className={style.solutionText}>AIR Med Digital is a platform that centralizes medical information in the aviation field, aiming to be more sustainable, straightforward, and reduce bureaucracy on the current processes.</p>
               </div>
             </div>
             <div className={style.solution} id="labcentric">
               <div className={`${style.solutionDescription} ${style.boxLeft}`}>
-                  <br></br>
-                  <h2 className={style.solutionTitle}>Labcentric</h2>
-                  <p className={style.solutionText}>Labcentric is an information system focused on digitizing and monitoring laboratory activities, allowing a decrease in errors, resulting in a cost reduction.</p>
+                <div className={style.squareRightMobile}></div>
+                <br></br>
+                <h2 className={style.solutionTitle}>Labcentric</h2>
+                <p className={style.solutionText}>Labcentric is an information system focused on digitizing and monitoring laboratory activities, allowing a decrease in errors, resulting in a cost reduction.</p>
               </div>
               <div className={style.imageSolution}>
                 <img 
