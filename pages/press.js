@@ -26,8 +26,11 @@ export default function Press() {
           <PressGeometric width={'85%'} className={style.geometric}></PressGeometric>
           <section className={style.pressContent}>
             <div className={style.downloadButtons}>
-              <DownloadFileButton fileName='Company_Handbook.pdf' title="Company Handbook" type="top">
+              <DownloadFileButton fileName='Company_Handbook.pdf' title="Media Kit" type="top">
                 Learn more about our company and solutions.
+              </DownloadFileButton>
+              <DownloadFileButton fileName="Company_Handbook.pdf" title="Company Handbook">
+                Learn more about our organization and policies.
               </DownloadFileButton>
               <DownloadFileButton fileName="brand_guidelines.pdf" title="Brand Guidelines">
                 Find out the best practices in order to use our image.

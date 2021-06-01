@@ -1,7 +1,7 @@
 .pressContent {
     display: flex;
     width: 70%;
-    height: 410px;
+    height: 510px;
     justify-content: space-between;
     margin-bottom: 131px;
     margin-top: 20px;
@@ -38,6 +38,7 @@
     .title {
         height: 6rem;
     }
+    
 	.pressContent {
         display: flex;
         flex-direction: column-reverse;
@@ -53,42 +54,49 @@
 
 @media only screen and (min-width: 650px) and (max-width: 1024px){
 	.pressContent {
-        height: 900px;
+        height: 1000px;
+        width: 80%;
     }
 
     .downloadButtons {
-        flex-basis: 45%;
+        flex-basis: 53%;
     }
 
     .interactiveManualDiv {
-        flex-basis: 50%;
+        flex-basis: 42%;
     }   
 }
 
 @media only screen and (min-width: 400px) and (max-width: 650px) {
 	.pressContent {
-        height: 700px;
+        height: 900px;
+        width: 80%;
     }
 
     .downloadButtons {
-        flex-basis: 55%;
+        flex-basis: 60%;
     }
 
     .interactiveManualDiv {
-        flex-basis: 40%;
+        flex-basis: 35%;
     }   
 }
 
 @media only screen and (max-width: 400px) {
 	.pressContent {
-        height: 600px;
+        height: 700px;
+        width: 80%;
     }
 
     .downloadButtons {
-        flex-basis: 65%;
+        flex-basis: 50%;
     }
 
     .interactiveManualDiv {
-        flex-basis: 30%;
+        flex-basis: 47%;
     }   
+
+    .downloadButtons > div {
+        height: 80px;
+    }
 }
