@@ -59,10 +59,10 @@ export default function Press() {
               <DownloadFileButton fileName="Company_Handbook.pdf" title="Company Handbook">
                 Learn more about our organization and policies.
               </DownloadFileButton>
-              <DownloadFileButton fileName="brand_guidelines.pdf" title="Brand Guidelines">
+              <DownloadFileButton fileName="Brand_Guidelines.pdf" title="Brand Guidelines">
                 Find out the best practices in order to use our image.
               </DownloadFileButton>
-              <DownloadFileButton fileName="media_assets.pdf" title="Media Assets" type="bottom">
+              <DownloadFileButton fileName="Media_Assets.zip" title="Media Assets" type="bottom">
                 Download our company's visual identity elements.
               </DownloadFileButton>
             </div>
