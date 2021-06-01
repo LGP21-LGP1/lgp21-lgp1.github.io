@@ -1,11 +1,38 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import {useEffect, useCallback, useState} from "react"
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 import PageTitle from '../components/pagetitle';
 import DownloadFileButton from '../components/downloadFileButton';
 import style from '../styles/press.module.css';
 import PressGeometric from '../public/assets/pressGeometric.svg'
+
+const useMediaQuery = (width) => {
+  const [targetReached, setTargetReached] = useState(false);
+
+  const updateTarget = useCallback((e) => {
+    if (e.matches) {
+      setTargetReached(true);
+    } else {
+      setTargetReached(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    const media = window.matchMedia(`(max-width: ${width}px)`);
+    media.addListener(updateTarget);
+
+    // Check on mount (callback is not called until a change occurs)
+    if (media.matches) {
+      setTargetReached(true);
+    }
+
+    return () => media.removeListener(updateTarget);
+  }, []);
+
+  return targetReached;
+};
 
 export default function Press() {
   return (
@@ -23,10 +50,10 @@ export default function Press() {
               description=''
             />
           </div>
-          <PressGeometric width={'85%'} className={style.geometric}></PressGeometric>
+          <PressGeometric width={!useMediaQuery(1024) ? '85%' : "95%"} className={style.geometric}></PressGeometric>
           <section className={style.pressContent}>
             <div className={style.downloadButtons}>
-              <DownloadFileButton fileName='Company_Handbook.pdf' title="Media Kit" type="top">
+              <DownloadFileButton fileName='VORTEX_COMPANY_MEDIA_PRESS_KIT.pdf' title="Media Kit" type="top">
                 Learn more about our company and solutions.
               </DownloadFileButton>
               <DownloadFileButton fileName="Company_Handbook.pdf" title="Company Handbook">
