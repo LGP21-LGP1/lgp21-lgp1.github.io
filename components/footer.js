@@ -66,7 +66,6 @@ export const footer = ({ dark }) => {
         </span>
         <span id={style.contacts}>
           <span id={style.email}>general@vortex-tech.pt</span>
-          <span id={style.phone}>+351 222 123 456</span>
         </span>
       </div>
     </footer>
